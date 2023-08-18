@@ -4,10 +4,6 @@ import styled, { createGlobalStyle } from "styled-components";
 
 // Create a global style that applies Ambit font to all text elements
 const GlobalStyle = createGlobalStyle`
-  main {
-    font-family: "Ambit", sans-serif;
-  }
-
   @keyframes blink {
     0%, 100% {
       opacity: 1;
@@ -28,7 +24,7 @@ const Intro = () => {
     <main> 
       <GlobalStyle />
       <section className="flex flex-col justify-center items-center py-16 px-8 lg:px-36">
-      <h2 className="font-Ambit md:text-4xl text-2xl font-bold mb-4"><span className="md:text-2xl text-xl mb-4 font-normal">Hey, </span> 
+      <h2 className=" md:text-4xl text-2xl font-bold mb-4"><span className="md:text-2xl text-xl mb-4 font-normal">Hey, </span> 
       <span className="font-semibold">
       I'm P Sidharth</span></h2>
       <p className="text-2xl mb-4 mt-4 text-gray-900">
