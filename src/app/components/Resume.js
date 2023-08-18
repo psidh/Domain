@@ -33,14 +33,18 @@ const Resume = () => {
 
       <section className="mb-8">
         <h3 className="md:text-2xl text-xl text-gray-800 font-semibold mb-4">Education</h3>
+        <div className="md:text-center text-justify">
         <p>Bachelor of Technology in Computer Science</p>
         <p>XYZ University, Graduated in 20XX</p>
+        </div>
       </section>
 
       <section className="mb-8">
         <h3 className="md:text-2xl text-xl text-gray-800 font-semibold mb-4">Experience</h3>
+        <div className="md:text-center text-justify">
         <p>Software Engineer Intern</p>
         <p>ABC Tech, Summer 20XX</p>
+        </div>
         <ul>
           <li>Contributed to the development of a new feature for the  flagship product.</li>
           <li>Collaborated with cross-functional teams to ensure seamless integration of the feature.</li>
