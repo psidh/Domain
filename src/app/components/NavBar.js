@@ -2,8 +2,7 @@ import React from 'react';
 
 const NavBar = () => {
   return (
-    <div className="bg-white">
-      <hr></hr>
+    <div className="">
       <div className="mx-8 lg:mx-20 flex justify-between py-10">
         <a href="mailto:philkhanasidharth14@gmail.com">
           <div className="flex gap-4 items-center">
@@ -48,6 +47,7 @@ const NavBar = () => {
           <line x1="3" y1="18" x2="21" y2="18" />
         </svg>
       </div>
+      <div className="border-gray-300 border-b-[0.05em]"></div> 
     </div>
   );
 };
