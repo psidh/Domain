@@ -1,9 +1,6 @@
 
 
 "use client";
-import Image from 'next/image';
-
-import pfp from "/public/Images/pfp.jpg";
 import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 
@@ -31,16 +28,6 @@ const TopIntro = () => {
     <div className="bg-white dark:bg-black">
     <main> 
       <GlobalStyle />
-      <div className="flex justify-center items-center pt-4">
-        <Image
-          src={pfp}
-          alt="Your Name"
-          width={200}
-          height={50}
-          layout="fixed"
-          className="rounded-xl overflow-hidden"
-        />
-      </div>
       <section className="flex flex-col justify-center items-center pt-8 pb-4 px-4 lg:px-18">
       <h2 className="md:text-2xl text-4xl font-semibold mb-4">
         <span className="md:text-2xl text-xl font-normal">Hey, </span> 
