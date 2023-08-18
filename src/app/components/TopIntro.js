@@ -23,7 +23,7 @@ const TopIntro = () => {
     <div className="">
     <main> 
       <GlobalStyle />
-      <section className="flex flex-col justify-center items-center py-8 px-4 lg:px-18">
+      <section className="flex flex-col justify-center items-center pt-16 pb-4 px-4 lg:px-18">
       <h2 className="md:text-2xl text-4xl font-semibold mb-4"><span className="md:text-2xl text-xl mb-4 font-normal">Hey, </span> 
       <span className="font-semibold md:text-4xl text-2xl ">
       {/* eslint-disable-next-line react/no-unescaped-entities */}
