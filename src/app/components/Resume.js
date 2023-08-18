@@ -3,14 +3,14 @@ import React from "react";
 const Resume = () => {
   const techStack = [
     "JavaScript",
+    "Nextjs",
     "React",
     "Node.js",
     "Python",
-    "HTML",
-    "CSS",
+    "HTML5",
+    "Tailwind CSS",
     "SQL",
     "Git",
-    "RESTful APIs",
     "Bootstrap",
     "VS Code",
     "MongoDB",
@@ -52,7 +52,7 @@ const Resume = () => {
         <h3 className="text-2xl font-semibold mt-4 mb-4">Tech Stack</h3>
         <div className="grid grid-cols-2 gap-4">
           {techStack.map((tech, index) => (
-            <div key={index} className="md:text-sm p-2 md:p-4 flex justify-center items-center bg-gray-100 rounded shadow-sm hover:shadow-md hover:bg-gray-700 hover:text-white transition duration-100">
+            <div key={index} className="md:text-lg p-2 md:p-4 flex justify-center items-center bg-gray-100 rounded shadow-sm hover:shadow-md hover:bg-gray-700 hover:text-white transition duration-100">
               {tech}
             </div>
           ))}
@@ -63,7 +63,7 @@ const Resume = () => {
         <h3 className="text-2xl font-semibold mt-4 mb-4">Skills</h3>
         <div className=" grid grid-cols-2 gap-4">
           {skills.map((skill, index) => (
-            <div key={index} className="p-4 flex justify-center items-center bg-gray-100 rounded shadow-sm hover:shadow-md hover:bg-gray-700 hover:text-white transition duration-100">
+            <div key={index} className="md:text-lg p-2 md:p-4 flex justify-center items-center bg-gray-100 rounded shadow-sm hover:shadow-md hover:bg-gray-700 hover:text-white transition duration-100">
               {skill}
             </div>
           ))}
