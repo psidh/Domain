@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Intro = () => {
+const TopIntro = () => {
   return (
     <div className="bg-white h-screen">
     <main> 
@@ -43,4 +43,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default TopIntro;

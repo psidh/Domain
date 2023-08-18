@@ -1,15 +1,14 @@
 /* eslint-disable @next/next/no-page-custom-font */
 
 import NavBar from 'src/app/components/NavBar';
-import TopIntro from './components/TopIntro';
-import Footer from './components/Footer';
+import TopIntro from 'src/app/components/TopIntro';
+import Footer from 'src/app/components/Footer';
 
-function MyApp({ Component, pageProps }) {
+function MyApp(){
   return (
     <>
       <NavBar />
       <TopIntro />
-
       <Footer />
     </>
   );
