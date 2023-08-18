@@ -44,10 +44,6 @@ const Resume = () => {
         <p>Software Engineer Intern</p>
         <p>ABC Tech, Summer 20XX</p>
         </div>
-        <ul className="mt-2 mb-2">
-          <li>Contributed to the development of a new feature for the flagship product.</li>
-          <li>Collaborated with cross-functional teams to ensure seamless integration of the feature.</li>
-        </ul>
       </section>
 
     <div className="md:grid grid-cols-2 gap-8">
