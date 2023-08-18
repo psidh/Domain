@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
       opacity: 0;
     }
   }
-
   .blinking {
     animation: blink 1s infinite;
   }
@@ -21,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
 const TopIntro = () => {
   return (
-    <div className="bg-white h-screen">
+    <div className="bg-white">
     <main> 
       <GlobalStyle />
       <section className="flex flex-col justify-center items-center py-16 px-8 lg:px-36">
