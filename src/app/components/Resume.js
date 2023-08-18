@@ -29,7 +29,7 @@ const Resume = () => {
   return (
    <div className="bg-white">
     <div className="py-16 px-8 lg:px-36">
-      <h2 className="md:text-4xl text-xl text-gray-800 font-bold mb-4">Resume</h2>
+      <h2 className="md:text-4xl text-2xl text-gray-800 font-bold mb-4">Resume</h2>
 
       <section className="mb-8">
         <h3 className="md:text-2xl text-xl text-gray-800 font-semibold mb-4">Education</h3>
@@ -47,7 +47,7 @@ const Resume = () => {
         </ul>
       </section>
 
-    <div className="md:grid grid-cols-2 gap-4">
+    <div className="md:grid grid-cols-2 gap-8">
       <section className="mb-8">
         <h3 className="text-2xl font-semibold mt-4 mb-4">Tech Stack</h3>
         <div className="grid grid-cols-2 gap-4">
