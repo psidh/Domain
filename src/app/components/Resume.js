@@ -52,18 +52,17 @@ const Resume = () => {
         <div className="grid grid-cols-2 gap-4">
           {techStack.map((tech, index) => (
             <div key={index} className="md:text-lg p-2 md:p-4 
-            flex justify-center items-center rounded 
+            flex justify-center items-center
+            border-0
+            rounded-lg
+            hover:bg-black
+            hover:text-white
 
-            bg-gray-200
-            hover:bg-gray-300
-            
-
-            dark:bg-gray-800
+            dark:bg-black
             dark:text-white
-            dark:hover:text-white
-            dark:hover:bg-gray-900
-
-            shadow-sm hover:shadow-md 
+            dark:hover:text-black
+            dark:hover:bg-white
+ 
             transition duration-100">
               {tech}
             </div>
@@ -76,16 +75,17 @@ const Resume = () => {
         <div className="grid grid-cols-2 gap-4">
           {skills.map((skill, index) => (
             <div key={index} className="md:text-lg md:p-4 p-2 
-            flex justify-center items-center rounded 
-            bg-gray-200
-            hover:bg-gray-300
+            flex justify-center items-center
+            border-0
+            rounded-lg
+            hover:bg-black
+            hover:text-white
 
-            dark:bg-gray-800
+            dark:bg-black
             dark:text-white
-            dark:hover:text-white
-            dark:hover:bg-gray-900
-
-            shadow-sm hover:shadow-md 
+            dark:hover:text-black
+            dark:hover:bg-white
+ 
             transition duration-100">
               {skill}
             </div>
