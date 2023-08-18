@@ -28,7 +28,7 @@ const Resume = () => {
   return (
    <div className="bg-white dark:bg-black">
     <div className="pt-4 px-8 lg:px-36">
-    <h2 className="md:text-4xl text-2xl font-semibold mb-4 text-center md:text-left">Resume</h2>
+    <h2 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 text-center md:text-left">Resume</h2>
       <section className="mb-8">
         <h3 className="md:text-2xl text-xl font-semibold mb-4">Education</h3>
         <div className="md:text-justify text-center">
