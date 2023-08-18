@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div>
+    <div className="bg-white dark:bg-black">
       <div className="py-16 px-8 lg:px-36 border-t-[0.05em] flex lg:flex-row flex-col gap-12 lg:gap-0 justify-between">
         <div className="flex gap-12">
           <a href="https://instagram.com/p_s1dharth">

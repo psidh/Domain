@@ -26,7 +26,7 @@ const Resume = () => {
   ];
 
   return (
-   <div className="">
+   <div className="bg-white dark:bg-black">
     <div className="pt-4 px-8 lg:px-36">
       <h2 className="md:text-4xl text-2xl font-bold mb-4">Resume</h2>
 

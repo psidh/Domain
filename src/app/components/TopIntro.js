@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
 const TopIntro = () => {
   return (
-    <div className="">
+    <div className="bg-white dark:bg-black">
     <main> 
       <GlobalStyle />
       <section className="flex flex-col justify-center items-center pt-16 pb-4 px-4 lg:px-18">
