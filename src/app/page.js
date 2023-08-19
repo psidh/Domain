@@ -11,8 +11,8 @@ function MyApp(){
     <>
       <NavBar />
       <TopIntro />
-      <Resume />
       <Achievements />
+      <Resume />
       <Footer />
     </>
   );
