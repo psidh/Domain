@@ -15,13 +15,13 @@ const Achievements = () => {
   };
 
   return (
-    <div className="dark:bg-gray-950 py-12">
+    <div className="bg-gray-100 dark:bg-gray-950 py-12">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold mb-8">Certificates and Achievements</h2>
         <Slider {...settings}>
           {certificatesData.map((certificate, index) => (
             <div key={index} className="px-4">
-              <div className="dark:bg-gray-900 rounded-lg shadow-md p-6">
+              <div className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg p-6 mb-4">
                 <div className="mb-4">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={certificate.image} alt={certificate.title} className="rounded-lg mx-auto w-60 h-50" />
