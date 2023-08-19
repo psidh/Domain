@@ -1,6 +1,9 @@
 import React from 'react';
 
 const NavBar = () => {
+
+  
+  
   return (
     <div className="bg-white dark:bg-black">
       <div className="mx-8 lg:mx-20 flex justify-between py-10">
@@ -27,8 +30,8 @@ const NavBar = () => {
         <div className="gap-14 hidden lg:flex">
           <a className="text-[#005AC1]" href="/">Home</a>
           <a className="" href="/#resume">Resume</a>
-          <a className="" href="/#achievements">Projects</a>
-          <a className="" href="src/app/pages/contact.js">Contact</a>
+          <a className="" href="/#blog">Blogs</a>
+          <a className="" href="/#footer">Contact</a>
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -29,7 +29,8 @@ const Resume = () => {
   ];
 
   return (
-   <div className="bg-white dark:bg-black">
+  <main id="resume">
+  <div className="bg-white dark:bg-black">
     <div className="py-10 px-8 lg:px-36">
     <h2 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left">Resume</h2>
       <section className="my-8">
@@ -116,6 +117,7 @@ const Resume = () => {
     </div>
     </div>
    </div>
+  </main>
   );
 };
 

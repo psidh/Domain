@@ -2,6 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
+  <main id="footer">
     <div className="bg-white dark:bg-black">
       <div className="py-16 px-8 lg:px-36 border-t-[0.05em] flex lg:flex-row flex-col gap-12 lg:gap-0 justify-between items-center">
         <div className="flex gap-12">
@@ -98,6 +99,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    </main>
   );
 };
 

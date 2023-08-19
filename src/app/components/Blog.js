@@ -4,6 +4,7 @@ import blogPosts from "src/app/data/blogPosts";
 
 const Blog = () => {
   return (
+  <main id="blog">
   <div className="container mx-auto px-16 py-12">
     <h2 className="md:text-4xl text-2xl font-semibold mb-8">Blog Posts</h2>
       <div className="grid gap-6">
@@ -16,6 +17,7 @@ const Blog = () => {
         ))}
       </div>
     </div>
+    </main>
   );
 };
 
