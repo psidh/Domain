@@ -15,7 +15,7 @@ const Achievements = () => {
   };
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-950 py-12">
+    <div className="bg-gray-100 dark:bg-gray-950 py-12 mt-4">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold mb-8">Certificates</h2>
         <Slider {...settings}>

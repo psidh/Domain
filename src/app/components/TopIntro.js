@@ -29,18 +29,18 @@ const TopIntro = () => {
     <div className="bg-white dark:bg-black">
     <main> 
       <GlobalStyle />
-      <div className="pt-8 px-4 flex justify-center items-center"> 
+      <div className="pt-4 md:pt-8 px-4 flex justify-center items-center"> 
         <Image
           src="/images/pfp.jpg"
           width={200}
           height={300}
           alt="author image"
-          className="w-[210px] h-[250px] rounded-full"
+          className="w-120 h-140 md:w-[210px] md:h-[250px] rounded-full"
           priority // Adding the "priority" property
           layout="fixed" // Specify layout to maintain aspect ratio
         />
       </div>
-      <section className="flex flex-col justify-center items-center pt-8 pb-8 px-4 lg:px-18">
+      <section className="flex flex-col justify-center items-center py-2 md:pt-8 md:pb-8 px-4 lg:px-18">
         <h2 className="md:text-2xl text-4xl font-semibold mt-4">
           <span className="md:text-2xl text-xl font-normal">Hey, </span> 
           <span className="font-semibold md:text-6xl text-4xl 
@@ -66,7 +66,7 @@ const TopIntro = () => {
               <span className="inline-flex opacity-50 text-2xl font-light blinking">|</span>
             </p>
           </div>
-          <button  className="mt-2 mb-2 bg-green-500 hover:bg-black dark:hover:bg-white dark:hover:text-black  hover:text-white text-white py-2 px-8 rounded-3xl">
+          <button  className="mt-2 mb-8 bg-green-500 hover:bg-black dark:hover:bg-white dark:hover:text-black  hover:text-white text-white py-2 px-8 rounded-3xl">
           <span className="text-xl"> <a href="mailto:philkhanasidharth14@gmail.com"> Connect </a></span>
           </button>
       </section>
