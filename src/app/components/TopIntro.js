@@ -60,13 +60,13 @@ const TopIntro = () => {
               With a background in <span className="underline underline-offset-4">Python </span> 
                and <span className="underline underline-offset-4">JavaScript</span>, 
               I bring Front-End and Back-End to the table </p>
-            <p className="md:text-2xl text-lg my-2 text-gray-600 dark:text-gray-300 mt-4 mb-4">
+            <p className="md:text-2xl text-lg my-2 text-gray-600 dark:text-gray-300 mt-4">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               Let's connect and build great things together...
               <span className="inline-flex opacity-50 text-2xl font-light blinking">|</span>
             </p>
           </div>
-          <button  className="mt-4 mb-10 bg-green-500 hover:bg-black dark:hover:bg-white dark:hover:text-black  hover:text-white text-white py-2 px-8 rounded-3xl">
+          <button  className="mt-2 mb-2 bg-green-500 hover:bg-black dark:hover:bg-white dark:hover:text-black  hover:text-white text-white py-2 px-8 rounded-3xl">
           <span className="text-xl"> <a href="mailto:philkhanasidharth14@gmail.com"> Connect </a></span>
           </button>
       </section>
