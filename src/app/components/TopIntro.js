@@ -2,6 +2,7 @@
 
 "use client";
 import React from "react";
+import Image from "next/image";
 import styled, { createGlobalStyle } from "styled-components";
 
 // Create a global style that applies Ambit font to all text elements
@@ -28,10 +29,21 @@ const TopIntro = () => {
     <div className="bg-white dark:bg-black">
     <main> 
       <GlobalStyle />
+      <div className="pt-8 px-4 flex justify-center items-center"> 
+        <Image
+          src="/images/pfp.jpg"
+          width={200}
+          height={300}
+          alt="author image"
+          className="w-[210px] h-[250px] rounded-full"
+          priority // Adding the "priority" property
+          layout="fixed" // Specify layout to maintain aspect ratio
+        />
+      </div>
       <section className="flex flex-col justify-center items-center pt-8 pb-8 px-4 lg:px-18">
-        <h2 className="md:text-2xl text-4xl font-semibold mt-8">
+        <h2 className="md:text-2xl text-4xl font-semibold mt-4">
           <span className="md:text-2xl text-xl font-normal">Hey, </span> 
-          <span className="font-semibold md:text-4xl text-3xl 
+          <span className="font-semibold md:text-6xl text-4xl 
           text-transparent bg-clip-text 
            bg-gradient-to-b from-gray-800 to-gray-500 
            dark:bg-gradient-to-t 
