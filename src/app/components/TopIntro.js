@@ -31,7 +31,12 @@ const TopIntro = () => {
       <section className="flex flex-col justify-center items-center pt-8 pb-8 px-4 lg:px-18">
         <h2 className="md:text-2xl text-4xl font-semibold mt-8">
           <span className="md:text-2xl text-xl font-normal">Hey, </span> 
-          <span className="font-semibold md:text-4xl text-3xl ">
+          <span className="font-semibold md:text-4xl text-3xl 
+          text-transparent bg-clip-text 
+           bg-gradient-to-b from-gray-800 to-gray-400 
+           dark:bg-gradient-to-t 
+           dark:from-gray-600 
+           dark:to-gray-50 ">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           I'm P Sidharth</span></h2>
           <div className="py-2 px-4 lg:px-18 md:text-center text-justify mt-4 mb-8">
@@ -48,7 +53,7 @@ const TopIntro = () => {
               <span className="inline-flex opacity-50 text-2xl font-light blinking">|</span>
             </p>
           </div>
-          <button className="my-8 bg-green-500 hover:bg-black dark:hover:bg-white dark:hover:text-black  hover:text-white text-white py-2 px-8 rounded-3xl">
+          <button className="mt-4 mb-10 bg-green-500 hover:bg-black dark:hover:bg-white dark:hover:text-black  hover:text-white text-white py-2 px-8 rounded-3xl">
           <span className="text-xl">Connect</span>
           </button>
       </section>
