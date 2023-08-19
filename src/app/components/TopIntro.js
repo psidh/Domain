@@ -33,7 +33,7 @@ const TopIntro = () => {
           <span className="md:text-2xl text-xl font-normal">Hey, </span> 
           <span className="font-semibold md:text-4xl text-3xl 
           text-transparent bg-clip-text 
-           bg-gradient-to-t from-gray-800 to-gray-500 
+           bg-gradient-to-b from-gray-800 to-gray-500 
            dark:bg-gradient-to-t 
            dark:from-gray-500 
            dark:to-gray-100 ">
@@ -45,8 +45,9 @@ const TopIntro = () => {
               I'm a Student, Developer passionate about [yet to write] 
             </p>
             <p className="md:text-2xl text-lg my-2 text-gray-700 dark:text-gray-300">
-              With a background in Python and JavaScript, I bring Front-End and Back-End to the table
-            </p>
+              With a background in <span className="underline underline-offset-4">Python </span> 
+               and <span className="underline underline-offset-4">JavaScript</span>, 
+              I bring Front-End and Back-End to the table </p>
             <p className="md:text-2xl text-lg my-2 text-gray-600 dark:text-gray-300 mt-4 mb-4">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               Let's connect and build great things together...
