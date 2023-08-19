@@ -35,8 +35,8 @@ const TopIntro = () => {
           text-transparent bg-clip-text 
            bg-gradient-to-b from-gray-800 to-gray-400 
            dark:bg-gradient-to-t 
-           dark:from-gray-600 
-           dark:to-gray-50 ">
+           dark:from-gray-500 
+           dark:to-gray-100 ">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           I'm P Sidharth</span></h2>
           <div className="py-2 px-4 lg:px-18 md:text-center text-justify mt-4 mb-8">
