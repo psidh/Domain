@@ -10,9 +10,9 @@ const Blog = () => {
       <div className="grid gap-6">
         {blogPosts.map((post, index) => (
           <div key={index} className="bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-xl p-6">
-            <h3 className="text-xl font-semibold mb-2 dark:text-gray-400">{post.title}</h3>
-            <p className="text-gray-500 ">{post.date}</p>
-            <p className="mt-2 dark:text-gray-300">{post.content}</p>
+            <h3 className="text-xl font-semibold mb-2 dark:text-gray-200">{post.title}</h3>
+            <p className="text-gray-400 ">{post.date}</p>
+            <p className="mt-2 dark:text-gray-200">{post.content}</p>
           </div>
         ))}
       </div>
