@@ -27,9 +27,9 @@ const Resume = () => {
 
   return (
    <div className="bg-white dark:bg-black">
-    <div className="pt-4 px-8 lg:px-36">
-    <h2 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 text-center md:text-left">Resume</h2>
-      <section className="mb-8">
+    <div className="py-10 px-8 lg:px-36">
+    <h2 className="md:text-4xl text-2xl font-semibold my-4 text-center md:text-left">Resume</h2>
+      <section className="my-8">
         <h3 className="md:text-2xl text-xl font-semibold mb-4 dark:text-green-500 text-green-600">Education</h3>
         <div className="md:text-justify text-center">
         <p>BTech in Computer Science</p>
@@ -37,7 +37,7 @@ const Resume = () => {
         </div>
       </section>
 
-      <section className="mb-8">
+      <section className="my-8">
         <h3 className="md:text-2xl text-xl font-semibold mb-4 dark:text-green-500 text-green-600">Experience</h3>
         <div className="md:text-justify text-center">
         <p>Software Engineer</p>
@@ -46,7 +46,7 @@ const Resume = () => {
       </section>
 
     <div className="md:grid grid-cols-2 gap-8">
-      <section className="mb-8">
+      <section className="my-8">
         <h3 className="text-2xl font-semibold mt-4 mb-4 "> 
         <span className="md:text-left lg:ml-3 
         dark:text-red-500
@@ -69,7 +69,7 @@ const Resume = () => {
         </div>
       </section>
 
-      <section className="mb-8">
+      <section className="my-8">
         <h3 className="text-2xl font-semibold mt-4 mb-4 md:text-left">
           <span className="md:text-left lg:ml-3 
           dark:text-orange-500
