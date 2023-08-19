@@ -28,7 +28,7 @@ const TopIntro = () => {
     <div className="bg-white dark:bg-black">
     <main> 
       <GlobalStyle />
-      <section className="flex flex-col justify-center items-center pt-8 pb-4 px-4 lg:px-18">
+      <section className="flex flex-col justify-center items-center pt-8 pb-8 px-4 lg:px-18">
         <h2 className="md:text-2xl text-4xl font-semibold mt-8">
           <span className="md:text-2xl text-xl font-normal">Hey, </span> 
           <span className="font-semibold md:text-4xl text-3xl ">
@@ -42,7 +42,7 @@ const TopIntro = () => {
             <p className="md:text-2xl text-lg my-2 text-gray-700 dark:text-gray-300">
               With a background in Python and JavaScript, I bring Front-End and Back-End to the table
             </p>
-            <p className="md:text-2xl text-lg my-2 text-gray-600 dark:text-gray-300 mt-4">
+            <p className="md:text-2xl text-lg my-2 text-gray-600 dark:text-gray-300 mt-4 mb-4">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               Let's connect and build great things together...
               <span className="inline-flex opacity-50 text-2xl font-light blinking">|</span>
