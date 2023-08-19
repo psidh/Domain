@@ -47,11 +47,14 @@ const Resume = () => {
 
     <div className="md:grid grid-cols-2 gap-8">
       <section className="my-8">
-        <h3 className="text-2xl font-semibold mt-4 mb-4 "> 
+        <h3 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 "> 
         <span className="md:text-left lg:ml-3 
-        dark:text-red-500
-        text-red-600">
-          Tech Stack 💻</span></h3>
+        text-transparent bg-clip-text 
+        bg-gradient-to-b from-black to-gray-500 
+        dark:bg-gradient-to-t 
+        dark:from-gray-500 
+        dark:to-gray-300">
+          Tech Stack</span></h3>
         <div className="grid grid-cols-2 gap-4">
           {techStack.map((tech, index) => (
             <div key={index} className="md:text-lg md:p-4 p-2  
@@ -70,10 +73,13 @@ const Resume = () => {
       </section>
 
       <section className="my-8">
-        <h3 className="text-2xl font-semibold mt-4 mb-4 md:text-left">
-          <span className="md:text-left lg:ml-3 
-          dark:text-orange-500
-        text-orange-600">Skills ⚒️</span>
+        <h3 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 md:text-left">
+        <span className="md:text-left lg:ml-3 
+          text-transparent bg-clip-text 
+          bg-gradient-to-b from-black to-gray-500 
+          dark:bg-gradient-to-t 
+          dark:from-gray-500 
+          dark:to-gray-300">Skills ⚒️</span>
         </h3>
         <div className="grid grid-cols-2 gap-4">
           {skills.map((skill, index) => (

@@ -33,7 +33,7 @@ const TopIntro = () => {
           <span className="md:text-2xl text-xl font-normal">Hey, </span> 
           <span className="font-semibold md:text-4xl text-3xl 
           text-transparent bg-clip-text 
-           bg-gradient-to-b from-gray-800 to-gray-400 
+           bg-gradient-to-t from-gray-800 to-gray-500 
            dark:bg-gradient-to-t 
            dark:from-gray-500 
            dark:to-gray-100 ">

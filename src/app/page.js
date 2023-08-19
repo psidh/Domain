@@ -5,6 +5,7 @@ import TopIntro from 'src/app/components/TopIntro';
 import Footer from 'src/app/components/Footer';
 import Resume from 'src/app/components/Resume';
 import Achievements from 'src/app/components/Achievements';
+import Blog from 'src/app/components/Blog';
 
 function MyApp(){
   return (
@@ -13,6 +14,7 @@ function MyApp(){
       <TopIntro />
       <Achievements />
       <Resume />
+      <Blog />
       <Footer />
     </>
   );
