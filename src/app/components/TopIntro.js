@@ -48,7 +48,7 @@ const TopIntro = () => {
               <span className="inline-flex opacity-50 text-2xl font-light blinking">|</span>
             </p>
           </div>
-          <button className="mt-8 mb-8 bg-green-600 hover:bg-green-700 text-white py-2 px-8 rounded-3xl">
+          <button className="mt-8 mb-8 bg-green-500 hover:bg-black hover:text-white text-white py-2 px-8 rounded-3xl">
           <span className="text-xl">Connect</span>
           </button>
       </section>
