@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <div className="bg-white dark:bg-black">
-      <div className="mx-8 lg:mx-20 flex justify-between py-4 md:py-10">
+      <div className="mx-8 lg:mx-20 flex justify-between py-10 md:py-10">
         <a href="mailto:philkhanasidharth14@gmail.com">
           <div className="flex gap-4 items-center">
             <svg
