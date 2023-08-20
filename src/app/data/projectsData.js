@@ -8,11 +8,11 @@ const projectsData = [
     technologies: [
       {
         name: "React",
-        img: <img src="/images/projects/reactlogo.png" className="w-10 h-10 rounded-md"/>
+        img: <img src="/images/projects/logos/reactlogo.png" className="w-10 h-10 rounded-md"/>
        },
       {
         name: "JS",
-        img : <img src="/images/projects/nextjslogo.png" className="w-20 h-10 rounded-md"/>
+        img : <img src="/images/projects/logos/nextjslogo.png" className="w-20 h-10 rounded-md"/>
       },
     ],
     image: "/images/projects/project1.png",
