@@ -10,7 +10,7 @@ const Projects = () => {
         <h2 className="md:text-4xl text-2xl px-16 text-left font-semibold mb-8">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projectsData.map((project, index) => (
-          <div key={index} className="dark:bg-gray-900 bg-white shadow-md rounded-lg p-6 mx-auto transform hover:scale-105 transition duration-300">
+          <div key={index} className="dark:bg-gray-900 bg-white shadow-md rounded-lg p-6 mx-auto transform hover:scale-105 transition duration-200">
               {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={project.image} alt={project.title} className="mx-auto mb-4 rounded-lg" />
             <h3 className="text-xl font-semibold my-2">{project.title}</h3>
@@ -20,7 +20,7 @@ const Projects = () => {
                 <div key={techIndex} className="flex items-center"> {tech.img} </div>
               ))}
             </div>
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-green-500 hover:underline">
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-green-500 hover:underline hover:underline-offset-2 ">
               View on GitHub
             </a>
           </div>

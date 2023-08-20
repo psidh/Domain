@@ -15,7 +15,7 @@ const projectsData = [
         img : <img src="/images/projects/nextjslogo.png" className="w-20 h-10 rounded-md"/>
       },
     ],
-    image: "/images/project1.jpg",
+    image: "/images/projects/project1.png",
     link: "https://github.com/psidh/gita_generator",
 
   },
@@ -26,14 +26,14 @@ const projectsData = [
     technologies: [
       {
         name: "Node",
-        img: <img src="/images/projects/nodelogo.png" className="w-10 h-10 rounded-md"/>
+        img: <img src="/images/projects/logos/nodelogo.png" className="w-10 h-10 rounded-md"/>
        },
       {
         name: "JS",
-        img : <img src="/images/projects/jslogo.png" className="w-10 h-10 rounded-md"/>
+        img : <img src="/images/projects/logos/jslogo.png" className="w-10 h-10 rounded-md"/>
       },
     ],
-    image: "/images/project1.jpg",
+    image: "/images/projects/project2.png",
     link: "https://github.com/psidh/todolist-v1",
   },
   // Add more project objects
