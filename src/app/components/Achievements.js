@@ -1,17 +1,37 @@
-"use client";
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import certificatesData from "src/app/components/certificates.js";
 
 const Achievements = () => {
+
+  const [sliderInitialized, setSliderInitialized] = useState(false);
+
+  useEffect(() => {
+    setSliderInitialized(true);
+  }, []);
+
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    autoplay: true, // Add autoplay property
+    autoplaySpeed: 3000, // Set the autoplay speed in milliseconds
+    pauseOnHover: true, // Pause autoplay on hover
+    responsive: [
+      {
+        breakpoint: 768, // Breakpoint for mobile screens
+        settings: {
+          slidesToShow: 1, // Show only 1 slide on mobile screens
+          arrows: false, // Hide navigation arrows 
+        },
+      },
+    ],
   };
 
   return (
