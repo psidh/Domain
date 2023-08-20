@@ -10,7 +10,7 @@ const Projects = () => {
           {projectsData.map((project, index) => (
             <div
               key={index}
-              className="dark:bg-gray-900 bg-white shadow-md rounded-lg p-6 ml-14 transform hover:scale-100 transition duration-300">
+              className="dark:bg-gray-900 bg-white shadow-md rounded-lg p-6 ml-14 transform hover:scale-105 transition duration-300">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={project.image} alt={project.title} className="mx-auto mb-4 rounded-lg" />
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
