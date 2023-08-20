@@ -21,7 +21,7 @@ const Achievements = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true, // Add autoplay property
-    autoplaySpeed: 300, // Set the autoplay speed in milliseconds
+    autoplaySpeed: 1500, // Set the autoplay speed in milliseconds
     pauseOnHover: true, // Pause autoplay on hover
     responsive: [
       {
@@ -35,7 +35,7 @@ const Achievements = () => {
   };
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-950 py-12 mt-4">
+    <div className="bg-gray-100 dark:bg-gray-950 py-6 md:py-12 mt-4">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold mb-8">Certificates</h2>
         <Slider {...settings}>

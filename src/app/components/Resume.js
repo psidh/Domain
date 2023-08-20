@@ -31,7 +31,7 @@ const Resume = () => {
   return (
   <main id="resume">
   <div className="bg-white dark:bg-black">
-    <div className="py-10 px-8 lg:px-36">
+    <div className="py-4 md:py-10 px-8 lg:px-36">
     <h2 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left">Resume</h2>
       <section className="my-8">
         <h3 className="md:text-2xl text-xl font-semibold mb-4 dark:text-green-500 text-green-600">Education</h3>
