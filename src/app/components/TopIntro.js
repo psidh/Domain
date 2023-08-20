@@ -54,7 +54,7 @@ const TopIntro = () => {
           <div className="py-2 px-4 lg:px-18 md:text-center text-justify mt-4 mb-2 md:mb-8">
             <p className="md:text-2xl text-lg mb-4 my-2 ">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
-              I'm a Student, Developer passionate about [yet to write] 
+              I'm a Student, Developer passionate about Web Development 
             </p>
             <p className="md:text-2xl text-lg my-2 text-gray-700 dark:text-gray-300">
               With a background in <span className="underline underline-offset-4">Python</span> and <span className="underline underline-offset-4">JavaScript</span>, 
