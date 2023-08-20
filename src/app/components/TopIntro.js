@@ -45,7 +45,7 @@ const TopIntro = () => {
           layout="fixed" // Specify layout to maintain aspect ratio
         />
       </div>
-      <section className="flex flex-col justify-center items-center py-2 md:pt-2 md:pb-8 px-4 lg:px-18">
+      <section className="flex flex-col justify-center items-center py-4 md:pt-2 md:pb-8 px-4 lg:px-18">
         <h2 className="md:text-2xl text-4xl font-semibold mt-4">
           <span className="md:text-2xl text-lg font-normal">Hey, </span> 
           <span className="font-semibold md:text-6xl text-3xl 
