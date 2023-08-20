@@ -13,7 +13,22 @@ const Projects = () => {
           <div key={index} className="dark:bg-gray-900 bg-white shadow-md rounded-lg p-6 mx-auto transform hover:scale-105 transition duration-200">
               {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={project.image} alt={project.title} className="mx-auto mb-4 rounded-lg" />
-            <h3 className="text-xl font-semibold my-2">{project.title}</h3>
+            <a href={project.link} className="text-xl justify-center font-semibold my-2 flex items-center">{project.title}
+            <span><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="ml-2 w-4 h-4">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg></span> 
+            </a>
             <p className="text-gray-400 mb-4">{project.description}</p>
             <div className="flex justify-center my-4 space-x-4">
               {project.technologies.map((tech, techIndex) => (
