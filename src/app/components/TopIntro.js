@@ -47,13 +47,13 @@ const TopIntro = () => {
       </div>
       <section className="flex flex-col justify-center items-center py-4 md:pt-2 md:pb-8 px-4 lg:px-18">
         <h2 className="md:text-2xl text-4xl font-semibold mt-2 py-2">
-          <span className="md:text-2xl text-lg font-normal ">Hey, </span> 
+          <span className="md:text-2xl text-lg font-normal">Hey, </span> 
           <span className="font-semibold md:text-6xl text-3xl 
           text-transparent bg-clip-text 
            bg-gradient-to-b from-gray-800 to-gray-500 
            dark:bg-gradient-to-t 
            dark:from-gray-500 
-           dark:to-gray-100 ">
+           dark:to-gray-100 py-2">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           I'm P Sidharth</span></h2>
           <div className="py-2 px-4 lg:px-18 md:text-center text-center my-4 md:mb-8">
