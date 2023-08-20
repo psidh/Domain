@@ -51,7 +51,7 @@ const TopIntro = () => {
            dark:to-gray-100 ">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           I'm P Sidharth</span></h2>
-          <div className="py-2 px-4 lg:px-18 md:text-center text-justify mt-4 mb-8">
+          <div className="py-2 px-4 lg:px-18 md:text-center text-justify mt-4 mb-2 md:mb-8">
             <p className="md:text-2xl text-lg mb-4 my-2 ">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               I'm a Student, Developer passionate about [yet to write] 
@@ -66,7 +66,7 @@ const TopIntro = () => {
               <span className="inline-flex opacity-50 text-2xl font-light blinking">|</span>
             </p>
           </div>
-          <button  className="mt-2 mb-8 bg-green-500 hover:bg-black dark:hover:bg-white dark:hover:text-black  hover:text-white text-white py-2 px-8 rounded-3xl">
+          <button  className="mb-2 md:mt-2 md:mb-8 bg-green-500 hover:bg-black dark:hover:bg-white dark:hover:text-black  hover:text-white text-white py-2 px-8 rounded-3xl">
           <span className="text-xl"> <a href="mailto:philkhanasidharth14@gmail.com"> Connect </a></span>
           </button>
       </section>

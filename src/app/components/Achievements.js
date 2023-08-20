@@ -33,7 +33,6 @@ const Achievements = () => {
       },
     ],
   };
-
   return (
     <div className="bg-gray-100 dark:bg-gray-950 py-6 md:py-12 mt-4">
       <div className="container mx-auto text-center">
