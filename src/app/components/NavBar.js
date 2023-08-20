@@ -9,7 +9,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-black">
+    <div className="bg-white dark:bg-black font-ambit">
       <div className="mx-8 lg:mx-20 flex justify-between pt-6 md:py-10">
         <a href="mailto:philkhanasidharth14@gmail.com">
           <div className="flex gap-4 items-center">

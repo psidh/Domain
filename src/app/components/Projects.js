@@ -5,7 +5,7 @@ import projectsData from "src/app/data/projectsData.js";
 
 const Projects = () => {
   return (
-    <section className="dark:bg-black bg-gray-100 py-4 md:py-12">
+    <section className="dark:bg-black bg-gray-100 py-4 md:py-12 font-ambit">
       <div className="container mx-auto md:text-center">
         <h2 className="md:text-4xl text-2xl px-16 text-left font-semibold mb-8">Projects</h2>
         <div className="grid grid-cols-1 gap-6 p-8 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6">

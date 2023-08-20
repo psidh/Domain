@@ -1,5 +1,3 @@
-
-
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -26,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 
 const TopIntro = () => {
   return (
-    <div className="bg-white dark:bg-black">
+    <div className="bg-white font-ambit dark:bg-black">
     <main> 
       <GlobalStyle />
       <div className="pt-4 md:pt-2 px-4 flex justify-center items-center"> 

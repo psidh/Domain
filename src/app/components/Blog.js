@@ -5,7 +5,7 @@ import blogPosts from "src/app/data/blogPosts";
 const Blog = () => {
   return (
   <main id="blog">
-  <div className="container mx-auto pt-4 pb-8 px-16 md:py-10">
+  <div className="container mx-auto pt-4 pb-8 px-16 md:py-10 font-ambit">
     <h2 className="md:text-4xl text-2xl font-semibold mb-8">Blog Posts</h2>
       <div className="grid gap-6">
         {blogPosts.map((post, index) => (

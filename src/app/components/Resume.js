@@ -30,7 +30,7 @@ const Resume = () => {
 
   return (
   <main id="resume">
-  <div className="bg-white dark:bg-black">
+  <div className="bg-white dark:bg-black font-ambit">
     <div className="py-4 md:py-10 px-8 lg:px-36">
     <h2 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left">Resume</h2>
       <section className="my-8">
