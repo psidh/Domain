@@ -29,18 +29,18 @@ const TopIntro = () => {
     <div className="bg-white dark:bg-black">
     <main> 
       <GlobalStyle />
-      <div className="pt-4 md:pt-8 px-4 flex justify-center items-center"> 
+      <div className="pt-4 md:pt-2 px-4 flex justify-center items-center"> 
         <Image
           src="/images/pfp.jpg"
           width={200}
           height={300}
           alt="author image"
-          className="w-120 h-140 md:w-[200px] md:h-[260px] mt-4 rounded-2xl"
+          className="w-120 h-140 md:w-[200px] md:h-[260px] my-4 rounded-2xl"
           priority // Adding the "priority" property
           layout="fixed" // Specify layout to maintain aspect ratio
         />
       </div>
-      <section className="flex flex-col justify-center items-center py-2 md:pt-8 md:pb-8 px-4 lg:px-18">
+      <section className="flex flex-col justify-center items-center py-2 md:pt-2 md:pb-8 px-4 lg:px-18">
         <h2 className="md:text-2xl text-4xl font-semibold mt-4">
           <span className="md:text-2xl text-lg font-normal">Hey, </span> 
           <span className="font-semibold md:text-6xl text-3xl 
@@ -51,7 +51,7 @@ const TopIntro = () => {
            dark:to-gray-100 ">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           I'm P Sidharth</span></h2>
-          <div className="py-2 px-4 lg:px-18 md:text-center text-justify mt-4 mb-2 md:mb-8">
+          <div className="py-2 px-4 lg:px-18 md:text-center text-center mt-4 mb-2 md:mb-8">
             <p className="md:text-2xl text-md mb-4 my-2 ">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               I'm a Student, Developer passionate about Web Development 

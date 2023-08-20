@@ -64,7 +64,6 @@ const NavBar = () => {
           <a className="m-6" href="/#footer"> Contact </a>
         </div>
       )}
-      <div className="border-gray-300 border-b-[0.05em]"></div> 
     </div>
   );
 };
