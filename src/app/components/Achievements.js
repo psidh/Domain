@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import certificatesData from "src/app/components/certificates.js";
+import certificatesData from "src/app/data/certificates.js";
 
 const Achievements = () => {
 
@@ -13,26 +13,26 @@ const Achievements = () => {
     setSliderInitialized(true);
   }, []);
 
-
   const settings = {
     dots: true,
     infinite: true,
     speed: 400,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true, // Add autoplay property
-    autoplaySpeed: 1500, // Set the autoplay speed in milliseconds
-    pauseOnHover: true, // Pause autoplay on hover
+    autoplay: true,
+    autoplaySpeed: 1500,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 768, // Breakpoint for mobile screens
         settings: {
-          slidesToShow: 1, // Show only 1 slide on mobile screens
-          arrows: false, // Hide navigation arrows 
+          slidesToShow: 1,
+          arrows: false,
         },
       },
     ],
   };
+  
   return (
     <div className="bg-gray-100 dark:bg-gray-950 py-6 md:py-12 mt-4">
       <div className="container mx-auto text-center">
