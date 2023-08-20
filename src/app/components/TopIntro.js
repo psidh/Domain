@@ -57,8 +57,7 @@ const TopIntro = () => {
               I'm a Student, Developer passionate about [yet to write] 
             </p>
             <p className="md:text-2xl text-lg my-2 text-gray-700 dark:text-gray-300">
-              With a background in <span className="underline underline-offset-4">Python </span> 
-               and <span className="underline underline-offset-4">JavaScript</span>, 
+              With a background in <span className="underline underline-offset-4">Python</span> and <span className="underline underline-offset-4">JavaScript</span>, 
               I bring Front-End and Back-End to the table </p>
             <p className="md:text-2xl text-lg my-2 text-gray-600 dark:text-gray-300 mt-4">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
