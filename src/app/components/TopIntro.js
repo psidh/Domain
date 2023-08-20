@@ -35,7 +35,7 @@ const TopIntro = () => {
           width={200}
           height={300}
           alt="author image"
-          className="w-120 h-140 md:w-[200px] md:h-[260px] rounded-2xl"
+          className="w-120 h-140 md:w-[200px] md:h-[260px] mt-4 rounded-2xl"
           priority // Adding the "priority" property
           layout="fixed" // Specify layout to maintain aspect ratio
         />
