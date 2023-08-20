@@ -46,8 +46,8 @@ const TopIntro = () => {
         />
       </div>
       <section className="flex flex-col justify-center items-center py-4 md:pt-2 md:pb-8 px-4 lg:px-18">
-        <h2 className="md:text-2xl text-4xl font-semibold mt-4">
-          <span className="md:text-2xl text-lg font-normal">Hey, </span> 
+        <h2 className="md:text-2xl text-4xl font-semibold mt-4 py-4">
+          <span className="md:text-2xl text-lg font-normal ">Hey, </span> 
           <span className="font-semibold md:text-6xl text-3xl 
           text-transparent bg-clip-text 
            bg-gradient-to-b from-gray-800 to-gray-500 
