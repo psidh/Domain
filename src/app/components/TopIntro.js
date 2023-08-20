@@ -42,8 +42,8 @@ const TopIntro = () => {
       </div>
       <section className="flex flex-col justify-center items-center py-2 md:pt-8 md:pb-8 px-4 lg:px-18">
         <h2 className="md:text-2xl text-4xl font-semibold mt-4">
-          <span className="md:text-2xl text-xl font-normal">Hey, </span> 
-          <span className="font-semibold md:text-6xl text-4xl 
+          <span className="md:text-2xl text-lg font-normal">Hey, </span> 
+          <span className="font-semibold md:text-6xl text-3xl 
           text-transparent bg-clip-text 
            bg-gradient-to-b from-gray-800 to-gray-500 
            dark:bg-gradient-to-t 
@@ -52,14 +52,14 @@ const TopIntro = () => {
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           I'm P Sidharth</span></h2>
           <div className="py-2 px-4 lg:px-18 md:text-center text-justify mt-4 mb-2 md:mb-8">
-            <p className="md:text-2xl text-lg mb-4 my-2 ">
+            <p className="md:text-2xl text-md mb-4 my-2 ">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               I'm a Student, Developer passionate about Web Development 
             </p>
-            <p className="md:text-2xl text-lg my-2 text-gray-700 dark:text-gray-300">
+            <p className="md:text-2xl text-md my-2 text-gray-700 dark:text-gray-300">
               With a background in <span className="underline underline-offset-4">Python</span> and <span className="underline underline-offset-4">JavaScript</span>, 
               I bring Front-End and Back-End to the table </p>
-            <p className="md:text-2xl text-lg my-2 text-gray-600 dark:text-gray-300 mt-4">
+            <p className="md:text-2xl text-md my-2 text-gray-600 dark:text-gray-300 mt-4">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               Let's connect and build great things together...
               <span className="inline-flex opacity-50 text-2xl font-light blinking">|</span>
