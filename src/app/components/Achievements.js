@@ -4,6 +4,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import certificatesData from "src/app/data/certificates.js";
+import styled, { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'Ambit';
+  src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+}
+
+
+`;
 
 const Achievements = () => {
 
@@ -34,7 +44,7 @@ const Achievements = () => {
   };
   
   return (
-    <div className="bg-gray-100 dark:bg-gray-950 py-6 md:py-12 mt-4 font-ambit">
+    <div style={{ fontFamily: 'Ambit, sans-serif'}}  className="bg-gray-100 dark:bg-gray-950 py-6 md:py-12 mt-4 font-ambit">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold mb-8">Certificates</h2>
         <Slider {...settings}>

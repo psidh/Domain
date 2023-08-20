@@ -1,11 +1,23 @@
 // src/components/Blog.js
 import React from "react";
 import blogPosts from "src/app/data/blogPosts";
+import styled, { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'Ambit';
+  src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+}
+
+
+`;
+
+
 
 const Blog = () => {
   return (
   <main id="blog">
-  <div className="container mx-auto pt-4 pb-8 px-16 md:py-10 font-ambit">
+  <div style={{ fontFamily: 'Ambit, sans-serif'}}  className="container mx-auto pt-4 pb-8 px-16 md:py-10 font-ambit">
     <h2 className="md:text-4xl text-2xl font-semibold mb-8">Blog Posts</h2>
       <div className="grid gap-6">
         {blogPosts.map((post, index) => (

@@ -20,11 +20,18 @@ const GlobalStyle = createGlobalStyle`
   .rounded-full {
     border-radius: 50%;
   }
+
+  @font-face {
+    font-family: 'Ambit';
+    src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+  }
+
+
 `;
 
 const TopIntro = () => {
   return (
-    <div className="bg-white font-ambit dark:bg-black">
+    <div style={{ fontFamily: 'Ambit, sans-serif'}} className="bg-white dark:bg-black">
     <main> 
       <GlobalStyle />
       <div className="pt-4 md:pt-2 px-4 flex justify-center items-center"> 

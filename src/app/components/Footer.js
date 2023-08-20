@@ -1,9 +1,19 @@
 import React from 'react';
+import styled, { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'Ambit';
+  src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+}
+
+
+`;
 
 const Footer = () => {
   return (
   <main id="footer">
-    <div className="bg-white dark:bg-black font-ambit">
+    <div style={{ fontFamily: 'Ambit, sans-serif'}}  className="bg-white dark:bg-black font-ambit">
       <div className="py-8 md:py-16 px-8 lg:px-36 border-t-[0.05em] flex lg:flex-row flex-col gap-12 lg:gap-0 justify-between items-center">
         <div className="flex gap-12">
           <a href="https://instagram.com/p_s1dharth">
