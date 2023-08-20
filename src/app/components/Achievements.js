@@ -17,11 +17,11 @@ const Achievements = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true, // Add autoplay property
-    autoplaySpeed: 3000, // Set the autoplay speed in milliseconds
+    autoplaySpeed: 300, // Set the autoplay speed in milliseconds
     pauseOnHover: true, // Pause autoplay on hover
     responsive: [
       {
