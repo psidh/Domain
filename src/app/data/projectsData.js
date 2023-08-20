@@ -1,27 +1,42 @@
+
+import React from "react"; // Import React
+
 const projectsData = [
-    {
-      title: "Project 1",
-      description: "A description of your first project.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      image: "/images/project1.jpg",
-      link: "https://github.com/psidh/domain",
-    },
-    {
-      title: "Project 1",
-      description: "A description of your first project.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      image: "/images/project1.jpg",
-      link: "https://github.com/psidh/domain",
-    },
-    {
-      title: "Project 1",
-      description: "A description of your first project.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      image: "/images/project1.jpg",
-      link: "https://github.com/psidh/domain",
-    },
-    // Add more project objects
-  ];
-  
-  export default projectsData;
-  
+  {
+    title: "Gita Generator",
+    description: "Web Application that can generate Slokās of Gita with options to select from a specific chapter",
+    technologies: [
+      {
+        name: "React",
+        img: <img src="/images/projects/reactlogo.png" className="w-10 h-10 rounded-md"/>
+       },
+      {
+        name: "JS",
+        img : <img src="/images/projects/nextjslogo.png" className="w-20 h-10 rounded-md"/>
+      },
+    ],
+    image: "/images/project1.jpg",
+    link: "https://github.com/psidh/gita_generator",
+
+  },
+
+  {
+    title: "To-Do List",
+    description: "A todo List created using Express and NodeJs that helps you to make a goal setting for your day !",
+    technologies: [
+      {
+        name: "Node",
+        img: <img src="/images/projects/nodelogo.png" className="w-10 h-10 rounded-md"/>
+       },
+      {
+        name: "JS",
+        img : <img src="/images/projects/jslogo.png" className="w-10 h-10 rounded-md"/>
+      },
+    ],
+    image: "/images/project1.jpg",
+    link: "https://github.com/psidh/todolist-v1",
+  },
+  // Add more project objects
+];
+
+export default projectsData;
