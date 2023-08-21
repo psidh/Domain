@@ -7,6 +7,7 @@ import Resume from 'src/app/components/Resume';
 import Achievements from 'src/app/components/Achievements';
 import Blog from 'src/app/components/Blog';
 import Projects from 'src/app/components/Projects';
+import Example from '../../pages/chart';
 
 
 function MyApp(){
@@ -18,6 +19,7 @@ function MyApp(){
       <Achievements />
       <Resume />
       <Projects />
+      <Example />
       <Blog />
       <Footer />
     </>
