@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
 
 const TopIntro = () => {
   return (
-    <div style={{ fontFamily: 'Ambit, sans-serif'}} className="bg-white dark:bg-black">
+    <div>
     <main> 
       <GlobalStyle />
       <div className="pt-4 md:pt-2 px-4 flex justify-center items-center"> 

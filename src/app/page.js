@@ -12,7 +12,7 @@ import Example from '/pages/chart.js';
 
 function MyApp(){
   return (
-    <>
+    <div style={{ fontFamily: 'Ambit, sans-serif'}} className="bg-white dark:bg-black">
     <NavBar />
     <TopIntro /> 
     <Achievements />
@@ -21,7 +21,7 @@ function MyApp(){
     <Example />
     <Blog />
     <Footer />
-    </>
+    </div>
   );
 }
 

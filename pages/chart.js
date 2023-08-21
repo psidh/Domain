@@ -79,7 +79,7 @@ function Example() {
 }, []);
 
   return (
-<div style={{ fontFamily: 'Ambit, sans-serif' }} className="container mx-auto pt-4 pb-8 px-4 sm:px-16 md:py-10 font-ambit">
+<div style={{ fontFamily: 'Ambit, sans-serif' }} className=" container mx-auto pt-4 pb-8 px-4 sm:px-16 md:py-10 font-ambit">
   <h1 className="text-3xl font-semibold mb-4 capitalize text-left px-8 sm:pl-8">Consistency</h1>
   <div className="my-4">
     <div className="border border-gray-600 rounded-xl shadow-xl p-4 sm:p-8">

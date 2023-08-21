@@ -8,15 +8,16 @@ const projectsData = [
     technologies: [
       {
         name: "React",
-        img: <img src="/images/projects/logos/reactlogo.png" className="w-10 h-10 rounded-md"/>
+        img: <img src="/images/projects/logos/reactlogo.png" className="w-10 h-10  rounded-md"/>
        },
       {
-        name: "JS",
-        img : <img src="/images/projects/logos/nextjslogo.png" className="w-20 h-10 rounded-md"/>
+        name: "NextJs",
+        img : <img src="/images/projects/logos/nextjslogo.png" className="w-10 h-10 rounded-md"/>
       },
     ],
     image: "/images/projects/project1.png",
-    link: "https://github.com/psidh/gita_generator",
+    githubLink: "https://github.com/psidh/gita_generator",
+    projectLink:"https:gita-generate.vercel.app",
 
   },
 
@@ -34,7 +35,8 @@ const projectsData = [
       },
     ],
     image: "/images/projects/project2.png",
-    link: "https://github.com/psidh/todolist-v1",
+    githubLink: "https://github.com/psidh/todolist-v1",
+    projectLink:"https://github.com/psidh/todolist-v1",
   },
   // Add more project objects
 ];

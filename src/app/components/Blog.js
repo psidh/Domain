@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 const Blog = () => {
   return (
   <main id="blog">
-  <div style={{ fontFamily: 'Ambit, sans-serif'}}  className="container mx-auto pt-4 pb-8 px-16 md:py-10 font-ambit">
+  <div style={{ fontFamily: 'Ambit, sans-serif'}}  className="dark:bg-black bg-white container mx-auto pt-4 pb-8 px-16 md:py-10 font-ambit">
     <h2 className="md:text-4xl text-2xl font-semibold mb-8">Blog Posts</h2>
       <div className="grid gap-6">
         {blogPosts.map((post, index) => (

@@ -40,7 +40,7 @@ const Resume = () => {
 
   return (
   <main id="resume">
-  <div style={{ fontFamily: 'Ambit, sans-serif'}}  className="bg-white dark:bg-black font-ambit">
+  <div>
     <div className="py-4 md:py-10 px-8 lg:px-36">
     <h2 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left">Resume</h2>
       <div className="md:grid md:grid-cols-2 gap-8">

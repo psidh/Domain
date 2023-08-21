@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Projects = () => {
   return (
-    <section style={{ fontFamily: 'Ambit, sans-serif'}}  className="dark:bg-black bg-gray-100 py-4 md:py-12 font-ambit">
+    <section>
       <div className="container mx-auto md:text-center">
         <h2 className="md:text-4xl text-2xl px-16 text-left font-semibold mb-8">Projects</h2>
         <div className="grid grid-cols-1 gap-6 p-8 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6">
@@ -22,7 +22,7 @@ const Projects = () => {
           <div key={index} className="dark:bg-gray-900 bg-white shadow-md rounded-lg p-6 mx-auto transform hover:scale-105 transition duration-200">
               {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={project.image} alt={project.title} className="mx-auto mb-4 rounded-lg" />
-            <a href={project.link} className="text-xl justify-center font-semibold my-2 flex items-center">{project.title}
+            <a href={project.projectLink} className="text-xl justify-center font-semibold my-2 flex items-center">{project.title}
             <span><svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -44,7 +44,7 @@ const Projects = () => {
                 <div key={techIndex} className="flex items-center"> {tech.img} </div>
               ))}
             </div>
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-green-500 text-center hover:underline hover:underline-offset-2 ">
+            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-green-500 text-center hover:underline hover:underline-offset-2 ">
               View on GitHub
             </a>
           </div>

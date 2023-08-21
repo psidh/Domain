@@ -44,7 +44,7 @@ const Achievements = () => {
   };
   
   return (
-    <div style={{ fontFamily: 'Ambit, sans-serif'}}  className="bg-gray-100 dark:bg-gray-950 py-6 md:py-12 mt-4 font-ambit">
+    <div className="bg-gray-100 dark:bg-gray-950 py-6 md:py-12 mt-4 ">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold mb-8">Certificates</h2>
         <Slider {...settings}>
