@@ -43,9 +43,32 @@ const Resume = () => {
   <div style={{ fontFamily: 'Ambit, sans-serif'}}  className="bg-white dark:bg-black font-ambit">
     <div className="py-4 md:py-10 px-8 lg:px-36">
     <h2 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left">Resume</h2>
+      <div className="md:grid md:grid-cols-2 gap-8">
       <section className="my-8">
-        <h3 className="md:text-2xl text-xl font-semibold mb-4 dark:text-green-500 text-green-600">Education</h3>
-        <p>BTech in Computer Science</p>
+        <h3 className="md:text-3xl text-2xl font-semibold mb-4 dark:text-green-500 text-green-600">Education</h3>
+        <p className="md:text-xl text-lg ">Class 1 - 3</p>
+        <p className="flex items-center mb-8">
+          Air Force School, IAF, West Bengal 
+        </p>
+        <p className="md:text-2xl text-xl mt-8">Class 4 - 12</p>
+        <a href="https://kvsangathan.nic.in/" className="flex items-center">
+          Kendriya Vidyalaya Sangathan [Kerala | AP]
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="ml-2 w-4 h-4">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+        <p className="md:text-2xl text-xl mt-8">BTech in Computer Science</p>
         <a href="https://www.gitam.edu" className="flex items-center">
           GITAM University, Graduated in 2026
           <svg
@@ -68,8 +91,9 @@ const Resume = () => {
       <section className="my-8">
         <h3 className="md:text-2xl text-xl font-semibold mb-4 dark:text-green-500 text-green-600">Experience</h3>
         <p>Software Engineer</p>
-        <p>ABC Tech, Summer 2026</p>
+        <p>Summer 2026</p>
       </section>
+    </div>
 
     <div className="md:grid grid-cols-2 gap-8">
       <section className="my-8">

@@ -16,8 +16,8 @@ function MyApp(){
       
       <NavBar />
       <TopIntro />
-      <Achievements />
       <Resume />
+      <Achievements />
       <Projects />
       <Example />
       <Blog />
