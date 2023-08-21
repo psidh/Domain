@@ -80,17 +80,12 @@ function Example() {
 
   return (
     <div style={{ fontFamily: 'Ambit, sans-serif'}}  className="px-16">
-      <div className="w-1000 h-screen flex flex-col justify-center items-center px-16 ">
-        {/* Line chart */}
-        </div>
-        <div>
         <h1 className="text-3xl font-semibold mb-4 capitalize text-left px-16">Consistency</h1>
         <div className="px-16  my-4">
           <div className="border border-gray-600 rounded-xl shadow-xl">
             <canvas ref={chartRef} width={800} height={400}></canvas>
           </div>
         </div>
-      </div>
     </div>
   );
 }

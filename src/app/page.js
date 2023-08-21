@@ -7,23 +7,24 @@ import Resume from 'src/app/components/Resume';
 import Achievements from 'src/app/components/Achievements';
 import Blog from 'src/app/components/Blog';
 import Projects from 'src/app/components/Projects';
-import Example from '../../pages/chart';
+import Example from '/pages/chart.js';
 
 
 function MyApp(){
   return (
     <>
-      
-      <NavBar />
-      <TopIntro />
-      <Resume />
-      <Achievements />
-      <Projects />
-      <Example />
-      <Blog />
-      <Footer />
+    <NavBar />
+    <TopIntro /> 
+    <Achievements />
+    <Resume />
+    <Projects />
+    <Example />
+    <Blog />
+    <Footer />
     </>
   );
 }
+
+
 
 export default MyApp;
