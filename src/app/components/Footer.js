@@ -15,8 +15,8 @@ const Footer = () => {
   <main id="footer">
     <div>
       <div className="py-8 md:py-16 px-8 lg:px-36 border-t-[0.05em] flex lg:flex-row flex-col gap-12 lg:gap-0 justify-between items-center">
-        <div className="flex gap-12">
-          <a href="https://instagram.com/p_s1dharth">
+        <div className="flex gap-12 ">
+          <a className="hover:scale-150 transition duration-300" href="https://instagram.com/p_s1dharth">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -34,7 +34,7 @@ const Footer = () => {
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
           </a>
-          <a href="https://twitter.com/p_s1dharth">
+          <a className="hover:scale-150 transition duration-300" href="https://twitter.com/p_s1dharth">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -50,7 +50,7 @@ const Footer = () => {
               <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/p-sidharth">
+          <a className="hover:scale-150 transition duration-300" href="https://www.linkedin.com/in/p-sidharth">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -68,7 +68,7 @@ const Footer = () => {
               <circle cx="4" cy="4" r="2"></circle>
             </svg>
           </a>
-          <a href="https://github.com/psidh">
+          <a className="hover:scale-150 transition duration-300" href="https://github.com/psidh">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -85,7 +85,7 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 hover:scale-105 transition duration-300">
           <a href="mailto:philkhanasidharth14@gmail.com">
             <div className="flex gap-4 items-center">
               <svg

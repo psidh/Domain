@@ -21,7 +21,7 @@ const NavBar = () => {
   return (
     <div>
       <div className="mx-8 lg:mx-20 flex justify-between pt-6 md:py-10">
-        <a className="hover:scale-105 transition duration-300 " href="mailto:philkhanasidharth14@gmail.com">
+        <a className="hover:scale-105 transition duration-300" href="mailto:philkhanasidharth14@gmail.com">
           <div className="flex gap-4 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
