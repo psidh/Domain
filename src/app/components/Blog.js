@@ -17,9 +17,9 @@ const GlobalStyle = createGlobalStyle`
 const Blog = () => {
   return (
   <main id="blog">
-  <div className="container mx-auto pt-4 pb-8 px-16 md:py-10">
+  <div className="container mx-auto pt-4 pb-8 px-8 md:px-16 md:py-10">
     <h2 className="md:text-4xl text-2xl font-semibold mb-8">Blog Posts</h2>
-      <div className="grid gap-6">
+      <div className="grid gap-4">
         {blogPosts.map((post, index) => (
           <div key={index} className=" dark:bg-gray-900 rounded-lg transform hover:scale-105 transition duration-300 shadow-md shadow-green-400 hover:shadow-green-900 p-6">
             <h3 className="text-xl font-semibold mb-2 dark:text-gray-200">{post.title}</h3>
