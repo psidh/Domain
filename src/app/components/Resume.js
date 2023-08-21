@@ -89,7 +89,7 @@ const Resume = () => {
       </section>
 
       <section className="my-8">
-        <h3 className="md:text-2xl text-xl font-semibold mb-4 dark:text-green-500 text-green-600">Experience</h3>
+        <h3 className="md:text-3xl text-2xl font-semibold mb-4 dark:text-green-500 text-green-600">Experience</h3>
         <p>Software Engineer</p>
         <p>Summer 2026</p>
       </section>

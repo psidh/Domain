@@ -21,7 +21,7 @@ const NavBar = () => {
   return (
     <div>
       <div className="mx-8 lg:mx-20 flex justify-between pt-6 md:py-10">
-        <a href="mailto:philkhanasidharth14@gmail.com">
+        <a className="hover:scale-105 transition duration-300 " href="mailto:philkhanasidharth14@gmail.com">
           <div className="flex gap-4 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,9 +43,9 @@ const NavBar = () => {
         </a>
         <div className="gap-14 hidden lg:flex">
           <a className="text-[#005AC1]" href="/">Home</a>
-          <a className="" href="/#resume">Resume</a>
-          <a className="" href="/#blog">Blogs</a>
-          <a className="" href="/#footer">Contact</a>
+          <a className="hover:text-green-600" href="/#resume">Resume</a>
+          <a className="hover:text-green-600" href="/#blog">Blogs</a>
+          <a className="hover:text-green-600" href="/#footer">Contact</a>
         </div>
         <svg
         onClick={toggleNav} // Add onClick event to toggle navigation
@@ -69,9 +69,9 @@ const NavBar = () => {
       {isNavOpen && ( // Render the navigation links if isNavOpen is true
         <div className="flex flex-col lg:hidden">
           <a className="text-[#005AC1] m-6" href="/">Home</a>
-          <a className="m-6" href="/#resume"> Resume </a>
-          <a className="m-6" href="/#blog"> Blogs </a>
-          <a className="m-6" href="/#footer"> Contact </a>
+          <a className="m-6 hover:text-green-600" href="/#resume"> Resume </a>
+          <a className="m-6 hover:text-green-600" href="/#blog"> Blogs </a>
+          <a className="m-6 hover:text-green-600" href="/#footer"> Contact </a>
         </div>
       )}
     </div>
