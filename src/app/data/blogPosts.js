@@ -1,14 +1,16 @@
 // src/data/blogPosts.js
 const blogPosts = [
     {
-      title: "Getting Started with React Hooks",
-      date: "August 25, 2023",
-      content: "In this tutorial, we'll explore how to use React Hooks...",
+      title: "Web Development: A Journey from HTML to JavaScript",
+      date: "June 21, 2023",
+      content: "Web development has witnessed remarkable growth and transformation over the years. From the humble beginnings of static HTML pages...",
+      link:"https://psidharth.hashnode.dev/demystifying-dsa",
     },
     {
-      title: "Introduction to Responsive Web Design",
-      date: "August 18, 2023",
-      content: "Learn about the principles of responsive web design...",
+      title: "Demystifying DSA - A Guide for Aspiring Programmers",
+      date: "June 21, 2023",
+      content: "As technology continues to shape our world, the need for efficient problem-solving techniques in software development has become paramount. ...",
+      link: "https://psidharth.hashnode.dev/demystifying-dsa",
     },
     // Add more blog post objects
   ];
