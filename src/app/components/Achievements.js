@@ -46,7 +46,7 @@ const Achievements = () => {
   return (
     <div className="bg-gray-100 dark:bg-gray-950 py-6 md:py-12 mt-4 ">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-semibold mb-8">Certificates</h2>
+        <h2 className="md:text-4xl text-3xl font-semibold my-4 mb-8">Certificates</h2>
         <Slider {...settings}>
           {certificatesData.map((certificate, index) => (
             <div key={index} className="px-4">
