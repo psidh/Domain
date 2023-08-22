@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import styled, { createGlobalStyle , css } from "styled-components";
+import { Autour_One } from "next/font/google";
 
 // Create a global style that applies Ambit font to all text elements
 const GlobalStyle = createGlobalStyle`
@@ -22,6 +23,12 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const imageStyle={
+  width:"auto",
+  height:"auto"
+
+}
+
 const TopIntro = () => {
   return (
     <div>
@@ -37,7 +44,7 @@ const TopIntro = () => {
           alt="author image"
           className="w-120 h-140 md:w-[200px] md:h-[260px] my-4 rounded-2xl"
           priority // Adding the "priority" property
-          layout="fixed" // Specify layout to maintain aspect ratio
+          style={imageStyle}
         />
       </div>
       <section className="flex flex-col justify-center items-center py-4 md:pt-2 md:pb-8 px-4 lg:px-18">
