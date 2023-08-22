@@ -19,13 +19,13 @@ function Example() {
     });
 
     const chartSection = chartRef.current.getBoundingClientRect();
-    if (chartSection.top < window.innerHeight * 0.5) {
+    if (chartSection.top < window.innerHeight * 0.9) {
       setShouldRenderChart(true);
     }
 
     const handleScroll = () => {
       const chartSection = chartRef.current.getBoundingClientRect();
-      if (chartSection.top < window.innerHeight * 0.5) {
+      if (chartSection.top < window.innerHeight * 0.9) {
         setShouldRenderChart(true);
         window.removeEventListener("scroll", handleScroll);
       }
