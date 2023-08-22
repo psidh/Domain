@@ -15,7 +15,7 @@ const Blog = () => {
 
   useEffect(() => {
     AOS.init({ 
-      delay: 200,    // Delay between animations (ms)
+      delay: 100,    // Delay between animations (ms)
     offset: 100,   // Offset (in px) from the element's position when animation starts
     duration: 800, // Duration of animations (ms)}); // Initialize AOS
     once: false, // Whether animations should be repeated
@@ -25,7 +25,8 @@ const Blog = () => {
   return (
   <main id="blog">
   <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10 ">
-    <h2 className="md:text-4xl text-2xl font-semibold mb-8">Blog Posts</h2>
+    <h2 className="md:text-4xl text-2xl font-semibold mb-8" 
+    data-aos="fade-up">Blog Posts</h2>
       <div className="grid gap-4">
         {blogPosts.map((post, index) => (
           <div key={index} className=" dark:bg-gray-900 rounded-lg transform hover:scale-105 transition duration-300 

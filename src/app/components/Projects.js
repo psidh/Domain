@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 const Projects = () => {
   useEffect(() => {
     AOS.init({ delay: 100,    // Delay between animations (ms)
-    offset: 150,   // Offset (in px) from the element's position when animation starts
+    offset: 100,   // Offset (in px) from the element's position when animation starts
     duration: 800, // Duration of animations (ms)}); // Initialize AOS
     once: false, // Whether animations should be repeated
     mirror: true
