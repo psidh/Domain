@@ -18,6 +18,11 @@ function Example() {
       easing: "ease-in-out",
     });
 
+    const chartSection = chartRef.current.getBoundingClientRect();
+    if (chartSection.top < window.innerHeight * 0.5) {
+      setShouldRenderChart(true);
+    }
+
     const handleScroll = () => {
       const chartSection = chartRef.current.getBoundingClientRect();
       if (chartSection.top < window.innerHeight * 0.5) {
