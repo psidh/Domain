@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle , css } from "styled-components";
 
 // Create a global style that applies Ambit font to all text elements
 const GlobalStyle = createGlobalStyle`
@@ -20,20 +20,15 @@ const GlobalStyle = createGlobalStyle`
   .rounded-full {
     border-radius: 50%;
   }
-
-  @font-face {
-    font-family: 'Ambit';
-    src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
-  }
-
-
 `;
 
 const TopIntro = () => {
   return (
     <div>
-    <main> 
-      <GlobalStyle />
+    <main>
+    
+
+    <GlobalStyle />  
       <div className="pt-4 md:pt-2 px-4 flex justify-center items-center"> 
         <Image
           src="/images/pfp.jpg"
@@ -70,7 +65,7 @@ const TopIntro = () => {
               Let's connect and build great things together...
               <span className="inline-flex opacity-50 text-2xl font-light blinking">|</span>
             </p>
-          </div>
+          </div>     
           <button className="mb-2 md:mt-2 md:mb-8 bg-green-500 hover:bg-black dark:hover:bg-white dark:hover:text-black  hover:text-white text-white py-2 px-8 rounded-3xl animate-pulse">
           <span className="text-xl"> <a href="mailto:philkhanasidharth14@gmail.com"> Connect </a></span>
           </button>

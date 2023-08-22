@@ -8,13 +8,12 @@ import Achievements from 'src/app/components/Achievements';
 import Blog from 'src/app/components/Blog';
 import Projects from 'src/app/components/Projects';
 import Example from '/pages/chart.js';
-
-
 function MyApp(){
   return (
+    <>
     <div style={{ fontFamily: 'Ambit, sans-serif'}} className="bg-white dark:bg-black">
     <NavBar />
-    <TopIntro /> 
+    <TopIntro />
     <Achievements />
     <Resume />
     <Projects />
@@ -22,6 +21,7 @@ function MyApp(){
     <Blog />
     <Footer />
     </div>
+    </>
   );
 }
 
