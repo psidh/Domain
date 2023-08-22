@@ -78,7 +78,7 @@ function Example() {
             },
           },
           animation: {
-            duration: 1000,
+            duration: 2000,
             onProgress: (animation) => {
               if (animation.animationObject.numSteps === animation.currentStep) {
                 myChart.options.animation.onProgress = null;
@@ -94,7 +94,7 @@ function Example() {
 
   return (
     <div className="container mx-auto pt-4 pb-8 px-4 sm:px-16 md:py-10 font-ambit">
-      <h1 className="text-3xl font-semibold mb-4 capitalize text-left px-8 sm:pl-8" data-aos="fade-up">Consistency</h1>
+      <h1 className="md:text-4xl text-3xl font-semibold mb-4 capitalize text-left px-8 sm:pl-8" data-aos="fade-up">Consistency</h1>
       <div className="my-4">
         <div className="rounded-xl p-4 sm:p-8 " data-aos="fade-up">
           <canvas ref={chartRef} width={800} height={400} className="w-full h-auto"></canvas>

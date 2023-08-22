@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <section>
       <div className="container mx-auto md:text-center">
-        <h2 className="md:text-4xl text-2xl px-16 text-left font-semibold mb-8">Projects</h2>
+        <h2 className="md:text-4xl text-3xl px-16 text-left font-semibold mb-8">Projects</h2>
         <div className="grid grid-cols-1 gap-6 p-8 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6 ">
         {projectsData.map((project, index) => (
           <div key={index} className="dark:bg-gray-900 bg-white shadow-xl shadow-green-500 
