@@ -39,9 +39,9 @@ const Resume = () => {
   ];
 
   useEffect(() => {
-    AOS.init({ delay: 100,    // Delay between animations (ms)
+    AOS.init({ delay: 50,    // Delay between animations (ms)
     offset: 100,   // Offset (in px) from the element's position when animation starts
-    duration: 1000, // Duration of animations (ms)}); // Initialize AOS
+    duration: 500, // Duration of animations (ms)}); // Initialize AOS
     once: false, // Whether animations should be repeated
     mirror: true,
     easing: "ease-in-out",

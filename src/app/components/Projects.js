@@ -13,9 +13,9 @@ const GlobalStyle = createGlobalStyle`
 `;
 const Projects = () => {
   useEffect(() => {
-    AOS.init({ delay: 100,    // Delay between animations (ms)
+    AOS.init({ delay: 50,    // Delay between animations (ms)
     offset: 100,   // Offset (in px) from the element's position when animation starts
-    duration: 800, // Duration of animations (ms)}); // Initialize AOS
+    duration: 500, // Duration of animations (ms)}); // Initialize AOS
     once: false, // Whether animations should be repeated
     mirror: true,
     easing: "ease-in-out",
@@ -25,7 +25,8 @@ const Projects = () => {
   return (
     <section>
       <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10">
-        <h2 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-8">Projects</h2>
+        <h2 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-8" 
+        data-aos="fade-up">Projects</h2>
         <div className="grid grid-cols-1 gap-6 p-8 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6 ">
         {projectsData.map((project, index) => (
           <div key={index} className="dark:bg-gray-900 bg-white shadow-xl shadow-green-500 

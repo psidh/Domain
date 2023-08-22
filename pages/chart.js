@@ -10,9 +10,9 @@ function Example() {
 
   useEffect(() => {
     AOS.init({ 
-      delay: 80,
+      delay: 50,
       offset: 100,
-      duration: 800,
+      duration: 500,
       once: false,
       mirror: true,
       easing: "ease-in-out",
