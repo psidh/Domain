@@ -52,7 +52,7 @@ const Resume = () => {
   <main id="resume">
   <div>
     <div className="py-4 md:py-10 px-8 lg:px-36">
-    <h2 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left " data-aos="fade-up">Resume</h2>
+    <h2 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left" data-aos="fade-up">Resume</h2>
       <div className="md:grid md:grid-cols-2 gap-8">
       <section className="my-8" data-aos="fade-up">
         <h3 className="md:text-3xl text-2xl font-semibold mb-4 dark:text-green-500 text-green-600">Education</h3>
