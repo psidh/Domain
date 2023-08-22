@@ -17,7 +17,8 @@ const Projects = () => {
     offset: 100,   // Offset (in px) from the element's position when animation starts
     duration: 800, // Duration of animations (ms)}); // Initialize AOS
     once: false, // Whether animations should be repeated
-    mirror: true
+    mirror: true,
+    easing: "ease-in-out",
   });
 }, []);
 

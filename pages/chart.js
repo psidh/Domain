@@ -15,6 +15,7 @@ function Example() {
       duration: 800,
       once: false,
       mirror: true,
+      easing: "ease-in-out",
     });
 
     const handleScroll = () => {
