@@ -42,7 +42,7 @@ function Example() {
           labels: ["2022", "2023", "2024","2022", "2023",],
           datasets: [
             {
-              data: [100, 200, 500, 300, 200, 500, ],
+              data: [100, 200, 400, 800, 1600, 3200, ],
               label: "Contributions",
               borderColor: "#00cc00",
               borderWidth: "4",
@@ -78,7 +78,7 @@ function Example() {
             },
           },
           animation: {
-            duration: 3000,
+            duration: 1000,
             onProgress: (animation) => {
               if (animation.animationObject.numSteps === animation.currentStep) {
                 myChart.options.animation.onProgress = null;
