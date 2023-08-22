@@ -6,8 +6,6 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Ambit';
   src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
 }
-
-
 `;
 
 const Resume = () => {
@@ -101,9 +99,12 @@ const Resume = () => {
         <span className="md:text-left lg:ml-3 
         text-transparent bg-clip-text 
         bg-gradient-to-b from-black to-gray-500 
+        hover:bg-gradient-to-t hover:from-gray-300  hover:to-gray-500
         dark:bg-gradient-to-t 
         dark:from-gray-500 
-        dark:to-gray-300">
+        dark:to-gray-300
+        
+        ">
         Tech Stack</span> <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -134,6 +135,7 @@ const Resume = () => {
         <span className="md:text-left lg:ml-3 
           text-transparent bg-clip-text 
           bg-gradient-to-b from-black to-gray-500 
+          hover:bg-gradient-to-t hover:from-gray-300  hover:to-gray-500
           dark:bg-gradient-to-t 
           dark:from-gray-500 
           dark:to-gray-300">Skills ⚒️</span>

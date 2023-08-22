@@ -8,10 +8,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Ambit';
   src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
 }
-
-
 `;
-
 const Blog = () => {
   return (
   <main id="blog">
@@ -19,10 +16,11 @@ const Blog = () => {
     <h2 className="md:text-4xl text-2xl font-semibold mb-8">Blog Posts</h2>
       <div className="grid gap-4">
         {blogPosts.map((post, index) => (
-          <div key={index} className=" dark:bg-gray-900 rounded-lg transform hover:scale-105 transition duration-300 shadow-md 
+          <div key={index} className=" dark:bg-gray-900 rounded-lg transform hover:scale-105 transition duration-300 
+          shadow-lg 
           shadow-green-400 hover:shadow-green-900 
-          dark:shadow-blue-400 
-          dark:hover:shadow-blue-900 
+          dark:shadow-blue-700 
+          dark:hover:shadow-blue-500 
           p-6">
             <h3 className="text-xl font-semibold mb-2 dark:text-gray-200">{post.title}</h3>
             <p className="text-gray-400 ">{post.date}</p>

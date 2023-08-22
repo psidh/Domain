@@ -8,10 +8,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Ambit';
   src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
 }
-
-
 `;
-
 const Projects = () => {
   return (
     <section>
@@ -19,7 +16,9 @@ const Projects = () => {
         <h2 className="md:text-4xl text-2xl px-16 text-left font-semibold mb-8">Projects</h2>
         <div className="grid grid-cols-1 gap-6 p-8 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6">
         {projectsData.map((project, index) => (
-          <div key={index} className="dark:bg-gray-900 bg-white shadow-xl shadow-green-300 dark:shadow-blue-900 rounded-lg p-6 mx-auto transform hover:scale-105 transition duration-200">
+          <div key={index} className="dark:bg-gray-900 bg-white shadow-xl shadow-green-500 
+          dark:shadow-blue-700 dark:hover:shadow-blue-500 
+          rounded-lg p-6 mx-auto transform hover:scale-105 transition duration-200">
               {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={project.image} alt={project.title} className="mx-auto mb-4 rounded-lg" />
             <a href={project.projectLink} className="text-xl justify-center font-semibold my-2 flex items-center">{project.title}
