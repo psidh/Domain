@@ -1,6 +1,8 @@
-import React from "react";
+import React, 
+{useEffect} from "react";
 import styled, { createGlobalStyle } from "styled-components";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: 'Ambit';
@@ -36,13 +38,23 @@ const Resume = () => {
     "Version Control",
   ];
 
+  useEffect(() => {
+    AOS.init({ delay: 300,    // Delay between animations (ms)
+    offset: 150,   // Offset (in px) from the element's position when animation starts
+    duration: 1000, // Duration of animations (ms)}); // Initialize AOS
+    once: true, // Whether animations should be repeated
+    mirror: true,
+    easing: "ease-in-out",
+  });
+}, []);
+
   return (
   <main id="resume">
   <div>
     <div className="py-4 md:py-10 px-8 lg:px-36">
-    <h2 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left">Resume</h2>
+    <h2 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left " data-aos="fade-up">Resume</h2>
       <div className="md:grid md:grid-cols-2 gap-8">
-      <section className="my-8">
+      <section className="my-8" data-aos="fade-up">
         <h3 className="md:text-3xl text-2xl font-semibold mb-4 dark:text-green-500 text-green-600">Education</h3>
         <p className="md:text-xl text-lg ">Class 1 - 3</p>
         <p className="flex items-center mb-8">
@@ -86,7 +98,7 @@ const Resume = () => {
         </a>
       </section>
 
-      <section className="my-8">
+      <section className="my-8" data-aos="fade-up">
         <h3 className="md:text-3xl text-2xl font-semibold mb-4 dark:text-green-500 text-green-600">Experience</h3>
         <p>Software Engineer</p>
         <p>Summer 2026</p>
@@ -94,7 +106,7 @@ const Resume = () => {
     </div>
 
     <div className="md:grid grid-cols-2 gap-8">
-      <section className="my-8">
+      <section className="my-8 " data-aos="fade-up">
       <a href="https:www.github.com/psidh/" className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "> 
         <span className="md:text-left lg:ml-3 
         text-transparent bg-clip-text 
@@ -130,7 +142,7 @@ const Resume = () => {
         </div>
       </section>
 
-      <section className="my-8">
+      <section className="my-8" data-aos="fade-up">
         <h3 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 md:text-left">
         <span className="md:text-left lg:ml-3 
           text-transparent bg-clip-text 

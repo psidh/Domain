@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 "use client";
+import React , {useEffect} from "react";
 import NavBar from 'src/app/components/NavBar';
 import TopIntro from 'src/app/components/TopIntro';
 import Footer from 'src/app/components/Footer';

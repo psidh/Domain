@@ -1,6 +1,9 @@
 "use client";
 import { useEffect, useRef , useState} from "react";
 import { Chart } from "chart.js";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Example() {
   const chartRef = useRef(null);
@@ -76,6 +79,7 @@ function Example() {
     return () => {
     window.removeEventListener("scroll", handleScroll);
     };
+    
 }, []);
 
   return (

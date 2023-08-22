@@ -7,8 +7,6 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Ambit';
   src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
 }
-
-
 `; 
 
 const NavBar = () => {
