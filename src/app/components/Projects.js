@@ -24,7 +24,7 @@ const Projects = () => {
 
   return (
     <section >
-      <div data-aos="fade-up">
+      <div data-aos="fade-down">
       <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10">
         <h2 className="text-white md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-8" 
          >Projects</h2>

@@ -40,7 +40,7 @@ const TopIntro = () => {
         cursor: 'pointer',
       }}
     >
-    <div data-aos="fade-up">
+    <div data-aos="fade-in">
     <GlobalStyle />  
       <div className="pt-4 md:pt-2 px-4 flex justify-center items-center"> 
         <Image

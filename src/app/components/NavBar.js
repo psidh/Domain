@@ -18,10 +18,10 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="mx-8 lg:mx-20 flex justify-between py-8 md:py-10">
+      <div className="mx-8 lg:mx-20 flex justify-between text-white  py-8 md:py-10">
         
         <a className="hover:scale-105 transition duration-300" href="mailto:philkhanasidharth14@gmail.com">
-          <div className="flex gap-4 items-center text-white">
+          <div className="flex gap-4 items-center ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -40,11 +40,11 @@ const NavBar = () => {
             <span>philkhanasidharth14@gmail.com</span>
           </div>
         </a>
-        <div className="gap-14 hidden lg:flex">
+        <div className="gap-14 hidden lg:flex text-white">
           <a className="text-[#005AC1]  hover:text-gray-300" href="/">Home</a>
-          <a className="text-white hover:text-green-600" href="/#resume">Resume</a>
-          <a className="text-white hover:text-green-600" href="/#blog">Blogs</a>
-          <a className="text-white hover:text-green-600" href="/#footer">Contact</a>
+          <a className="  hover:text-green-600" href="/#resume">Resume</a>
+          <a className="  hover:text-green-600" href="/#blog">Blogs</a>
+          <a className="  hover:text-green-600" href="/#footer">Contact</a>
         </div>
         <svg
         onClick={toggleNav} // Add onClick event to toggle navigation
@@ -66,11 +66,11 @@ const NavBar = () => {
       </div>
 
       {isNavOpen && ( // Render the navigation links if isNavOpen is true
-        <div className="flex flex-col lg:hidden">
+        <div className="flex flex-col lg:hidden text-white">
           <a className="text-[#005AC1] m-6" href="/">Home</a>
-          <a className="m-6 text-white hover:text-green-600" href="/#resume"> Resume </a>
-          <a className="m-6 text-white hover:text-green-600" href="/#blog"> Blogs </a>
-          <a className="m-6 text-white hover:text-green-600" href="/#footer"> Contact </a>
+          <a className="m-6   hover:text-green-600" href="/#resume"> Resume </a>
+          <a className="m-6   hover:text-green-600" href="/#blog"> Blogs </a>
+          <a className="m-6   hover:text-green-600" href="/#footer"> Contact </a>
         </div>
       )}
       </div>

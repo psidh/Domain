@@ -50,7 +50,7 @@ const Resume = () => {
 
   return (
   <main id="resume">
-  <div data-aos="fade-up">
+  <div data-aos="fade-in">
     <div className="py-4 md:py-10 px-8 lg:px-36">
     <h2 className="md:text-4xl text-white text-3xl font-semibold my-4 text-center md:text-left" >Resume</h2>
       <div className="md:grid md:grid-cols-2 gap-8">
@@ -107,6 +107,7 @@ const Resume = () => {
       </section>
     </div>
 
+    <div data-aos="fade-in">
     <div className="md:grid grid-cols-2 gap-8">
       <section className="my-8 ">
       <a href="https:www.github.com/psidh/" className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "> 
@@ -153,6 +154,7 @@ const Resume = () => {
         </div>
       </section>
 
+    </div>
     </div>
     </div>
    </div>
