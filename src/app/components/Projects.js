@@ -30,7 +30,7 @@ const Projects = () => {
          >Projects</h2>
         <div className="grid grid-cols-1 gap-6 p-8 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6 ">
         {projectsData.map((project, index) => (
-          <div key={index} className="bg-gray-900 shadow-xl shadow-blue-700 hover:shadow-blue-500 
+          <div key={index} className="bg-gray-900 shadow-xl shadow-green-600 hover:shadow-green-500 
           rounded-lg p-6 mx-auto transform hover:scale-105 transition duration-200" 
            >
               {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -9,6 +9,7 @@ import Achievements from 'src/app/components/Achievements';
 import Blog from 'src/app/components/Blog';
 import Projects from 'src/app/components/Projects';
 import Example from '/pages/chart.js';
+import BarGraph from "./components/BarGraph";
 function MyApp(){
   return (
     <>
@@ -19,6 +20,7 @@ function MyApp(){
     <Resume />
     <Projects />
     <Example />
+    <BarGraph />
     <Blog />
     <Footer />
     </div>
