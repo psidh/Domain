@@ -24,31 +24,33 @@ const Blog = () => {
   });
 }, []);
   return (
+    <div className="bg-black">
   <main id="blog">
   <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10 " data-aos="fade-up">
-    <h2 className="md:text-4xl text-3xl font-semibold text-center md:text-left mb-8">Blogs</h2>
+    <h2 className="text-white md:text-4xl text-3xl font-semibold text-center md:text-left mb-8">Blogs</h2>
       
       <div className="grid gap-4">
       {blogPosts.map((post, index) => (
         <a key={index} href={post.link} className="block" target="_blank" rel="noopener noreferrer">
-          <div className="dark:bg-gray-900 rounded-lg transform hover:scale-105 transition duration-300 
+          <div className="bg-gray-900 rounded-lg transform hover:scale-105 transition duration-300 
             shadow-lg 
-            shadow-green-400 hover:shadow-green-900 
-            dark:shadow-blue-700 
-            dark:hover:shadow-blue-500 
+            shadow-blue-700 
+            hover:shadow-blue-500 
             p-6"
           >
-            <h3 className="text-xl font-semibold mb-2 dark:text-gray-200">{post.title}</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-200">{post.title}</h3>
             <p className="text-gray-400 ">{post.date}</p>
-            <p className="mt-2 dark:text-gray-200">{post.content}</p>
+            <p className="mt-2 text-gray-200">{post.content}</p>
           </div>
         </a>
       ))}
     </div>
+    
 
       
     </div>
     </main>
+  </div>
   );
 };
 

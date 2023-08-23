@@ -80,7 +80,7 @@ function Example() {
 
   return (
     <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10" data-aos="fade-up">
-      <h1 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left">Consistency</h1>
+      <h1 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left text-white">Consistency</h1>
       <div className="my-4" >
         <div className="rounded-xl p-4 sm:p-8 ">
           <canvas ref={chartRef} width={800} height={400} className="w-full h-auto"></canvas>

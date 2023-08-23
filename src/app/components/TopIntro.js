@@ -33,7 +33,13 @@ const TopIntro = () => {
   return (
     <div>
     <main>
-    
+    <div
+      className="bg-cover bg-center h-screen flex flex-col justify-center items-center bg-opacity-90"
+      style={{
+        backgroundImage: 'url("/images/aurora.jpg")',
+        cursor: 'pointer',
+      }}
+    >
     <div data-aos="fade-up">
     <GlobalStyle />  
       <div className="pt-4 md:pt-2 px-4 flex justify-center items-center"> 
@@ -49,41 +55,39 @@ const TopIntro = () => {
       </div>
       <section className="flex flex-col justify-center items-center py-4 md:pt-2 md:pb-8 px-4 lg:px-18">
         <h2 className="md:text-2xl text-4xl font-semibold mt-2 py-2">
-          <span className="md:text-2xl text-lg font-normal">Hey, </span> 
+          <span className="text-white md:text-2xl text-lg font-normal">Hey, </span> 
           <span className="font-semibold md:text-6xl text-3xl 
           text-transparent bg-clip-text 
-           bg-gradient-to-b from-gray-800 to-gray-500 
-           dark:bg-gradient-to-t 
-           dark:from-gray-500 
-           dark:to-gray-100 py-2
+           bg-gradient-to-t from-gray-300 to-white
+            py-2
            ">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           I'm P Sidharth</span></h2>
-          <div className="py-2 px-4 lg:px-18 md:text-center text-center my-4 md:mb-8">
+          <div className="text-white py-2 px-4 lg:px-18 md:text-center text-center my-4 md:mb-8">
             <p className="md:text-2xl text-md ">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               I'm a Student, Developer passionate about Web Development 
             </p>
-            <p className="md:text-2xl text-md  text-gray-700 dark:text-gray-300">
+            <p className="md:text-2xl text-md text-gray-200">
               With a background in <a href="https://github.com/psidh"><span className="underline underline-offset-4">Python</span></a> and  <a href="https://github.com/psidh"><span className="underline underline-offset-4">JavaScript</span></a>, 
               I bring Front-End and Back-End to the table </p>
-            <p className="md:text-2xl text-md text-gray-600 dark:text-gray-300">
+            <p className="md:text-2xl text-md text-gray-300">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               Let's connect and build great things together...
               <span className="inline-flex opacity-50 text-2xl font-light blinking">|</span>
             </p>
           </div>     
-          <button className="mt-8  md:mt-6 mb-8 bg-green-500 
-          hover:bg-black dark:hover:bg-white 
-          dark:hover:text-black  hover:text-white 
-          text-white py-2 px-8 rounded-3xl animate-pulse">
+          <button className="mt-8  md:mt-6 mb-8 bg-green-200 
+          hover:bg-green-600 hover:text-white 
+          text-black py-2 px-8 rounded-3xl ">
           <span className="text-xl"> <a href="mailto:philkhanasidharth14@gmail.com"> Connect </a></span>
           </button>
       </section>
       </div>
-    </main>
-    
+      </div>
+      </main>
     </div>
+    
   );
 };
 

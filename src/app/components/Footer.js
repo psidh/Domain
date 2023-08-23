@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 const Footer = () => {
   return (
   <main id="footer">
-    <div>
+    <div className="text-white">
       <div className="py-8 md:py-16 px-8 lg:px-36 border-t-[0.05em] flex lg:flex-row flex-col gap-12 lg:gap-0 justify-between items-center">
         <div className="flex gap-12 ">
           <a className="hover:scale-150 transition duration-300" href="https://instagram.com/p_s1dharth">
