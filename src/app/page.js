@@ -18,9 +18,9 @@ function MyApp(){
     <TopIntro />
     <Achievements />
     <Resume />
+    <BarGraph />
     <Projects />
     <Example />
-    <BarGraph />
     <Blog />
     <Footer />
     </div>
