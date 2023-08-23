@@ -25,9 +25,8 @@ const Blog = () => {
 }, []);
   return (
   <main id="blog">
-  <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10 ">
-    <h2 className="md:text-4xl text-3xl font-semibold text-center md:text-left mb-8" 
-    data-aos="fade-up">Blogs</h2>
+  <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10 " data-aos="fade-up">
+    <h2 className="md:text-4xl text-3xl font-semibold text-center md:text-left mb-8">Blogs</h2>
       
       <div className="grid gap-4">
       {blogPosts.map((post, index) => (
@@ -38,7 +37,6 @@ const Blog = () => {
             dark:shadow-blue-700 
             dark:hover:shadow-blue-500 
             p-6"
-            data-aos="fade-up"
           >
             <h3 className="text-xl font-semibold mb-2 dark:text-gray-200">{post.title}</h3>
             <p className="text-gray-400 ">{post.date}</p>

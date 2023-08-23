@@ -34,7 +34,7 @@ const TopIntro = () => {
     <div>
     <main>
     
-
+    <div data-aos="fade-up">
     <GlobalStyle />  
       <div className="pt-4 md:pt-2 px-4 flex justify-center items-center"> 
         <Image
@@ -73,11 +73,16 @@ const TopIntro = () => {
               <span className="inline-flex opacity-50 text-2xl font-light blinking">|</span>
             </p>
           </div>     
-          <button className="mt-8  md:mt-6 mb-8 bg-green-500 hover:bg-black dark:hover:bg-white dark:hover:text-black  hover:text-white text-white py-2 px-8 rounded-3xl animate-pulse">
+          <button className="mt-8  md:mt-6 mb-8 bg-green-500 
+          hover:bg-black dark:hover:bg-white 
+          dark:hover:text-black  hover:text-white 
+          text-white py-2 px-8 rounded-3xl animate-pulse">
           <span className="text-xl"> <a href="mailto:philkhanasidharth14@gmail.com"> Connect </a></span>
           </button>
       </section>
+      </div>
     </main>
+    
     </div>
   );
 };

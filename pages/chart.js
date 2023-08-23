@@ -6,40 +6,20 @@ import 'aos/dist/aos.css';
 
 function Example() {
   const chartRef = useRef(null);
-  const [shouldRenderChart, setShouldRenderChart] = useState(false);
 
   useEffect(() => {
     AOS.init({ 
-      delay: 50,
+      delay: 100,
       offset: 100,
-      duration: 500,
+      duration: 600,
       once: false,
       mirror: true,
       easing: "ease-in-out",
     });
-
-    const chartSection = chartRef.current.getBoundingClientRect();
-    if (chartSection.top < window.innerHeight * 0.9) {
-      setShouldRenderChart(true);
-    }
-
-    const handleScroll = () => {
-      const chartSection = chartRef.current.getBoundingClientRect();
-      if (chartSection.top < window.innerHeight * 0.9) {
-        setShouldRenderChart(true);
-        window.removeEventListener("scroll", handleScroll);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
 
   useEffect(() => {
-    if (shouldRenderChart) {
+
       const chartCanvas = chartRef.current;
       const ctx = chartCanvas.getContext("2d");
       const myChart = new Chart(ctx, {
@@ -95,14 +75,14 @@ function Example() {
           maintainAspectRatio: false,
         },
       });
-    }
-  }, [shouldRenderChart]);
+
+  });
 
   return (
-    <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10">
-      <h1 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left" data-aos="fade-up">Consistency</h1>
-      <div className="my-4">
-        <div className="rounded-xl p-4 sm:p-8 " data-aos="fade-up">
+    <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10" data-aos="fade-up">
+      <h1 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left">Consistency</h1>
+      <div className="my-4" >
+        <div className="rounded-xl p-4 sm:p-8 ">
           <canvas ref={chartRef} width={800} height={400} className="w-full h-auto"></canvas>
         </div>
       </div>
