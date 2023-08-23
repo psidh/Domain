@@ -77,7 +77,7 @@ const TopIntro = () => {
               <span className="inline-flex opacity-50 text-2xl font-light blinking">|</span>
             </p>
           </div>     
-          <button className="mt-6  md:mt-6 mb-6 bg-green-200 
+          <button className="mt-2  md:mt-6 mb-8 bg-green-200 
           hover:bg-green-600 hover:text-white 
           text-black py-2 px-8 rounded-3xl ">
           <span className="text-xl"> <a href="mailto:philkhanasidharth14@gmail.com"> Connect </a></span>
