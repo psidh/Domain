@@ -9,8 +9,14 @@ const blogPosts = [
     {
       title: "Demystifying DSA - A Guide for Aspiring Programmers",
       date: "June 21, 2023",
-      content: "As technology continues to shape our world, the need for efficient problem-solving techniques in software development has become paramount. ...",
+      content: "As technology continues to shape our world, the need for efficient problem-solving techniques in software development has become paramount...",
       link: "https://psidharth.hashnode.dev/demystifying-dsa",
+    },
+    {
+      title: "Unleashing Competitive Programming: A Pathway to Excellence",
+      date: "June 24, 2023",
+      content: "Competitive programming has emerged as a fascinating domain that challenges programmers to solve complex problems efficiently within a limited timeframe...",
+      link: "https://psidharth.hashnode.dev/unleashing-cp",
     },
     // Add more blog post objects
   ];

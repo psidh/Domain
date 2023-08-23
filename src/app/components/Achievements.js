@@ -44,6 +44,7 @@ const Achievements = () => {
   };
   
   return (
+    <div data-aos="fade-up">
     <div className="bg-gray-100 dark:bg-gray-950 py-6 md:py-12 mt-4 ">
       <div className="container mx-auto text-center">
         <h2 className="md:text-4xl text-3xl font-semibold my-4 mb-8">Certificates</h2>
@@ -65,6 +66,7 @@ const Achievements = () => {
         </Slider>
       </div>
     </div>
+  </div>
   );
 };
 
