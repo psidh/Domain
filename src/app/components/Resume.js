@@ -55,7 +55,7 @@ const Resume = () => {
     <h2 className="md:text-4xl text-white text-3xl font-semibold my-4 text-center md:text-left" >Resume</h2>
       <div className="md:grid md:grid-cols-2 gap-8">
       <section className="my-8" >
-        <h3 className="md:text-3xl text-2xl font-semibold mb-4 dark:text-green-500 text-green-600">Education</h3>
+        <h3 className="md:text-3xl text-2xl font-semibold mb-4 text-green-500">Education</h3>
         <div className="text-white">
         <p className="md:text-xl text-lg ">Class 1 - 3</p>
         <p className="flex items-center mb-8">
@@ -101,9 +101,11 @@ const Resume = () => {
       </section>
 
       <section className="my-8" >
-        <h3 className="md:text-3xl  text-2xl font-semibold mb-4 dark:text-green-500 text-green-600">Experience</h3>
+        <h3 className="md:text-3xl  text-2xl font-semibold mb-4 text-green-500">Experience</h3>
+        <div className="text-white">
         <p>Software Engineer</p>
         <p>Summer 2026</p>
+        </div>
       </section>
     </div>
 
