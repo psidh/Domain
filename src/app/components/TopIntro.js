@@ -42,13 +42,13 @@ const TopIntro = () => {
     >
     <div data-aos="fade-in">
     <GlobalStyle />  
-      <div className="pt-4 md:pt-2 px-4 flex justify-center items-center"> 
+      <div className="px-4 flex justify-center items-center"> 
         <Image
           src="/images/pfp.jpg"
           width={200}
           height={300}
           alt="author image"
-          className="w-120 h-140 md:w-[200px] md:h-[260px] mt-2 mb-2 rounded-2xl"
+          className="w-120 h-140 md:w-[200px] md:h-[260px] rounded-2xl"
           priority // Adding the "priority" property
           style={imageStyle}
         />
