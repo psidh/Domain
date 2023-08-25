@@ -18,7 +18,7 @@ function MyApp(){
     <TopIntro />
     <Achievements />
     <Resume />
-    <BarGraph />
+    {/* <BarGraph /> */}
     <Projects />
     <Example />
     <Blog />
