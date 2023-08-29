@@ -26,7 +26,7 @@ const Blog = () => {
   return (
     <div className="bg-black">
   <main id="blog">
-  <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10" data-aos="fade-down">
+  <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10" data-aos="fade-in">
     <h2 className="text-white md:text-4xl text-3xl font-semibold text-center md:text-left mb-8">Blogs</h2>
       
       <div className="grid gap-4">
