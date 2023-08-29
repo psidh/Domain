@@ -9,20 +9,29 @@ import Achievements from 'src/app/components/Achievements';
 import Blog from 'src/app/components/Blog';
 import Projects from 'src/app/components/Projects';
 import Example from '/pages/chart.js';
-import BarGraph from "./components/BarGraph";
+import styled, { createGlobalStyle } from "styled-components";
+const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'Ambit';
+  src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+}
+`;
 function MyApp(){
   return (
     <>
-    <div style={{ fontFamily: 'Ambit, sans-serif'}} className="bg-black font-ambit">
+    
+    <div style={{ fontFamily: 'Ambit, sans-serif'}}>
+    <div className="bg-black font-Ambit">
+    <GlobalStyle />  
     <NavBar />
     <TopIntro />
     <Achievements />
     <Resume />
-    {/* <BarGraph /> */}
     <Projects />
     <Example />
     <Blog />
     <Footer />
+    </div>
     </div>
     </>
   );

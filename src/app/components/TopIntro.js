@@ -31,7 +31,7 @@ const imageStyle={
 
 const TopIntro = () => {
   return (
-    <div>
+    <div style={{ fontFamily: 'Ambit, sans-serif'}} >
     <main>
     <div
       className="bg-cover bg-center h-screen flex flex-col justify-center items-center bg-opacity-90"
