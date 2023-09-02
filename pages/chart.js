@@ -25,10 +25,10 @@ function Example() {
       const myChart = new Chart(ctx, {
         type: "line",
         data: {
-          labels: ["2022", "2023", "2024","2022", "2023",],
+          labels: ["Dec 2022", "April 2023", "August 2024"],
           datasets: [
             {
-              data: [100, 200, 400, 800, 1600, 3200, ],
+              data: [70, 200, 500],
               label: "Contributions",
               borderColor: "#00cc00",
               borderWidth: "4",
