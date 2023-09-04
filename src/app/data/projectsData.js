@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 
 import React from "react"; // Import React
 
@@ -52,8 +54,34 @@ const projectsData = [
       },
     ],
     image: "/images/projects/project2.png",
-    githubLink: "https://github.com/psidh/todolist-v1",
+    githubLink: "https://github.com/psidh/TodoList",
     projectLink:"https://psidhtodolist.vercel.app",
+  },
+
+  {
+    title: "Quotes Generator",
+    description: "Static Website that generates my personal quotes/quotations!",
+    technologies: [
+      {
+        name: "TypeScript",
+        img : <img src="/images/projects/logos/typescript.png" className="w-12 h-10 rounded-md"/>
+      },
+      {
+        name: "React",
+        img: <img src="/images/projects/logos/reactlogo.png" className="w-10 h-10  rounded-md"/>
+       },
+      {
+        name: "NextJs",
+        img : <img src="/images/projects/logos/nextjslogo.png" className="w-10 h-10 rounded-md"/>
+      },
+      {
+        name: "Tailwind CSS",
+        img : <img src="/images/projects/logos/tailwind.png" className="w-13 h-12 rounded-md"/>
+      },
+    ],
+    image: "/images/projects/project3.png",
+    githubLink: "https://github.com/psidh/myQuotes",
+    projectLink:"https://psidhquotes.vercel.app",
   },
   
   // Add more project objects
