@@ -7,6 +7,10 @@ const projectsData = [
     description: "Web Application that can generate Slokās of Gita with options to select from a specific chapter",
     technologies: [
       {
+        name: "JavaScript",
+        img : <img src="/images/projects/logos/jslogo.png" className="w-10 h-10 rounded-md"/>
+      },
+      {
         name: "React",
         img: <img src="/images/projects/logos/reactlogo.png" className="w-10 h-10  rounded-md"/>
        },
@@ -14,6 +18,11 @@ const projectsData = [
         name: "NextJs",
         img : <img src="/images/projects/logos/nextjslogo.png" className="w-10 h-10 rounded-md"/>
       },
+      {
+        name: "Tailwind CSS",
+        img : <img src="/images/projects/logos/tailwind.png" className="w-13 h-12 rounded-md"/>
+      },
+
     ],
     image: "/images/projects/project1.png",
     githubLink: "https://github.com/psidh/gita_generator",
@@ -26,17 +35,25 @@ const projectsData = [
     description: "A todo List created using Express and NodeJs that helps you to make a goal setting for your day !",
     technologies: [
       {
-        name: "Node",
-        img: <img src="/images/projects/logos/nodelogo.png" className="w-10 h-10 rounded-md"/>
+        name: "TypeScript",
+        img : <img src="/images/projects/logos/typescript.png" className="w-12 h-10 rounded-md"/>
+      },
+      {
+        name: "React",
+        img: <img src="/images/projects/logos/reactlogo.png" className="w-10 h-10  rounded-md"/>
        },
       {
-        name: "JS",
-        img : <img src="/images/projects/logos/jslogo.png" className="w-10 h-10 rounded-md"/>
+        name: "NextJs",
+        img : <img src="/images/projects/logos/nextjslogo.png" className="w-10 h-10 rounded-md"/>
+      },
+      {
+        name: "Tailwind CSS",
+        img : <img src="/images/projects/logos/tailwind.png" className="w-13 h-12 rounded-md"/>
       },
     ],
     image: "/images/projects/project2.png",
     githubLink: "https://github.com/psidh/todolist-v1",
-    projectLink:"https://github.com/psidh/todolist-v1",
+    projectLink:"https://psidhtodolist.vercel.app",
   },
   
   // Add more project objects
