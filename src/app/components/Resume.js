@@ -62,7 +62,7 @@ const Resume = () => {
           Air Force School, IAF, West Bengal 
         </p>
         <p className="md:text-2xl text-xl mt-8">Class 4 - 12</p>
-        <a href="https://kvsangathan.nic.in/" className="flex items-center">
+        <a href="https://kvsangathan.nic.in/" target="_blank" className="flex items-center">
           Kendriya Vidyalaya Sangathan [Kerala | AP]
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ const Resume = () => {
           </svg>
         </a>
         <p className="md:text-2xl text-xl mt-8">BTech in Computer Science</p>
-        <a href="https://www.gitam.edu" className="flex items-center">
+        <a href="https://www.gitam.edu" target="_blank" className="flex items-center">
           GITAM University, Graduated in 2026
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ const Resume = () => {
     <div data-aos="fade-in">
     <div className="md:grid grid-cols-2 gap-8">
       <section className="my-8 ">
-      <a href="https:www.github.com/psidh/" className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "> 
+      <a href="https:www.github.com/psidh/" target="_blank" className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "> 
         <span className="md:text-left lg:ml-3 
          
         text-green-500 hover:text-green-200">

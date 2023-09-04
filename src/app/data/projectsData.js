@@ -32,7 +32,7 @@ const projectsData = [
 
   {
     title: "To-Do List",
-    description: "A todo List created using Express and NodeJs that helps you to make a goal setting for your day !",
+    description: "A todo List created using NextJs and React, using Typescript that helps you to make a goal setting for your day !",
     technologies: [
       {
         name: "TypeScript",

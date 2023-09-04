@@ -35,7 +35,7 @@ const Projects = () => {
            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={project.image} alt={project.title} className="mx-auto mb-4 rounded-lg" />
-            <a href={project.projectLink} className="text-xl text-white justify-center font-semibold my-2 flex items-center">{project.title}
+            <a href={project.projectLink} target="_blank" className="text-xl text-white justify-center font-semibold my-2 flex items-center">{project.title}
             <span><svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
