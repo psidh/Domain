@@ -34,7 +34,7 @@ const TopIntro = () => {
     <div style={{ fontFamily: 'Ambit, sans-serif'}} >
     <main>
     <div
-      className="bg-cover bg-center py-8 flex flex-col justify-center items-center bg-opacity-90"
+      className="bg-cover bg-center py-12 flex flex-col justify-center items-center bg-opacity-90"
       style={{
         backgroundImage: 'url("/images/aurora.jpg")',
         cursor: 'pointer',
