@@ -9,20 +9,16 @@ const projectsData = [
     description: "Web Application that can generate Slokās of Gita with options to select from a specific chapter",
     technologies: [
       {
-        name: "JavaScript",
-        img : <img src="/images/projects/logos/jslogo.png" className="w-10 h-10 rounded-md"/>
-      },
-      {
-        name: "React",
-        img: <img src="/images/projects/logos/reactlogo.png" className="w-10 h-10  rounded-md"/>
+        name: "HTML",
+        img: <img src="/images/projects/logos/htmlogo.png" className="w-10 h-10  rounded-md"/>
+       },
+       {
+        name: "CSS",
+        img: <img src="/images/projects/logos/csslogo.webp" className="w-10 h-10  rounded-md"/>
        },
       {
-        name: "NextJs",
-        img : <img src="/images/projects/logos/nextjslogo.png" className="w-10 h-10 rounded-md"/>
-      },
-      {
-        name: "Tailwind CSS",
-        img : <img src="/images/projects/logos/tailwind.png" className="w-13 h-12 rounded-md"/>
+        name: "JavaScript",
+        img : <img src="/images/projects/logos/jslogo.png" className="w-10 h-10 rounded-md"/>
       },
 
     ],
@@ -83,6 +79,32 @@ const projectsData = [
     githubLink: "https://github.com/psidh/myQuotes",
     projectLink:"https://psidhquotes.vercel.app",
   },
+  {
+    title: "Weather App",
+    description: "An All stop solution to find where's it raining/shining",
+    technologies: [
+      {
+        name: "TypeScript",
+        img : <img src="/images/projects/logos/typescript.png" className="w-12 h-10 rounded-md"/>
+      },
+      {
+        name: "React",
+        img: <img src="/images/projects/logos/reactlogo.png" className="w-10 h-10  rounded-md"/>
+       },
+      {
+        name: "NextJs",
+        img : <img src="/images/projects/logos/nextjslogo.png" className="w-10 h-10 rounded-md"/>
+      },
+      {
+        name: "Tailwind CSS",
+        img : <img src="/images/projects/logos/tailwind.png" className="w-13 h-12 rounded-md"/>
+      },
+    ],
+    image: "/images/projects/project4.png",
+    githubLink: "https://github.com/psidh/openWeatherApp",
+    projectLink:"https://psidhweather.vercel.app",
+  },
+  
   
   // Add more project objects
 ];
