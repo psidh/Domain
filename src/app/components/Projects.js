@@ -1,9 +1,9 @@
 "use client";
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import projectsData from "src/app/data/projectsData.js";
 import styled, { createGlobalStyle } from "styled-components";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -13,91 +13,92 @@ const GlobalStyle = createGlobalStyle`
 `;
 const Projects = () => {
   useEffect(() => {
-    AOS.init({ delay: 50,    // Delay between animations (ms)
-    offset: 100,   // Offset (in px) from the element's position when animation starts
-    duration: 500, // Duration of animations (ms)}); // Initialize AOS
-    once: true, // Whether animations should be repeated
-    mirror: true,
-    easing: "ease-in-out",
-  });
-}, []);
+    AOS.init({
+      delay: 50, // Delay between animations (ms)
+      offset: 100, // Offset (in px) from the element's position when animation starts
+      duration: 500, // Duration of animations (ms)}); // Initialize AOS
+      once: true, // Whether animations should be repeated
+      mirror: true,
+      easing: "ease-in-out",
+    });
+  }, []);
 
   return (
     <section>
-  <div data-aos="fade-in">
-    <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10">
-      <h2 className="text-white md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-8">
-        Projects
-      </h2>
-      <div className="grid grid-cols-1 gap-6 p-8 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6">
-        {projectsData.map((project, index) => (
-          <div
-            key={index}
-            className="bg-gray-900 shadow-xl shadow-green-500 hover:shadow-green-400 rounded-lg p-6 mx-auto transform hover:scale-105 transition duration-200 relative"
-            style={{ minHeight: '400px' }} // Adjust the minimum height as needed
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={project.image}
-              alt={project.title}
-              className="mx-auto mb-4 rounded-lg"
-            />
-            <div className="h-16 flex items-center justify-center">
-              {/* Fix title below images */}
-              <a
-                href={project.projectLink}
-                target="_blank"
-                className="text-xl text-white justify-center font-semibold my-2 flex items-center "
+      <div data-aos="fade-in">
+        <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10">
+          <h2 className="text-white md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-8">
+            Projects
+          </h2>
+          <div className="grid grid-cols-1 gap-6 p-8 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6">
+            {projectsData.map((project, index) => (
+              <div
+                key={index}
+                className="bg-gray-900 shadow-xl shadow-green-500 hover:shadow-green-400 rounded-lg p-6 mx-auto transform hover:scale-105 transition duration-200 relative"
+                style={{ minHeight: "400px" }} // Adjust the minimum height as needed
               >
-                {project.title}
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="ml-2 w-4 h-4"
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="mx-auto mb-4 rounded-lg"
+                />
+                <div className="h-16 flex items-center justify-center">
+                  {/* Fix title below images */}
+                  <a
+                    href={project.projectLink}
+                    target="_blank"
+                    className="text-xl text-white justify-center font-semibold my-2 flex items-center "
                   >
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
-                  </svg>
-                </span>
-              </a>
-            </div>
-            <p className="text-gray-400 mb-4">{project.description}</p>
-            {/* Fix the project technology and description */}
-            <div className="flex justify-center items-center h-16 mb-4 space-x-4">
-              {project.technologies.map((tech, techIndex) => (
-                <div key={techIndex} className="flex items-center">
-                  {tech.img}
+                    {project.title}
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="ml-2 w-4 h-4"
+                      >
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </span>
+                  </a>
                 </div>
-              ))}
-            </div>
-            {/* Fix "View on GitHub" button */}
-            <a
-              href={project.githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green-500 text-center absolute bottom-6 left-1/2 transform -translate-x-1/2 hover:underline hover:underline-offset-2"
-            >
-              View on GitHub
-            </a>
+                <p className="text-gray-400 mb-4">{project.description}</p>
+                {/* Fix the project technology and description */}
+                <div className="flex justify-center items-center h-16 mb-4 space-x-4">
+                  {project.technologies.map((tech, techIndex) => (
+                    <div key={techIndex} className="flex items-center">
+                      {tech.img}
+                    </div>
+                  ))}
+                </div>
+                {/* Fix "View on GitHub" button */}
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-500 text-center absolute bottom-6 left-1/2 transform -translate-x-1/2 hover:underline hover:underline-offset-2"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
+    </section>
   );
 };
 
 export default Projects;
 
-
-{/* <span className="bg-gray-200 text-gray-600 px-2 py-1 rounded ml-2">{tech.name}</span> */}
+{
+  /* <span className="bg-gray-200 text-gray-600 px-2 py-1 rounded ml-2">{tech.name}</span> */
+}

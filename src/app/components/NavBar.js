@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Ambit';
   src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
 }
-`; 
+`;
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -19,8 +19,10 @@ const NavBar = () => {
   return (
     <div>
       <div className="mx-8 lg:mx-20 flex justify-between text-white  py-8 md:py-10">
-        
-        <a className="hover:scale-105 transition duration-300" href="mailto:philkhanasidharth14@gmail.com">
+        <a
+          className="hover:scale-105 transition duration-300"
+          href="mailto:philkhanasidharth14@gmail.com"
+        >
           <div className="flex gap-4 items-center ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,24 +43,32 @@ const NavBar = () => {
           </div>
         </a>
         <div className="gap-14 hidden lg:flex text-white">
-          <a className="text-[#005AC1]  hover:text-gray-300" href="/">Home</a>
-          <a className="  hover:text-green-600" href="/#resume">Resume</a>
-          <a className="  hover:text-green-600" href="/#blog">Blogs</a>
-          <a className="  hover:text-green-600" href="/#footer">Contact</a>
+          <a className="text-[#005AC1]  hover:text-gray-300" href="/">
+            Home
+          </a>
+          <a className="  hover:text-green-600" href="/#resume">
+            Resume
+          </a>
+          <a className="  hover:text-green-600" href="/#blog">
+            Blogs
+          </a>
+          <a className="  hover:text-green-600" href="/#footer">
+            Contact
+          </a>
         </div>
         <svg
-        onClick={toggleNav} // Add onClick event to toggle navigation
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="flex lg:hidden w-5 h-5 cursor-pointer" // Add cursor-pointer to indicate it's clickable
-      >
+          onClick={toggleNav} // Add onClick event to toggle navigation
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="flex lg:hidden w-5 h-5 cursor-pointer" // Add cursor-pointer to indicate it's clickable
+        >
           <line x1="3" y1="12" x2="21" y2="12" />
           <line x1="3" y1="6" x2="21" y2="6" />
           <line x1="3" y1="18" x2="21" y2="18" />
@@ -67,13 +77,24 @@ const NavBar = () => {
 
       {isNavOpen && ( // Render the navigation links if isNavOpen is true
         <div className="flex flex-col lg:hidden text-white">
-          <a className="text-[#005AC1] m-6" href="/">Home</a>
-          <a className="m-6   hover:text-green-600" href="/#resume"> Resume </a>
-          <a className="m-6   hover:text-green-600" href="/#blog"> Blogs </a>
-          <a className="m-6   hover:text-green-600" href="/#footer"> Contact </a>
+          <a className="text-[#005AC1] m-6" href="/">
+            Home
+          </a>
+          <a className="m-6   hover:text-green-600" href="/#resume">
+            {" "}
+            Resume{" "}
+          </a>
+          <a className="m-6   hover:text-green-600" href="/#blog">
+            {" "}
+            Blogs{" "}
+          </a>
+          <a className="m-6   hover:text-green-600" href="/#footer">
+            {" "}
+            Contact{" "}
+          </a>
         </div>
       )}
-      </div>
+    </div>
   );
 };
 

@@ -1,10 +1,10 @@
-"use client"
-import React, { useEffect, useState } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import certificatesData from "src/app/data/certificates.js";
-import styled, { createGlobalStyle } from "styled-components";
+'use client';
+import React, { useEffect, useState } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import certificatesData from 'src/app/data/certificates.js';
+import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -16,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Achievements = () => {
-
   const [sliderInitialized, setSliderInitialized] = useState(false);
 
   useEffect(() => {
@@ -42,31 +41,39 @@ const Achievements = () => {
       },
     ],
   };
-  
+
   return (
     <div data-aos="fade-in">
-    <div className="bg-gray-950 py-6 md:py-12 mt-4 ">
-      <div className="container mx-auto text-center">
-        <h2 className="text-white md:text-4xl text-3xl font-semibold my-4 mb-8">Certificates</h2>
-        <Slider {...settings}>
-          {certificatesData.map((certificate, index) => (
-            <div key={index} className="px-4">
-              <div className="bg-gray-900 rounded-lg shadow-lg p-6 mb-4">
-                <div className="mb-4">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={certificate.image} alt={certificate.title} className="rounded-lg mx-auto w-60 h-50" />
-                </div>
-                <div>
-                  <h3 className="text-xl text-white font-semibold mb-2">{certificate.title}</h3>
-                  <p className="text-gray-300">{certificate.description}</p>
+      <div className="bg-gray-950 py-6 md:py-12 mt-4 ">
+        <div className="container mx-auto text-center">
+          <h2 className="text-white md:text-4xl text-3xl font-semibold my-4 mb-8">
+            Certificates
+          </h2>
+          <Slider {...settings}>
+            {certificatesData.map((certificate, index) => (
+              <div key={index} className="px-4">
+                <div className="bg-gray-900 rounded-lg shadow-lg p-6 mb-4">
+                  <div className="mb-4">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={certificate.image}
+                      alt={certificate.title}
+                      className="rounded-lg mx-auto w-60 h-50"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl text-white font-semibold mb-2">
+                      {certificate.title}
+                    </h3>
+                    <p className="text-gray-300">{certificate.description}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 

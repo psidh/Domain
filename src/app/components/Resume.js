@@ -1,6 +1,5 @@
-import React, 
-{useEffect} from "react";
-import styled, { createGlobalStyle } from "styled-components";
+import React, { useEffect } from 'react';
+import styled, { createGlobalStyle } from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const GlobalStyle = createGlobalStyle`
@@ -12,178 +11,214 @@ const GlobalStyle = createGlobalStyle`
 
 const Resume = () => {
   const techStack = [
-    "Python",
-    "JavaScript",
-    "C",
-    "C++",
-    "Java",
-    "NextJs",
-    "React",
-    "Node.js",
-    "HTML5",
-    "CSS/SCSS",
-    "Tailwind CSS",
-    "SQL",
-    "Git",
-    "Bootstrap",
-    "MongoDB",
+    'Python',
+    'JavaScript',
+    'C',
+    'C++',
+    'Java',
+    'NextJs',
+    'React',
+    'Node.js',
+    'HTML5',
+    'CSS/SCSS',
+    'Tailwind CSS',
+    'SQL',
+    'Git',
+    'Bootstrap',
+    'MongoDB',
   ];
   const skills = [
-    "Web Development",
-    "Front-End Development",
-    "Back-End Development",
-    "Problem Solving",
-    "Team Collaboration",
-    "UI/UX Design",
-    "Version Control",
+    'Web Development',
+    'Front-End Development',
+    'Back-End Development',
+    'Problem Solving',
+    'Team Collaboration',
+    'UI/UX Design',
+    'Version Control',
   ];
 
   useEffect(() => {
-    AOS.init({ delay: 50,    // Delay between animations (ms)
-    offset: 100,   // Offset (in px) from the element's position when animation starts
-    duration: 500, // Duration of animations (ms)}); // Initialize AOS
-    once: true, // Whether animations should be repeated
-    mirror: true,
-    easing: "ease-in-out",
-  });
-}, []);
+    AOS.init({
+      delay: 50, // Delay between animations (ms)
+      offset: 100, // Offset (in px) from the element's position when animation starts
+      duration: 500, // Duration of animations (ms)}); // Initialize AOS
+      once: true, // Whether animations should be repeated
+      mirror: true,
+      easing: 'ease-in-out',
+    });
+  }, []);
 
   return (
-  <main id="resume">
-  <div style={{ fontFamily: 'Ambit, sans-serif'}} data-aos="fade-in font-ambit">
-    <div className="py-4 md:py-10 px-8 lg:px-36">
-    <h2 className="md:text-4xl text-white text-3xl font-semibold my-4 text-center md:text-left" >Resume</h2>
-      <div className="md:grid md:grid-cols-2 gap-8">
-      <section className="my-8" >
-        <h3 className="md:text-3xl text-2xl font-semibold mb-4 text-green-500">Education</h3>
-        <div className="text-white">
-        <p className="md:text-xl text-lg ">Class 1 - 3</p>
-        <p className="flex items-center mb-8">
-          Air Force School, IAF, West Bengal 
-        </p>
-        <p className="md:text-2xl text-xl mt-8">Class 4 - 12</p>
-        <a href="https://kvsangathan.nic.in/" target="_blank" className="flex items-center">
-          Kendriya Vidyalaya Sangathan [Kerala | AP]
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="ml-2 w-4 h-4">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-        </a>
-        <p className="md:text-2xl text-xl mt-8">BTech in Computer Science</p>
-        <a href="https://www.gitam.edu" target="_blank" className="flex items-center">
-          GITAM University, Graduated in 2026
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="ml-2 w-4 h-4">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-        </a>
-        </div>
-      </section>
+    <main id="resume">
+      <div
+        style={{ fontFamily: 'Ambit, sans-serif' }}
+        data-aos="fade-in font-ambit"
+      >
+        <div className="py-4 md:py-10 px-8 lg:px-36">
+          <h2 className="md:text-4xl text-white text-3xl font-semibold my-4 text-center md:text-left">
+            Resume
+          </h2>
+          <div className="md:grid md:grid-cols-2 gap-8">
+            <section className="my-8">
+              <h3 className="md:text-3xl text-2xl font-semibold mb-4 text-green-500">
+                Education
+              </h3>
+              <div className="text-white">
+                <p className="md:text-xl text-lg ">Class 1 - 3</p>
+                <p className="flex items-center mb-8">
+                  Air Force School, IAF, West Bengal
+                </p>
+                <p className="md:text-2xl text-xl mt-8">Class 4 - 12</p>
+                <a
+                  href="https://kvsangathan.nic.in/"
+                  target="_blank"
+                  className="flex items-center"
+                >
+                  Kendriya Vidyalaya Sangathan [Kerala | AP]
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="ml-2 w-4 h-4"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <p className="md:text-2xl text-xl mt-8">
+                  BTech in Computer Science
+                </p>
+                <a
+                  href="https://www.gitam.edu"
+                  target="_blank"
+                  className="flex items-center"
+                >
+                  GITAM University, Graduated in 2026
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="ml-2 w-4 h-4"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </section>
 
-      <section className="my-8" >
-        <h3 className="md:text-3xl  text-2xl font-semibold mb-4 text-green-500">Experience</h3>
-        <div className="text-white">
-        <p>Software Engineer</p>
-        <p>Summer 2026</p>
-        </div>
-      </section>
-    </div>
+            <section className="my-8">
+              <h3 className="md:text-3xl  text-2xl font-semibold mb-4 text-green-500">
+                Experience
+              </h3>
+              <div className="text-white">
+                <p>Software Engineer</p>
+                <p>Summer 2026</p>
+              </div>
+            </section>
+          </div>
 
-    <div data-aos="fade-in">
-    <div className="md:grid grid-cols-2 gap-8">
-      <section className="my-8 ">
-      <a href="https:www.github.com/psidh/" target="_blank" className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "> 
-        <span className="md:text-left lg:ml-3 
+          <div data-aos="fade-in">
+            <div className="md:grid grid-cols-2 gap-8">
+              <section className="my-8 ">
+                <a
+                  href="https:www.github.com/psidh/"
+                  target="_blank"
+                  className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "
+                >
+                  <span
+                    className="md:text-left lg:ml-3 
          
-        text-green-500 hover:text-green-200">
-        Tech Stack</span> <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="ml-2 w-4 h-4"
-          >
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg></a>
-        <div className="grid grid-cols-2 gap-4">
-          {techStack.map((tech, index) => (
-            <div key={index} className="md:text-xl text-white md:p-4 p-2  
-            flex justify-start items-center border-0 rounded-lg">
-              {tech}
-            </div>
-          ))}
-        </div>
-      </section>
+        text-green-500 hover:text-green-200"
+                  >
+                    Tech Stack
+                  </span>{' '}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="ml-2 w-4 h-4"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <div className="grid grid-cols-2 gap-4">
+                  {techStack.map((tech, index) => (
+                    <div
+                      key={index}
+                      className="md:text-xl text-white md:p-4 p-2  
+            flex justify-start items-center border-0 rounded-lg"
+                    >
+                      {tech}
+                    </div>
+                  ))}
+                </div>
+              </section>
 
-      <section className="my-8" data-aos="fade-up">
-        <h3 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 md:text-left">
-        <span className="md:text-left lg:ml-3 
-          text-green-500">Skills ⚒️</span>
-        </h3>
-        <div className="grid grid-cols-2 gap-4">
-          {skills.map((skill, index) => (
-            <div key={index} className="md:text-xl md:p-4 p-2  
-            flex justify-start items-center border-0 text-white rounded-lg">
-              {skill}
+              <section className="my-8" data-aos="fade-up">
+                <h3 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 md:text-left">
+                  <span
+                    className="md:text-left lg:ml-3 
+          text-green-500"
+                  >
+                    Skills ⚒️
+                  </span>
+                </h3>
+                <div className="grid grid-cols-2 gap-4">
+                  {skills.map((skill, index) => (
+                    <div
+                      key={index}
+                      className="md:text-xl md:p-4 p-2  
+            flex justify-start items-center border-0 text-white rounded-lg"
+                    >
+                      {skill}
+                    </div>
+                  ))}
+                </div>
+              </section>
             </div>
-          ))}
+          </div>
         </div>
-      </section>
-
-    </div>
-    </div>
-    </div>
-   </div>
-  </main>
+      </div>
+    </main>
   );
 };
 
 export default Resume;
 
-
 // styles for the tech stack -->
-// hover:bg-black 
-// hover:text-white  
-// dark:bg-black 
-// dark:text-white 
-// dark:hover:text-black 
-// dark:hover:bg-white  
+// hover:bg-black
+// hover:text-white
+// dark:bg-black
+// dark:text-white
+// dark:hover:text-black
+// dark:hover:bg-white
 // transition duration-100
 
-
-
-
 // styles for skills -->
-// hover:bg-black 
-// hover:text-white  
-// dark:bg-black 
-// dark:text-white 
-// dark:hover:text-black 
-// dark:hover:bg-white  
+// hover:bg-black
+// hover:text-white
+// dark:bg-black
+// dark:text-white
+// dark:hover:text-black
+// dark:hover:bg-white
 // transition duration-100
