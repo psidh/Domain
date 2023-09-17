@@ -4,6 +4,7 @@ import projectsData from "src/app/data/projectsData.js";
 import styled, { createGlobalStyle } from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -25,80 +26,81 @@ const Projects = () => {
 
   return (
     <section>
-      <div data-aos="fade-in">
-        <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10">
-          <h2 className="text-white md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-8">
-            Projects
-          </h2>
-          <div className="grid grid-cols-1 gap-6 p-8 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6">
-            {projectsData.map((project, index) => (
-              <div
-                key={index}
-                className="bg-gray-900 shadow-xl shadow-green-500 hover:shadow-green-400 rounded-lg p-6 mx-auto transform hover:scale-105 transition duration-200 relative"
-                style={{ minHeight: "400px" }} // Adjust the minimum height as needed
+  <div data-aos="fade-in">
+    <div className="container mx-auto pt-4 pb-4 px-4 md:px-8 md:py-6">
+      <h2 className="text-white md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-4">
+        Projects
+      </h2>
+      <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 md:gap-4 lg:gap-6">
+        {projectsData.map((project, index) => (
+          <div
+            key={index}
+            className="bg-gray-900 shadow-lg  hover:shadow-green-400 rounded-lg p-4 mx-auto transform hover:scale-105 transition duration-200 relative"
+            style={{ minHeight: "400px" }} // Adjust the minimum height as needed
+          >
+            
+            <Image
+              src={project.image}
+              alt={project.title}
+              className="mx-auto my-2 rounded-lg"
+              width={200}
+              height={200}
+            />
+            <div className=" flex items-center justify-center">
+              {/* Fix title below images */}
+              <a
+                href={project.projectLink}
+                target="_blank"
+                className="text-xl text-white justify-center font-semibold my-4 flex items-center "
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="mx-auto mb-4 rounded-lg"
-                />
-                <div className="h-16 flex items-center justify-center">
-                  {/* Fix title below images */}
-                  <a
-                    href={project.projectLink}
-                    target="_blank"
-                    className="text-xl text-white justify-center font-semibold my-2 flex items-center "
+                {project.title}
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="ml-2 w-4 h-4"
                   >
-                    {project.title}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="ml-2 w-4 h-4"
-                      >
-                        <line x1="7" y1="17" x2="17" y2="7"></line>
-                        <polyline points="7 7 17 7 17 17"></polyline>
-                      </svg>
-                    </span>
-                  </a>
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <p className="text-gray-400 my-2">{project.description}</p>
+            {/* Fix the project technology and description */}
+            <div className="flex justify-center items-center my-2 space-x-2">
+              {project.technologies.map((tech, techIndex) => (
+                <div key={techIndex} className="flex items-center">
+                  {tech.img}
                 </div>
-                <p className="text-gray-400 mb-4">{project.description}</p>
-                {/* Fix the project technology and description */}
-                <div className="flex justify-center items-center h-16 mb-4 space-x-4">
-                  {project.technologies.map((tech, techIndex) => (
-                    <div key={techIndex} className="flex items-center">
-                      {tech.img}
-                    </div>
-                  ))}
-                </div>
-                {/* Fix "View on GitHub" button */}
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-500 text-center absolute bottom-6 left-1/2 transform -translate-x-1/2 hover:underline hover:underline-offset-2"
-                >
-                  View on GitHub
-                </a>
-              </div>
-            ))}
+              ))}
+            </div>
+            {/* Fix "View on GitHub" button */}
+            <div className="flex flex-row items-center justify-center">
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-500 mt-2 transform hover:underline hover:underline-offset-2"
+            >
+              View on GitHub
+            </a>
           </div>
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
   );
 };
 
 export default Projects;
-
-{
-  /* <span className="bg-gray-200 text-gray-600 px-2 py-1 rounded ml-2">{tech.name}</span> */
-}

@@ -10,6 +10,8 @@ import Blog from 'src/app/components/Blog';
 import Projects from 'src/app/components/Projects';
 import Example from '/pages/chart.js';
 import styled, { createGlobalStyle } from "styled-components";
+import Services from "./components/Services";
+import Card from "./components/Card";
 const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: 'Ambit';
@@ -29,6 +31,7 @@ function MyApp(){
     <Resume />
     <Projects />
     <Example />
+    {/* <Services /> */}
     <Blog />
     <Footer />
     </div>
