@@ -18,7 +18,7 @@ const BarGraph = () => {
       delay: 50,
       offset: 100,
       duration: 500,
-      once: true,
+      once: false,
       mirror: true,
       easing: 'ease-in-out',
     });

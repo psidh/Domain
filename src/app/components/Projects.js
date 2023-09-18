@@ -18,7 +18,7 @@ const Projects = () => {
       delay: 50, // Delay between animations (ms)
       offset: 100, // Offset (in px) from the element's position when animation starts
       duration: 500, // Duration of animations (ms)}); // Initialize AOS
-      once: true, // Whether animations should be repeated
+      once: false, // Whether animations should be repeated
       mirror: true,
       easing: "ease-in-out",
     });

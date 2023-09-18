@@ -17,7 +17,7 @@ const Blog = () => {
       delay: 50, // Delay between animations (ms)
       offset: 50, // Offset (in px) from the element's position when animation starts
       duration: 500, // Duration of animations (ms)}); // Initialize AOS
-      once: true, // Whether animations should be repeated
+      once: false, // Whether animations should be repeated
       mirror: true, // whether to repeat the animation vertically upwards vice-verse
       easing: "ease-in-out", // smoothness of the animation
     });

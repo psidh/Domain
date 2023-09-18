@@ -72,7 +72,7 @@ const Resume = () => {
       delay: 100,
       offset: 10,
       duration: 800,
-      once: true,
+      once: false,
       mirror: true,
       easing: 'ease-in-out',
     });
@@ -91,8 +91,81 @@ const Resume = () => {
           >
             Resume
           </h2>
+          <div className="py-4 md:py-10 px-8 lg:px-36">
+          <h2 className="md:text-4xl text-white text-3xl font-semibold my-4 text-center md:text-left"
+          data-aos="flip-up">
+            Resume
+          </h2>
           <div className="md:grid md:grid-cols-2 gap-8">
-            {/* Education and Experience sections here */}
+            <section className="my-8" data-aos="fade-right">
+              <h3 className="md:text-3xl text-2xl font-semibold mb-4 text-green-500">
+                Education
+              </h3>
+              <div className="text-white">
+                <p className="md:text-xl text-lg ">Class 1 - 3</p>
+                <p className="flex items-center mb-8">
+                  Air Force School, IAF, West Bengal
+                </p>
+                <p className="md:text-2xl text-xl mt-8">Class 4 - 12</p>
+                <a
+                  href="https://kvsangathan.nic.in/"
+                  target="_blank"
+                  className="flex items-center"
+                >
+                  Kendriya Vidyalaya Sangathan [Kerala | AP]
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="ml-2 w-4 h-4"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <p className="md:text-2xl text-xl mt-8">
+                  BTech in Computer Science
+                </p>
+                <a
+                  href="https://www.gitam.edu"
+                  target="_blank"
+                  className="flex items-center"
+                >
+                  GITAM University, Graduated in 2026
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="ml-2 w-4 h-4"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </section>
+
+            <section className="my-8" data-aos="fade-right">
+              <h3 className="md:text-3xl  text-2xl font-semibold mb-4 text-green-500">
+                Experience
+              </h3>
+              <div className="text-white">
+                <p>Software Engineer</p>
+                <p>Summer 2026</p>
+              </div>
+            </section>
           </div>
 
           <div>
