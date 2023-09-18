@@ -1,10 +1,29 @@
-"use client";
+'use client';
 import React, { useEffect } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { SiPython, SiJavascript, SiTypescript, SiC, SiCss3, SiCplusplus, SiHtml5,
-  SiNextdotjs, SiReact } from 'react-icons/si'; // Import the icons
+import {
+  SiPython,
+  SiJavascript,
+  SiTypescript,
+  SiC,
+  SiCss3,
+  SiCplusplus,
+  SiHtml5,
+  SiNextdotjs,
+  SiReact,
+  SiExpress,
+  SiJupyter,
+  SiMongodb,
+  SiTailwindcss,
+  SiBootstrap,
+  SiGnubash,
+  SiNumpy,
+  SiPandas,
+} from 'react-icons/si'; // Import the icons
+import {BiLogoJquery, BiLogoJava} from "react-icons/bi";
+import {FaNodeJs} from "react-icons/fa";
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -18,12 +37,23 @@ const Resume = () => {
     { name: 'Next.js 13', icon: <SiNextdotjs /> },
     { name: 'JavaScript', icon: <SiJavascript /> },
     { name: 'TypeScript', icon: <SiTypescript /> },
+    { name: 'Mongodb', icon: <SiMongodb /> },
     { name: 'React', icon: <SiReact /> },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+    { name: 'BootStrap', icon: <SiBootstrap /> },
     { name: 'C++', icon: <SiCplusplus /> },
     { name: 'C', icon: <SiC /> },
     { name: 'CSS', icon: <SiCss3 /> },
     { name: 'HTML', icon: <SiHtml5 /> },
     { name: 'Python', icon: <SiPython /> },
+    { name: 'Jupyter', icon: <SiJupyter /> },
+    { name: 'JQuery', icon: <BiLogoJquery /> },
+    { name: 'Express', icon: <SiExpress /> },
+    { name: 'Node.js', icon: <FaNodeJs /> },
+    { name: 'Java', icon: <BiLogoJava /> },
+    { name: 'Bash', icon: <SiGnubash /> },
+    { name: 'Numpy', icon: <SiNumpy /> },
+    { name: 'Pandas', icon: <SiPandas /> },
     
     // Add more tech stack items with icons as needed
   ];
@@ -73,9 +103,7 @@ const Resume = () => {
                   target="_blank"
                   className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "
                 >
-                  <span
-                    className="md:text-left lg:ml-3 text-green-500 hover:text-green-200"
-                  >
+                  <span className="md:text-left lg:ml-3 text-green-500 hover:text-green-200">
                     Tech Stack
                   </span>{' '}
                   <svg
@@ -94,15 +122,19 @@ const Resume = () => {
                     <polyline points="7 7 17 7 17 17"></polyline>
                   </svg>
                 </a>
-                <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-6">
                   {techStack.map((tech, index) => (
                     <div
                       key={index}
-                      className="md:text-xl text-white md:p-4 p-4   
-            flex justify-start items-center border-0 rounded-lg"
+                      className="md:text-xl text-white md:p-4 p-2
+        flex justify-center items-center border-0 rounded-lg"
                     >
-                      {tech.icon} {/* Display the icon */}
-                      <span className="ml-2">{tech.name}</span>
+                      <div className='flex flex-col items-center justify-center'>
+                      <span style={{ fontSize: '36px' }}>
+                        {tech.icon} {/* Display the icon */}
+                      </span>
+                      <span className='m-2'>{tech.name}</span>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -110,9 +142,7 @@ const Resume = () => {
 
               <section className="my-8" data-aos="fade-left">
                 <h3 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 md:text-left">
-                  <span
-                    className="md:text-left lg:ml-3 text-green-500"
-                  >
+                  <span className="md:text-left lg:ml-3 text-green-500">
                     Skills ⚒️
                   </span>
                 </h3>
