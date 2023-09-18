@@ -39,11 +39,7 @@ const Resume = () => {
     { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
     { name: 'Mongodb', icon: <SiMongodb />, color: 'text-green-400' },
     { name: 'React', icon: <SiReact />, color: 'text-cyan-400' },
-    {
-      name: 'Tailwind CSS',
-      icon: <SiTailwindcss />,
-      color: 'text-emerald-400',
-    },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: 'text-emerald-400',},
     { name: 'BootStrap', icon: <SiBootstrap />, color: 'text-purple-400' },
     { name: 'C++', icon: <SiCplusplus />, color: 'text-blue-600' },
     { name: 'C', icon: <SiC />, color: 'text-gray-400' },
@@ -53,7 +49,7 @@ const Resume = () => {
     { name: 'Jupyter', icon: <SiJupyter />, color: 'text-orange-500' },
     { name: 'JQuery', icon: <BiLogoJquery />, color: 'text-gray-500' },
     { name: 'Express', icon: <SiExpress />, color: 'text-yellow-500' },
-    { name: 'Node.js', icon: <FaNodeJs />, color: 'text-yellow-500' },
+    { name: 'Node.js', icon: <FaNodeJs />, color: 'text-lime-500' },
     { name: 'Java', icon: <BiLogoJava />, color: 'text-orange-500' },
     { name: 'Bash', icon: <SiGnubash />, color: 'text-gray-500' },
     { name: 'Numpy', icon: <SiNumpy />, color: 'text-blue-500' },
@@ -95,13 +91,6 @@ const Resume = () => {
           >
             Resume
           </h2>
-          <div className="py-4 md:py-10 px-8 lg:px-36">
-            <h2
-              className="md:text-4xl text-white text-3xl font-semibold my-4 text-center md:text-left"
-              data-aos="flip-up"
-            >
-              Resume
-            </h2>
             <div className="md:grid md:grid-cols-2 gap-8">
               <section className="my-8" data-aos="fade-right">
                 <h3 className="md:text-3xl text-2xl font-semibold mb-4 text-green-500">
@@ -174,73 +163,72 @@ const Resume = () => {
               </section>
             </div>
 
-            <div>
-              <div className="md:grid grid-cols-2 gap-8">
-                <section className="my-8 " data-aos="fade-right">
-                  <a
-                    href="https:www.github.com/psidh/"
-                    target="_blank"
-                    className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "
+          <div>
+            <div className="md:grid grid-cols-2 gap-8">
+              <section className="my-8 " data-aos="fade-right">
+                <a
+                  href="https:www.github.com/psidh/"
+                  target="_blank"
+                  className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "
+                >
+                  <span className="md:text-left lg:ml-3 text-green-500 hover:text-green-200">
+                    Tech Stack
+                  </span>{' '}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="ml-2 w-4 h-4"
                   >
-                    <span className="md:text-left lg:ml-3 text-green-500 hover:text-green-200">
-                      Tech Stack
-                    </span>{' '}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="4"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="ml-2 w-4 h-4"
-                    >
-                      <line x1="7" y1="17" x2="17" y2="7"></line>
-                      <polyline points="7 7 17 7 17 17"></polyline>
-                    </svg>
-                  </a>
-                  <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-6">
-                    {techStack.map((tech, index) => (
-                      <div
-                        key={index}
-                        className="md:text-xl text-white md:p-4 p-2
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-6">
+                  {techStack.map((tech, index) => (
+                    <div
+                      key={index}
+                      className="md:text-xl text-white md:p-4 p-2
         flex justify-center items-center border-0 rounded-lg"
-                      >
-                        <div className="flex flex-col items-center justify-center">
-                          <span
-                            style={{ fontSize: '36px' }}
-                            className={tech.color}
-                          >
-                            {tech.icon} {/* Display the icon */}
-                          </span>
-                          <span className="m-2">{tech.name}</span>
-                        </div>
+                    >
+                      <div className="flex flex-col items-center justify-center">
+                        <span
+                          style={{ fontSize: '36px' }}
+                          className={tech.color}
+                        >
+                          {tech.icon} {/* Display the icon */}
+                        </span>
+                        <span className="m-2">{tech.name}</span>
                       </div>
-                    ))}
-                  </div>
-                </section>
+                    </div>
+                  ))}
+                </div>
+              </section>
 
-                <section className="my-8" data-aos="fade-left">
-                  <h3 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 md:text-left">
-                    <span className="md:text-left lg:ml-3 text-green-500">
-                      Skills ⚒️
-                    </span>
-                  </h3>
-                  <div className="grid grid-cols-2 gap-4">
-                    {skills.map((skill, index) => (
-                      <div
-                        key={index}
-                        className="md:text-xl md:p-4 p-2  
+              <section className="my-8" data-aos="fade-left">
+                <h3 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 md:text-left">
+                  <span className="md:text-left lg:ml-3 text-green-500">
+                    Skills ⚒️
+                  </span>
+                </h3>
+                <div className="grid grid-cols-2 gap-4">
+                  {skills.map((skill, index) => (
+                    <div
+                      key={index}
+                      className="md:text-xl md:p-4 p-2  
             flex justify-start items-center border-0 text-white rounded-lg"
-                      >
-                        {skill}
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              </div>
+                    >
+                      {skill}
+                    </div>
+                  ))}
+                </div>
+              </section>
             </div>
           </div>
         </div>
