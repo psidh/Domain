@@ -35,25 +35,25 @@ const GlobalStyle = createGlobalStyle`
 const Resume = () => {
   const techStack = [
     { name: 'Next.js 13', icon: <SiNextdotjs /> },
-    { name: 'JavaScript', icon: <SiJavascript /> },
-    { name: 'TypeScript', icon: <SiTypescript /> },
-    { name: 'Mongodb', icon: <SiMongodb /> },
-    { name: 'React', icon: <SiReact /> },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
-    { name: 'BootStrap', icon: <SiBootstrap /> },
-    { name: 'C++', icon: <SiCplusplus /> },
-    { name: 'C', icon: <SiC /> },
-    { name: 'CSS', icon: <SiCss3 /> },
-    { name: 'HTML', icon: <SiHtml5 /> },
-    { name: 'Python', icon: <SiPython /> },
-    { name: 'Jupyter', icon: <SiJupyter /> },
-    { name: 'JQuery', icon: <BiLogoJquery /> },
-    { name: 'Express', icon: <SiExpress /> },
-    { name: 'Node.js', icon: <FaNodeJs /> },
-    { name: 'Java', icon: <BiLogoJava /> },
-    { name: 'Bash', icon: <SiGnubash /> },
-    { name: 'Numpy', icon: <SiNumpy /> },
-    { name: 'Pandas', icon: <SiPandas /> },
+    { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-400' },
+    { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400'  },
+    { name: 'Mongodb', icon: <SiMongodb />, color: 'text-green-400'},
+    { name: 'React', icon: <SiReact /> , color: 'text-cyan-400'},
+    { name: 'Tailwind CSS', icon: <SiTailwindcss /> , color: 'text-emerald-400'},
+    { name: 'BootStrap', icon: <SiBootstrap /> , color: 'text-purple-400'},
+    { name: 'C++', icon: <SiCplusplus /> , color: 'text-blue-600'},
+    { name: 'C', icon: <SiC /> , color: 'text-gray-400'},
+    { name: 'CSS', icon: <SiCss3 /> , color: 'text-cyan-400'},
+    { name: 'HTML', icon: <SiHtml5 /> , color: 'text-orange-500'},
+    { name: 'Python', icon: <SiPython /> , color: 'text-blue-300'},
+    { name: 'Jupyter', icon: <SiJupyter /> , color: 'text-orange-500'},
+    { name: 'JQuery', icon: <BiLogoJquery /> , color: 'text-gray-500'},
+    { name: 'Express', icon: <SiExpress /> , color: 'text-yellow-500'},
+    { name: 'Node.js', icon: <FaNodeJs /> , color: 'text-yellow-500'},
+    { name: 'Java', icon: <BiLogoJava /> , color: 'text-orange-500'},
+    { name: 'Bash', icon: <SiGnubash /> , color: 'text-gray-500'},
+    { name: 'Numpy', icon: <SiNumpy /> , color: 'text-blue-500'},
+    { name: 'Pandas', icon: <SiPandas /> , color: 'text-blue-500'},
     
     // Add more tech stack items with icons as needed
   ];
@@ -130,7 +130,8 @@ const Resume = () => {
         flex justify-center items-center border-0 rounded-lg"
                     >
                       <div className='flex flex-col items-center justify-center'>
-                      <span style={{ fontSize: '36px' }}>
+                      <span style={{ fontSize: '36px' }} 
+                      className={tech.color}>
                         {tech.icon} {/* Display the icon */}
                       </span>
                       <span className='m-2'>{tech.name}</span>
