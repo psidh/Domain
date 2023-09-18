@@ -26,8 +26,8 @@ const Projects = () => {
 
   return (
     <section>
-  <div data-aos="flip-up">
-    <div className="container mx-auto pt-4 pb-4 px-4 md:px-8 md:py-6">
+  <div >
+    <div className="container mx-auto pt-4 pb-4 px-4 md:px-8 md:py-6" data-aos="flip-up">
       <h2 className="text-white md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-4">
         Projects
       </h2>
