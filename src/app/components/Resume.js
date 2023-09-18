@@ -236,6 +236,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
+      </div>
     </main>
   );
 };
