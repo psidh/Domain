@@ -39,9 +39,9 @@ const Resume = () => {
 
   useEffect(() => {
     AOS.init({
-      delay: 50, // Delay between animations (ms)
-      offset: 100, // Offset (in px) from the element's position when animation starts
-      duration: 500, // Duration of animations (ms)}); // Initialize AOS
+      delay: 100, // Delay between animations (ms)
+      offset: 10, // Offset (in px) from the element's position when animation starts
+      duration: 800, // Duration of animations (ms)}); // Initialize AOS
       once: true, // Whether animations should be repeated
       mirror: true,
       easing: 'ease-in-out',
@@ -55,11 +55,12 @@ const Resume = () => {
         data-aos="fade-in font-ambit"
       >
         <div className="py-4 md:py-10 px-8 lg:px-36">
-          <h2 className="md:text-4xl text-white text-3xl font-semibold my-4 text-center md:text-left">
+          <h2 className="md:text-4xl text-white text-3xl font-semibold my-4 text-center md:text-left"
+          data-aos="flip-up">
             Resume
           </h2>
           <div className="md:grid md:grid-cols-2 gap-8">
-            <section className="my-8">
+            <section className="my-8" data-aos="fade-right">
               <h3 className="md:text-3xl text-2xl font-semibold mb-4 text-green-500">
                 Education
               </h3>
@@ -119,7 +120,7 @@ const Resume = () => {
               </div>
             </section>
 
-            <section className="my-8">
+            <section className="my-8" data-aos="fade-right">
               <h3 className="md:text-3xl  text-2xl font-semibold mb-4 text-green-500">
                 Experience
               </h3>
@@ -130,9 +131,9 @@ const Resume = () => {
             </section>
           </div>
 
-          <div data-aos="fade-in">
+          <div>
             <div className="md:grid grid-cols-2 gap-8">
-              <section className="my-8 ">
+              <section className="my-8 "  data-aos="fade-right">
                 <a
                   href="https:www.github.com/psidh/"
                   target="_blank"
@@ -174,7 +175,7 @@ const Resume = () => {
                 </div>
               </section>
 
-              <section className="my-8" data-aos="fade-up">
+              <section className="my-8" data-aos="fade-left">
                 <h3 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 md:text-left">
                   <span
                     className="md:text-left lg:ml-3 
