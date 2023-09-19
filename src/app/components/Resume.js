@@ -22,7 +22,7 @@ import {
   SiNumpy,
   SiPandas,
 } from 'react-icons/si'; // Import the icons
-import { BiLogoJquery, BiLogoJava } from 'react-icons/bi';
+import { BiLogoJquery, BiLogoJava, BsGit } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
 
 const GlobalStyle = createGlobalStyle`
@@ -33,30 +33,36 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Resume = () => {
-  const techStack = [
+  const Frameworks = [
     { name: 'Next.js 13', icon: <SiNextdotjs /> },
-    { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-400' },
-    { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
-    { name: 'Mongodb', icon: <SiMongodb />, color: 'text-green-400' },
     { name: 'React', icon: <SiReact />, color: 'text-cyan-400' },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: 'text-emerald-400',},
-    { name: 'BootStrap', icon: <SiBootstrap />, color: 'text-purple-400' },
-    { name: 'C++', icon: <SiCplusplus />, color: 'text-blue-600' },
-    { name: 'C', icon: <SiC />, color: 'text-gray-400' },
-    { name: 'CSS', icon: <SiCss3 />, color: 'text-cyan-400' },
-    { name: 'HTML', icon: <SiHtml5 />, color: 'text-orange-500' },
-    { name: 'Python', icon: <SiPython />, color: 'text-blue-300' },
-    { name: 'Jupyter', icon: <SiJupyter />, color: 'text-orange-500' },
-    { name: 'JQuery', icon: <BiLogoJquery />, color: 'text-gray-500' },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: 'text-emerald-500',},
     { name: 'Express', icon: <SiExpress />, color: 'text-yellow-500' },
     { name: 'Node.js', icon: <FaNodeJs />, color: 'text-lime-500' },
-    { name: 'Java', icon: <BiLogoJava />, color: 'text-orange-500' },
+    { name: 'Mongodb', icon: <SiMongodb />, color: 'text-green-400' },
+    { name: 'BootStrap', icon: <SiBootstrap />, color: 'text-violet-400' },
+    { name: 'Jupyter', icon: <SiJupyter />, color: 'text-orange-500' },
+    { name: 'JQuery', icon: <BiLogoJquery />, color: 'text-cyan-700' },
     { name: 'Bash', icon: <SiGnubash />, color: 'text-gray-500' },
     { name: 'Numpy', icon: <SiNumpy />, color: 'text-blue-500' },
     { name: 'Pandas', icon: <SiPandas />, color: 'text-blue-500' },
 
-    // Add more tech stack items with icons as needed
+    // Add more lang stack items with icons as needed
   ];
+
+  const lang = [
+    { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-400' },
+    { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
+    { name: 'Java', icon: <BiLogoJava />, color: 'text-orange-500' },
+    { name: 'Python', icon: <SiPython />, color: 'text-blue-300' },
+    { name: 'C++', icon: <SiCplusplus />, color: 'text-blue-600' },
+    { name: 'C', icon: <SiC />, color: 'text-gray-400' },
+    { name: 'CSS', icon: <SiCss3 />, color: 'text-cyan-400' },
+    { name: 'HTML', icon: <SiHtml5 />, color: 'text-orange-500' },
+    
+
+  ]
+
   const skills = [
     'Web Development',
     'Front-End Development',
@@ -172,7 +178,53 @@ const Resume = () => {
                   className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "
                 >
                   <span className="md:text-left lg:ml-3 text-green-500 hover:text-green-200">
-                    Tech Stack
+                    Frameworks
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="ml-2 w-4 h-4"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-6">
+                  {Frameworks.map((Frameworks, index) => (
+                    <div
+                      key={index}
+                      className="md:text-xl text-white md:p-4 p-2
+        flex justify-center items-center border-0 rounded-lg"
+                    >
+                      <div className="flex flex-col items-center justify-center">
+                        <span
+                          style={{ fontSize: '36px' }}
+                          className={Frameworks.color}
+                        >
+                          {Frameworks.icon} {/* Display the icon */}
+                        </span>
+                        <span className="m-2">{Frameworks.name}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              <section className="my-8 " data-aos="fade-right">
+                <a
+                  href="https:www.github.com/psidh/"
+                  target="_blank"
+                  className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "
+                >
+                  <span className="md:text-left lg:ml-3 text-green-500 hover:text-green-200">
+                    Languages
                   </span>{' '}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -191,7 +243,7 @@ const Resume = () => {
                   </svg>
                 </a>
                 <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-6">
-                  {techStack.map((tech, index) => (
+                  {lang.map((lang, index) => (
                     <div
                       key={index}
                       className="md:text-xl text-white md:p-4 p-2
@@ -200,11 +252,11 @@ const Resume = () => {
                       <div className="flex flex-col items-center justify-center">
                         <span
                           style={{ fontSize: '36px' }}
-                          className={tech.color}
+                          className={lang.color}
                         >
-                          {tech.icon} {/* Display the icon */}
+                          {lang.icon} {/* Display the icon */}
                         </span>
-                        <span className="m-2">{tech.name}</span>
+                        <span className="m-2">{lang.name}</span>
                       </div>
                     </div>
                   ))}
