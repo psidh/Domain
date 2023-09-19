@@ -8,7 +8,7 @@ import Resume from 'src/app/components/Resume';
 import Achievements from 'src/app/components/Achievements';
 import Blog from 'src/app/components/Blog';
 import Projects from 'src/app/components/Projects';
-import chart from '/pages/chart.js';
+import ChartComponent from '/pages/chart.js';
 import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -25,7 +25,7 @@ function MyApp(){
     <Achievements />
     <Resume />
     <Projects />
-    <chart />
+    <ChartComponent />
     <Blog />
     <Footer />
     </div>

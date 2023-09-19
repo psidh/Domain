@@ -4,7 +4,7 @@ import { Chart } from "chart.js";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function chart() {
+function ChartComponent() {
   const chartRef = useRef(null);
 
   useEffect(() => {
@@ -90,4 +90,4 @@ function chart() {
   );
 }
 
-export default chart;
+export default ChartComponent;
