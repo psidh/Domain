@@ -104,10 +104,10 @@ const Resume = () => {
                 </h3>
                 <div className="text-white">
                   <p className="md:text-xl text-lg ">Class 1 - 3</p>
-                  <p className="flex items-center mb-8">
+                  <p className="flex items-center mb-4">
                     Air Force School, IAF, West Bengal
                   </p>
-                  <p className="md:text-2xl text-xl mt-8">Class 4 - 12</p>
+                  <p className="md:text-2xl text-xl mt-4">Class 4 - 12</p>
                   <a
                     href="https://kvsangathan.nic.in/"
                     target="_blank"
