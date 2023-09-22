@@ -1,9 +1,9 @@
 // src/components/Blog.js
-import React, { useEffect } from "react";
-import blogPosts from "src/app/data/blogPosts";
-import styled, { createGlobalStyle } from "styled-components";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect } from 'react';
+import blogPosts from 'src/app/data/blogPosts';
+import styled, { createGlobalStyle } from 'styled-components';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
 }
 `;
-const Blog = () => {
+export default function Blog() {
   useEffect(() => {
     AOS.init({
       delay: 50, // Delay between animations (ms)
@@ -19,7 +19,7 @@ const Blog = () => {
       duration: 500, // Duration of animations (ms)}); // Initialize AOS
       once: false, // Whether animations should be repeated
       mirror: true, // whether to repeat the animation vertically upwards vice-verse
-      easing: "ease-in-out", // smoothness of the animation
+      easing: 'ease-in-out', // smoothness of the animation
     });
   }, []);
   return (
@@ -61,6 +61,4 @@ const Blog = () => {
       </main>
     </div>
   );
-};
-
-export default Blog;
+}
