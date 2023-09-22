@@ -32,7 +32,7 @@ const Projects = () => {
           </h2>
           <div
             className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 md:gap-4 lg:gap-6"
-            data-aos="flip-down"
+            data-aos="fade-in"
           >
             {projectsData.map((project, index) => (
               <div
