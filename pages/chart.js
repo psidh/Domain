@@ -25,7 +25,7 @@ function ChartComponent() {
       const myChart = new Chart(ctx, {
         type: "line",
         data: {
-          labels: ["Dec 2022", "April 2023", "August 2024"],
+          labels: ["Dec 2022", "April 2023", "August 2023"],
           datasets: [
             {
               data: [70, 200, 500],
