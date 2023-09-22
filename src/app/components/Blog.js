@@ -45,7 +45,6 @@ const Blog = () => {
                 <div
                   className="bg-gray-900 rounded-lg transform hover:scale-105 transition duration-300 
             shadow-lg 
-            shadow-lime-700 
             hover:shadow-lime-500 
             p-6"
                 >
