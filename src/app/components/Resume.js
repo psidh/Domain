@@ -21,7 +21,23 @@ import {
   SiGnubash,
   SiNumpy,
   SiPandas,
+  SiFirebase,
+  SiSupabase,
+  SiGit,
+  SiGithub,
+  SiFigma,
+  SiMui,
+  SiVercel,
+  SiOpenai,
+  SiGooglecloud,
+  SiVisualstudiocode,
+  SiPycharm,
+  SiIntellijidea,
+  SiWebstorm,
+  SiPostman
 } from 'react-icons/si'; // Import the icons
+import  {GrMysql, } from "react-icons/gr"
+import  {GiTurtle, } from "react-icons/gi"
 import { BiLogoJquery, BiLogoJava, BsGit } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
 
@@ -36,33 +52,49 @@ const Resume = () => {
   const Frameworks = [
     { name: 'Next.js 13', icon: <SiNextdotjs /> },
     { name: 'React', icon: <SiReact />, color: 'text-cyan-400' },
-    {
-      name: 'Tailwind CSS',
-      icon: <SiTailwindcss />,
-      color: 'text-emerald-500',
-    },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: 'text-emerald-300',},
     { name: 'Express', icon: <SiExpress />, color: 'text-yellow-500' },
     { name: 'Node.js', icon: <FaNodeJs />, color: 'text-lime-500' },
     { name: 'Mongodb', icon: <SiMongodb />, color: 'text-green-400' },
     { name: 'BootStrap', icon: <SiBootstrap />, color: 'text-violet-400' },
     { name: 'Jupyter', icon: <SiJupyter />, color: 'text-orange-500' },
-    { name: 'JQuery', icon: <BiLogoJquery />, color: 'text-cyan-700' },
-    { name: 'Bash', icon: <SiGnubash />, color: 'text-gray-500' },
+    { name: 'JQuery', icon: <BiLogoJquery />, color: 'text-cyan-500' },
     { name: 'Numpy', icon: <SiNumpy />, color: 'text-blue-500' },
     { name: 'Pandas', icon: <SiPandas />, color: 'text-blue-500' },
-
+    { name: 'FireBase', icon: <SiFirebase />, color: 'text-amber-400' },
+    { name: 'SupaBase', icon: <SiSupabase />, color: 'text-green-400' },
+    { name: 'MySQL', icon: <GrMysql />, color: 'text-blue-200' },
     // Add more lang stack items with icons as needed
   ];
 
   const lang = [
-    { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-400' },
-    { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
-    { name: 'Java', icon: <BiLogoJava />, color: 'text-orange-500' },
-    { name: 'Python', icon: <SiPython />, color: 'text-blue-300' },
+    { name: 'Bash', icon: <SiGnubash />, color: 'text-gray-500' },
     { name: 'C++', icon: <SiCplusplus />, color: 'text-blue-600' },
     { name: 'C', icon: <SiC />, color: 'text-gray-400' },
+    { name: 'Java', icon: <BiLogoJava />, color: 'text-orange-500' },
+    { name: 'Python', icon: <SiPython />, color: 'text-blue-300' },
+    { name: 'Turtle', icon: <GiTurtle />, color: 'text-blue-300' },
     { name: 'CSS', icon: <SiCss3 />, color: 'text-cyan-400' },
     { name: 'HTML', icon: <SiHtml5 />, color: 'text-orange-500' },
+    { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-400' },
+    { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
+    
+  ];
+
+  const tools = [
+    { name: 'Git', icon: <SiGit />, color: 'text-orange-500' },
+    { name: 'GitHub', icon: <SiGithub />, color: 'text-gray-100' },
+    { name: 'Vercel', icon: <SiVercel />, color: 'text-white' },
+    { name: 'Figma', icon: <SiFigma />, color: 'text-red-300' },
+    { name: 'Material UI', icon: <SiMui />, color: 'text-blue-500' },
+    { name: 'ChatGPT', icon: <SiOpenai />, color: 'text-teal-200' },
+    { name: 'Google Cloud', icon: <SiGooglecloud />, color: 'text-white' },
+    { name: 'Visual Studio Code', icon: <SiVisualstudiocode />, color: 'text-sky-400' },
+    { name: 'PyCharm', icon: <SiPycharm />, color: 'text-lime-400' },
+    { name: 'WebStorm', icon: <SiWebstorm />, color: 'text-blue-400' },
+    { name: 'IntelliJ', icon: <SiIntellijidea />, color: 'text-red-500' },
+    { name: 'PostMan', icon: <SiPostman />, color: 'text-orange-500' },
+    
   ];
 
   const skills = [
@@ -259,6 +291,52 @@ const Resume = () => {
                           {lang.icon} {/* Display the icon */}
                         </span>
                         <span className="m-2">{lang.name}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              <section className="my-8 " data-aos="fade-right">
+                <a
+                  href="https:www.github.com/psidh/"
+                  target="_blank"
+                  className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "
+                >
+                  <span className="md:text-left lg:ml-3 text-green-500 hover:text-green-200">
+                    Tools
+                  </span>{' '}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="ml-2 w-4 h-4"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-6">
+                  {tools.map((tool, index) => (
+                    <div
+                      key={index}
+                      className="md:text-xl text-white md:p-4 p-2
+        flex justify-center items-center border-0 rounded-lg"
+                    >
+                      <div className="flex flex-col items-center justify-center">
+                        <span
+                          style={{ fontSize: '36px' }}
+                          className={tool.color}
+                        >
+                          {tool.icon} {/* Display the icon */}
+                        </span>
+                        <span className="m-2">{tool.name}</span>
                       </div>
                     </div>
                   ))}
