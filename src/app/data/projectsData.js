@@ -38,7 +38,7 @@ const projectsData = [
       },
     ],
     image: '/images/projects/project1.png',
-    githubLink: 'https://github.com/psidh/gita_generator',
+    githubLink: 'https:github.com/psidh/gita_generate',
     projectLink: 'https:gita-generate.vercel.app',
   },
 
