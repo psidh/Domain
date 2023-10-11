@@ -1,4 +1,3 @@
-'use client';
 import React, { useEffect } from 'react';
 import projectsData from 'src/app/data/projectsData.js';
 import styled, { createGlobalStyle } from 'styled-components';

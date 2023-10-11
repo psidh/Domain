@@ -180,6 +180,52 @@ const projectsData = [
     projectLink: 'https://psidhweather.vercel.app',
   },
 
+  {
+    title: 'Amazon Front End Clone',
+    description: "Clone of E-commerce website. Beware only Front End !",
+    technologies: [
+      {
+        name: 'TypeScript',
+        img: (
+          <img
+            src="/images/projects/logos/typescript.png"
+            className="w-12 h-10 rounded-md"
+          />
+        ),
+      },
+      {
+        name: 'React',
+        img: (
+          <img
+            src="/images/projects/logos/reactlogo.png"
+            className="w-10 h-10  rounded-md"
+          />
+        ),
+      },
+      {
+        name: 'NextJs',
+        img: (
+          <img
+            src="/images/projects/logos/nextjslogo.png"
+            className="w-10 h-10 rounded-md"
+          />
+        ),
+      },
+      {
+        name: 'Tailwind CSS',
+        img: (
+          <img
+            src="/images/projects/logos/tailwind.png"
+            className="w-13 h-12 rounded-md"
+          />
+        ),
+      },
+    ],
+    image: '/images/projects/project4.png',
+    githubLink: 'https://github.com/psidh/openWeatherApp',
+    projectLink: 'https://psidhweather.vercel.app',
+  },
+
   // Add more project objects
 ];
 

@@ -1,5 +1,3 @@
-'use client';
-import React, { useState } from 'react';
 
 const Services = () => {
   return (
