@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Image from 'next/image';
 import styled, { createGlobalStyle, css } from 'styled-components';
 import { Autour_One } from 'next/font/google';
