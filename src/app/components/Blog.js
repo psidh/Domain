@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect } from 'react';
 import blogPosts from 'src/app/data/blogPosts';
 import styled, { createGlobalStyle } from 'styled-components';
@@ -44,7 +45,8 @@ const Blog = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-gray-900 rounded-lg transform hover:scale-105 transition duration-300 shadow-lg hover:shadow-lime-500 p-6">
+              <div className="bg-gray-900 rounded-lg transform transition 
+              duration-300 shadow-lg hover:shadow-blue-500 p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-200">
                   {majorBlog.title}
                 </h3>
@@ -63,7 +65,8 @@ const Blog = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="bg-gray-900 rounded-lg transform hover:scale-105 transition duration-300 shadow-lg hover:shadow-lime-500 p-6">
+                <div className="bg-gray-900 rounded-lg transform transition duration-300 
+                shadow-lg hover:shadow-blue-500 p-6">
                   <h3 className="text-xl font-semibold mb-2 text-gray-200">
                     {post.title}
                   </h3>

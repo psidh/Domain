@@ -6,22 +6,25 @@ import 'aos/dist/aos.css';
 import Image from 'next/image';
 
 const GlobalStyle = createGlobalStyle`
-@font-face {
-  font-family: 'Ambit';
-  src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
-}
+  @font-face {
+    font-family: 'Ambit';
+    src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+  }
 `;
+
 const Projects = () => {
   useEffect(() => {
     AOS.init({
-      delay: 50, // Delay between animations (ms)
-      offset: 100, // Offset (in px) from the element's position when animation starts
-      duration: 500, // Duration of animations (ms)}); // Initialize AOS
-      once: false, // Whether animations should be repeated
+      delay: 50,
+      offset: 100,
+      duration: 500,
+      once: false,
       mirror: true,
       easing: 'ease-in-out',
     });
   }, []);
+
+  const majorProject = projectsData[0]; // The first project will be the major one.
 
   return (
     <main>
@@ -30,51 +33,78 @@ const Projects = () => {
           Projects
         </h2>
         <div
-          className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 md:gap-4 lg:gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4 md:gap-4 lg:gap-6"
           data-aos="fade-in"
         >
-          {projectsData.map((project, index) => (
+          {/* Major Project on the Left */}
+          <div
+            key={0}
+            className="bg-gray-900 shadow-lg hover:shadow-blue-400 
+            rounded-lg p-4 transform transition duration-200
+            block md:col-span-2 md:row-span-2"
+            style={{ minHeight: '400px' }}
+            >
+            <Image
+              src={majorProject.image}
+              alt={majorProject.title}
+              className="mx-auto my-2 rounded-lg"
+              width={500}
+              height={400}
+            />
+            <div className="flex items-center justify-center">
+              <a
+                href={majorProject.projectLink}
+                target="_blank"
+                className="text-xl text-white justify-center font-semibold my-4 flex items-center"
+              >
+                {majorProject.title}
+              </a>
+            </div>
+            <p className="text-gray-400 my-2">{majorProject.description}</p>
+            <div className="flex justify-center items-center my-2 space-x-2">
+              {majorProject.technologies.map((tech, techIndex) => (
+                <div key={techIndex} className="flex items-center">
+                  {tech.img}
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-row items-center justify-center">
+              <a
+                href={majorProject.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-500 mt-2 transform hover:underline hover:underline-offset-2"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </div>
+          {/* Smaller Projects on the Right */}
+          {projectsData.slice(1).map((project, index) => (
             <div
-              key={index}
-              className="bg-gray-900 shadow-lg  hover:shadow-green-400 rounded-lg p-4 mx-auto transform hover:scale-105 transition duration-200 relative"
-              style={{ minHeight: '400px' }} // Adjust the minimum height as needed
+              key={index + 1}
+              className="bg-gray-900 shadow-lg hover:shadow-green-400 
+              rounded-lg p-4 transform transition duration-200
+              block md:col-span-1 md:row-span-1"
+              style={{ minHeight: '400px' }}
             >
               <Image
                 src={project.image}
                 alt={project.title}
                 className="mx-auto my-2 rounded-lg"
-                width={200}
-                height={200}
+                width={100}
+                height={100}
               />
-              <div className=" flex items-center justify-center">
-                {/* Fix title below images */}
+              <div className="flex items-center justify-center">
                 <a
                   href={project.projectLink}
                   target="_blank"
-                  className="text-xl text-white justify-center font-semibold my-4 flex items-center "
+                  className="text-xl text-white justify-center font-semibold my-4 flex items-center"
                 >
                   {project.title}
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="4"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="ml-2 w-4 h-4"
-                    >
-                      <line x1="7" y1="17" x2="17" y2="7"></line>
-                      <polyline points="7 7 17 7 17 17"></polyline>
-                    </svg>
-                  </span>
                 </a>
               </div>
               <p className="text-gray-400 my-2">{project.description}</p>
-              {/* Fix the project technology and description */}
               <div className="flex justify-center items-center my-2 space-x-2">
                 {project.technologies.map((tech, techIndex) => (
                   <div key={techIndex} className="flex items-center">
@@ -82,7 +112,6 @@ const Projects = () => {
                   </div>
                 ))}
               </div>
-              {/* Fix "View on GitHub" button */}
               <div className="flex flex-row items-center justify-center">
                 <a
                   href={project.githubLink}
