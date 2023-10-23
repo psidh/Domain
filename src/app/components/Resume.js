@@ -35,8 +35,7 @@ import {
   SiPostman, 
 } from 'react-icons/si'; // Import the icons
 import  {GrMysql, } from "react-icons/gr"
-import  {GiTurtle, } from "react-icons/gi"
-import { BiLogoJquery, BiLogoJava, BsGit, BiLogoFlask } from 'react-icons/bi';
+import { BiLogoJava, BiLogoFlask } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
 
 
@@ -52,16 +51,16 @@ const Resume = () => {
     { name: 'Next.js 13', icon: <SiNextdotjs /> },
     { name: 'React', icon: <SiReact />, color: 'text-cyan-400' },
     { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: 'text-emerald-300',},
-    { name: 'Express', icon: <SiExpress />, color: 'text-yellow-500' },
+    { name: 'Flask', icon: <BiLogoFlask />, color: 'text-red-500' },
     { name: 'Node.js', icon: <FaNodeJs />, color: 'text-lime-500' },
+    { name: 'Express', icon: <SiExpress />, color: 'text-yellow-500' },
     { name: 'Mongodb', icon: <SiMongodb />, color: 'text-green-400' },
     { name: 'BootStrap', icon: <SiBootstrap />, color: 'text-violet-400' },
     { name: 'Jupyter', icon: <SiJupyter />, color: 'text-orange-500' },
     { name: 'Pandas', icon: <SiPandas />, color: 'text-blue-500' },
     { name: 'FireBase', icon: <SiFirebase />, color: 'text-amber-400' },
     { name: 'SupaBase', icon: <SiSupabase />, color: 'text-green-400' },
-    { name: 'MySQL', icon: <GrMysql />, color: 'text-blue-200' },
-    { name: 'Flask', icon: <BiLogoFlask />, color: 'text-red-500' },
+    { name: 'MySQL', icon: <GrMysql />, color: 'text-blue-200' }, 
     // Add more lang stack items with icons as needed
   ];
 
