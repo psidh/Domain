@@ -5,7 +5,7 @@ const blogPosts = [
     date: 'June 21, 2023',
     content:
       'Web development has witnessed remarkable growth and transformation over the years. From the humble beginnings of static HTML pages...',
-    link: 'https://psidharth.hashnode.dev/demystifying-dsa',
+    link: 'https://psidharth.hashnode.dev/web-dev-a-journey-from-html-to-js',
   },
   {
     title: 'Demystifying DSA - A Guide for Aspiring Programmers',
