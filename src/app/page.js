@@ -22,10 +22,6 @@ function MyApp() {
       style={{ fontFamily: 'Ambit, sans-serif' }}
       className="bg-black font-Ambit"
     >
-      <head>
-        <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
-        <meta name="google" content="notranslate" key="notranslate" />
-      </head>
 
       <GlobalStyle />
       <NavBar />
