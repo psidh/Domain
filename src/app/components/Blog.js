@@ -1,10 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect } from 'react';
 import blogPosts from 'src/app/data/blogPosts';
-
+import styled, { createGlobalStyle } from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Ambit';
+    src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+  }
+`;
 
 const Blog = () => {
   useEffect(() => {

@@ -1,8 +1,16 @@
 import React, { useEffect } from 'react';
 import projectsData from 'src/app/data/projectsData.js';
+import styled, { createGlobalStyle } from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
+
+const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Ambit';
+    src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+  }
+`;
 
 const Projects = () => {
   useEffect(() => {
@@ -35,7 +43,7 @@ const Projects = () => {
             rounded-lg p-4 transform transition duration-200
             block md:col-span-2 md:row-span-2"
             style={{ minHeight: '400px' }}
-          >
+            >
             <Image
               src={majorProject.image}
               alt={majorProject.title}

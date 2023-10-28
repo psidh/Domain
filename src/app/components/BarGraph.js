@@ -2,6 +2,13 @@ import React, { useRef, useEffect } from 'react';
 import Chart from 'chart.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import styled, { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'Ambit';
+  src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+}
+`;
 const BarGraph = () => {
   const chartRef = useRef(null);
 

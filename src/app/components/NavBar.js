@@ -1,5 +1,13 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import React, { useState , useEffect }  from "react";
+import styled, { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'Ambit';
+  src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+}
+`;
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -73,16 +81,16 @@ const NavBar = () => {
             Home
           </a>
           <a className="m-6   hover:text-green-600" href="/#resume">
-            {' '}
-            Resume{' '}
+            {" "}
+            Resume{" "}
           </a>
           <a className="m-6   hover:text-green-600" href="/#blog">
-            {' '}
-            Blogs{' '}
+            {" "}
+            Blogs{" "}
           </a>
           <a className="m-6   hover:text-green-600" href="/#footer">
-            {' '}
-            Contact{' '}
+            {" "}
+            Contact{" "}
           </a>
         </div>
       )}

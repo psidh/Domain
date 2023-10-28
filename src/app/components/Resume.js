@@ -3,7 +3,6 @@ import styled, { createGlobalStyle } from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
-  SiAngular,
   SiPython,
   SiJavascript,
   SiTypescript,
@@ -33,26 +32,28 @@ import {
   SiPycharm,
   SiIntellijidea,
   SiWebstorm,
-  SiPostman,
+  SiPostman, 
 } from 'react-icons/si'; // Import the icons
-import { GrMysql } from 'react-icons/gr';
-import { BiLogoJava, BiLogoFlask, BiLogoPostgresql } from 'react-icons/bi';
+import  {GrMysql, } from "react-icons/gr"
+import  {GiTurtle, } from "react-icons/gi"
+import { BiLogoJquery, BiLogoJava, BsGit, BiLogoFlask } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
+
+
+const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'Ambit';
+  src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+}
+`;
 
 const Resume = () => {
   const Frameworks = [
-    { name: 'NextJs', icon: <SiNextdotjs /> },
-    { name: 'Angular', icon: <SiAngular />, color: 'text-red-500' },
+    { name: 'Next.js 13', icon: <SiNextdotjs /> },
     { name: 'React', icon: <SiReact />, color: 'text-cyan-400' },
-    {
-      name: 'Tailwind CSS',
-      icon: <SiTailwindcss />,
-      color: 'text-emerald-300',
-    },
-    { name: 'Postgresql', icon: <BiLogoPostgresql />, color: 'text-sky-300' },
-    { name: 'Flask', icon: <BiLogoFlask />, color: 'text-red-500' },
-    { name: 'Node.js', icon: <FaNodeJs />, color: 'text-lime-500' },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: 'text-emerald-300',},
     { name: 'Express', icon: <SiExpress />, color: 'text-yellow-500' },
+    { name: 'Node.js', icon: <FaNodeJs />, color: 'text-lime-500' },
     { name: 'Mongodb', icon: <SiMongodb />, color: 'text-green-400' },
     { name: 'BootStrap', icon: <SiBootstrap />, color: 'text-violet-400' },
     { name: 'Jupyter', icon: <SiJupyter />, color: 'text-orange-500' },
@@ -60,19 +61,21 @@ const Resume = () => {
     { name: 'FireBase', icon: <SiFirebase />, color: 'text-amber-400' },
     { name: 'SupaBase', icon: <SiSupabase />, color: 'text-green-400' },
     { name: 'MySQL', icon: <GrMysql />, color: 'text-blue-200' },
-    { name: 'CSS', icon: <SiCss3 />, color: 'text-cyan-400' },
-    { name: 'HTML', icon: <SiHtml5 />, color: 'text-orange-500' },
-
+    { name: 'Flask', icon: <BiLogoFlask />, color: 'text-red-500' },
     // Add more lang stack items with icons as needed
   ];
 
   const lang = [
-    { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-400' },
-    { name: 'Python', icon: <SiPython />, color: 'text-blue-300' },
-    { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
-    { name: 'Java', icon: <BiLogoJava />, color: 'text-orange-500' },
+    { name: 'Bash', icon: <SiGnubash />, color: 'text-gray-500' },
+    { name: 'C++', icon: <SiCplusplus />, color: 'text-teal-400' },
     { name: 'C', icon: <SiC />, color: 'text-gray-400' },
-    { name: 'C++', icon: <SiCplusplus />, color: 'text-sky-400' },
+    { name: 'Java', icon: <BiLogoJava />, color: 'text-orange-500' },
+    { name: 'Python', icon: <SiPython />, color: 'text-blue-300' },
+    { name: 'CSS', icon: <SiCss3 />, color: 'text-cyan-400' },
+    { name: 'HTML', icon: <SiHtml5 />, color: 'text-orange-500' },
+    { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-400' },
+    { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
+    
   ];
 
   const tools = [
@@ -82,15 +85,12 @@ const Resume = () => {
     { name: 'Figma', icon: <SiFigma />, color: 'text-red-500' },
     { name: 'Material UI', icon: <SiMui />, color: 'text-blue-500' },
     { name: 'ChatGPT', icon: <SiOpenai />, color: 'text-teal-200' },
-    {
-      name: 'Visual Studio Code',
-      icon: <SiVisualstudiocode />,
-      color: 'text-sky-400',
-    },
+    { name: 'Visual Studio Code', icon: <SiVisualstudiocode />, color: 'text-sky-400' },
     { name: 'PyCharm', icon: <SiPycharm />, color: 'text-lime-400' },
     { name: 'WebStorm', icon: <SiWebstorm />, color: 'text-blue-400' },
     { name: 'IntelliJ', icon: <SiIntellijidea />, color: 'text-red-500' },
     { name: 'PostMan', icon: <SiPostman />, color: 'text-orange-500' },
+    
   ];
 
   const skills = [
@@ -201,7 +201,7 @@ const Resume = () => {
 
           <div>
             <div className="md:grid grid-cols-2 gap-8">
-              <section className="my-4" data-aos="fade-right">
+              <section className="my-8 " data-aos="fade-right">
                 <a
                   href="https:www.github.com/psidh/"
                   target="_blank"
@@ -231,7 +231,7 @@ const Resume = () => {
                     <div
                       key={index}
                       className="md:text-xl text-white md:p-4 p-2
-                  flex justify-center items-center border-0 rounded-lg"
+        flex justify-center items-center border-0 rounded-lg"
                     >
                       <div className="flex flex-col items-center justify-center">
                         <span
@@ -247,7 +247,7 @@ const Resume = () => {
                 </div>
               </section>
 
-              <section className="my-4 ">
+              <section className="my-8 " data-aos="fade-right">
                 <a
                   href="https:www.github.com/psidh/"
                   target="_blank"
@@ -293,7 +293,7 @@ const Resume = () => {
                 </div>
               </section>
 
-              <section className="my-4 ">
+              <section className="my-8 " data-aos="fade-right">
                 <a
                   href="https:www.github.com/psidh/"
                   target="_blank"
@@ -339,7 +339,7 @@ const Resume = () => {
                 </div>
               </section>
 
-              <section className="my-4" data-aos="fade-left">
+              <section className="my-8" data-aos="fade-left">
                 <h3 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 md:text-left">
                   <span className="md:text-left lg:ml-3 text-green-500">
                     Skills ⚒️

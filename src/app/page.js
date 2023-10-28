@@ -22,7 +22,6 @@ function MyApp() {
       style={{ fontFamily: 'Ambit, sans-serif' }}
       className="bg-black font-Ambit"
     >
-
       <GlobalStyle />
       <NavBar />
       <TopIntro />

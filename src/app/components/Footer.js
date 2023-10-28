@@ -1,4 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import styled, { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'Ambit';
+  src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+}
+
+
+`;
 
 const Footer = () => {
   return (
