@@ -7,7 +7,7 @@ const projectsData = [
   {
     title: 'Gita Generator',
     description:
-      'Web Application that can generate Slokās of Gita with options to select from a specific chapter',
+      ' The Gita Sloka Generator project aims to make the profound teachings of the Bhagavad Gita easily accessible to people from diverse backgrounds. By offering chapter-wise sloka reading and a user-friendly interface, we hope to promote the understanding and appreciation of this timeless spiritual scripture. Whether you are seeking spiritual insights, philosophical guidance, or simply interested in exploring ancient wisdom, the Gita Sloka Generator provides a valuable resource for your spiritual journey. ',
     technologies: [
       {
         name: 'HTML',
@@ -182,7 +182,7 @@ const projectsData = [
 
   {
     title: 'Amazon Front End Clone',
-    description: "Clone of E-commerce website. Beware only Front End !",
+    description: 'Clone of E-commerce website. Beware only Front End !',
     technologies: [
       {
         name: 'TypeScript',
