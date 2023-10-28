@@ -36,22 +36,19 @@ import {
   SiPostman,
 } from 'react-icons/si'; // Import the icons
 import { GrMysql } from 'react-icons/gr';
-import { BiLogoJava, BiLogoFlask , BiLogoPostgresql } from 'react-icons/bi';
+import { BiLogoJava, BiLogoFlask, BiLogoPostgresql } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
-
-const GlobalStyle = createGlobalStyle`
-@font-face {
-  font-family: 'Ambit';
-  src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
-}
-`;
 
 const Resume = () => {
   const Frameworks = [
     { name: 'NextJs', icon: <SiNextdotjs /> },
     { name: 'Angular', icon: <SiAngular />, color: 'text-red-500' },
     { name: 'React', icon: <SiReact />, color: 'text-cyan-400' },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: 'text-emerald-300' },
+    {
+      name: 'Tailwind CSS',
+      icon: <SiTailwindcss />,
+      color: 'text-emerald-300',
+    },
     { name: 'Postgresql', icon: <BiLogoPostgresql />, color: 'text-sky-300' },
     { name: 'Flask', icon: <BiLogoFlask />, color: 'text-red-500' },
     { name: 'Node.js', icon: <FaNodeJs />, color: 'text-lime-500' },
@@ -250,7 +247,7 @@ const Resume = () => {
                 </div>
               </section>
 
-              <section className="my-4 " >
+              <section className="my-4 ">
                 <a
                   href="https:www.github.com/psidh/"
                   target="_blank"
