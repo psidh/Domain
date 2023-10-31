@@ -1,7 +1,7 @@
-
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import styled, { createGlobalStyle, css } from 'styled-components';
-import { Autour_One } from 'next/font/google';
+
 
 // Create a global style that applies Ambit font to all text elements
 const GlobalStyle = createGlobalStyle`
@@ -22,11 +22,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const imageStyle = {
-  width: 'auto',
-  height: 'auto',
-};
-
 const TopIntro = () => {
   return (
     <div style={{ fontFamily: 'Ambit, sans-serif' }}>
@@ -35,20 +30,16 @@ const TopIntro = () => {
           className="bg-cover bg-center py-12 flex flex-col justify-center items-center bg-opacity-90"
           style={{
             backgroundImage: 'url("/images/aurora.jpg")',
-            cursor: 'pointer',
           }}
         >
           <div data-aos-duration="500" data-aos="fade-in">
             <GlobalStyle />
             <div className="px-4 flex justify-center items-center">
-              <Image
-                src="/images/pfp.jpg"
-                width={200}
-                height={300}
+              <img
+                src="/me.png"                
                 alt="author image"
-                className="w-120 h-140 md:w-[200px] md:h-[260px] rounded-2xl"
-                priority // Adding the "priority" property
-                style={imageStyle}
+                className="w-120 h-120 md:w-[220px] md:h-[220px] rounded-full"
+                priority
               />
             </div>
             <section className="flex flex-col justify-center items-center py-2 md:pt-2 md:pb-4 px-4 lg:px-18">
@@ -94,7 +85,7 @@ const TopIntro = () => {
                 </p>
               </div>
               <button
-                className="md:mt-6 mb-4 bg-green-200 
+                className="md:mt-6 mb-4 bg-green-200 transition duration-300
           hover:bg-green-600 hover:text-white 
           text-black py-2 px-8 rounded-3xl "
               >

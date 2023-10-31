@@ -1,16 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect } from 'react';
 import blogPosts from 'src/app/data/blogPosts';
-import styled, { createGlobalStyle } from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Ambit';
-    src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
-  }
-`;
 
 const Blog = () => {
   useEffect(() => {
@@ -24,7 +16,7 @@ const Blog = () => {
     });
   }, []);
 
-  const majorBlog = blogPosts[0]; 
+  const majorBlog = blogPosts[0];
 
   return (
     <div className="bg-black">
@@ -45,12 +37,18 @@ const Blog = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-gray-900 rounded-lg transform transition 
-              duration-300 shadow-lg hover:shadow-blue-500 p-6">
+              <div
+                className="bg-gray-900 rounded-lg transform transition 
+              duration-300 shadow-lg hover:shadow-blue-500 p-6"
+              >
                 <h3 className="text-xl font-semibold mb-2 text-gray-200">
                   {majorBlog.title}
                 </h3>
-                <img src={majorBlog.image} alt='Blog Image' className='w-full h-full rounded-3xl p-4'/>
+                <img
+                  src={majorBlog.image}
+                  alt="Blog Image"
+                  className="w-full h-full rounded-3xl p-4"
+                />
                 <p className="text-gray-400 ">{majorBlog.date}</p>
                 <p className="mt-2 text-gray-200">{majorBlog.content}</p>
               </div>
@@ -65,8 +63,10 @@ const Blog = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="bg-gray-900 rounded-lg transform transition duration-300 
-                shadow-lg hover:shadow-blue-500 p-6">
+                <div
+                  className="bg-gray-900 rounded-lg transform transition duration-300 
+                shadow-lg hover:shadow-blue-500 p-6"
+                >
                   <h3 className="text-xl font-semibold mb-2 text-gray-200">
                     {post.title}
                   </h3>

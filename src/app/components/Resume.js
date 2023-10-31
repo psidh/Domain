@@ -32,26 +32,22 @@ import {
   SiPycharm,
   SiIntellijidea,
   SiWebstorm,
-  SiPostman, 
+  SiPostman,
 } from 'react-icons/si'; // Import the icons
-import  {GrMysql, } from "react-icons/gr"
-import  {GiTurtle, } from "react-icons/gi"
+import { GrMysql } from 'react-icons/gr';
+import { GiTurtle } from 'react-icons/gi';
 import { BiLogoJquery, BiLogoJava, BsGit, BiLogoFlask } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
-
-
-const GlobalStyle = createGlobalStyle`
-@font-face {
-  font-family: 'Ambit';
-  src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
-}
-`;
 
 const Resume = () => {
   const Frameworks = [
     { name: 'Next.js 13', icon: <SiNextdotjs /> },
     { name: 'React', icon: <SiReact />, color: 'text-cyan-400' },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: 'text-emerald-300',},
+    {
+      name: 'Tailwind CSS',
+      icon: <SiTailwindcss />,
+      color: 'text-emerald-300',
+    },
     { name: 'Express', icon: <SiExpress />, color: 'text-yellow-500' },
     { name: 'Node.js', icon: <FaNodeJs />, color: 'text-lime-500' },
     { name: 'Mongodb', icon: <SiMongodb />, color: 'text-green-400' },
@@ -75,7 +71,6 @@ const Resume = () => {
     { name: 'HTML', icon: <SiHtml5 />, color: 'text-orange-500' },
     { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-400' },
     { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
-    
   ];
 
   const tools = [
@@ -85,12 +80,15 @@ const Resume = () => {
     { name: 'Figma', icon: <SiFigma />, color: 'text-red-500' },
     { name: 'Material UI', icon: <SiMui />, color: 'text-blue-500' },
     { name: 'ChatGPT', icon: <SiOpenai />, color: 'text-teal-200' },
-    { name: 'Visual Studio Code', icon: <SiVisualstudiocode />, color: 'text-sky-400' },
+    {
+      name: 'Visual Studio Code',
+      icon: <SiVisualstudiocode />,
+      color: 'text-sky-400',
+    },
     { name: 'PyCharm', icon: <SiPycharm />, color: 'text-lime-400' },
     { name: 'WebStorm', icon: <SiWebstorm />, color: 'text-blue-400' },
     { name: 'IntelliJ', icon: <SiIntellijidea />, color: 'text-red-500' },
     { name: 'PostMan', icon: <SiPostman />, color: 'text-orange-500' },
-    
   ];
 
   const skills = [
@@ -117,7 +115,6 @@ const Resume = () => {
   return (
     <main id="resume">
       <div
-        style={{ fontFamily: 'Ambit, sans-serif' }}
         data-aos="fade-in font-ambit"
       >
         <div className="py-4 md:py-10 px-8 lg:px-36">

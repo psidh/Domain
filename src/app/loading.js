@@ -1,12 +1,10 @@
-"use client";
-import react from "react";
+'use client';
+import react from 'react';
 
 export default function Loading() {
-    
-    return (
-        <div>
-    <p>Loading1...</p>
+  return (
+    <div>
+      <p>Loading1...</p>
     </div>
-    )
-  }
-  
+  );
+}
