@@ -1,6 +1,3 @@
-import React, { useEffect } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
   SiPython,
@@ -101,31 +98,15 @@ const Resume = () => {
     'Version Control',
   ];
 
-  useEffect(() => {
-    AOS.init({
-      delay: 100,
-      offset: 10,
-      duration: 800,
-      once: false,
-      mirror: true,
-      easing: 'ease-in-out',
-    });
-  }, []);
-
   return (
     <main id="resume">
-      <div
-        data-aos="fade-in font-ambit"
-      >
+      <div>
         <div className="py-4 md:py-10 px-8 lg:px-36">
-          <h2
-            className="md:text-4xl text-white text-3xl font-semibold my-4 text-center md:text-left"
-            data-aos="flip-up"
-          >
+          <h2 className="md:text-4xl text-white text-3xl font-semibold my-4 text-center md:text-left">
             Resume
           </h2>
           <div className="md:grid md:grid-cols-2 gap-8">
-            <section className="my-8" data-aos="fade-right">
+            <section className="my-8">
               <h3 className="md:text-3xl text-2xl font-semibold mb-4 text-green-500">
                 Education
               </h3>
@@ -185,7 +166,7 @@ const Resume = () => {
               </div>
             </section>
 
-            <section className="my-8" data-aos="fade-right">
+            <section className="my-8">
               <h3 className="md:text-3xl  text-2xl font-semibold mb-4 text-green-500">
                 Experience
               </h3>
@@ -198,7 +179,7 @@ const Resume = () => {
 
           <div>
             <div className="md:grid grid-cols-2 gap-8">
-              <section className="my-8 " data-aos="fade-right">
+              <section className="my-8 ">
                 <a
                   href="https:www.github.com/psidh/"
                   target="_blank"
@@ -244,7 +225,7 @@ const Resume = () => {
                 </div>
               </section>
 
-              <section className="my-8 " data-aos="fade-right">
+              <section className="my-8 ">
                 <a
                   href="https:www.github.com/psidh/"
                   target="_blank"
@@ -290,7 +271,7 @@ const Resume = () => {
                 </div>
               </section>
 
-              <section className="my-8 " data-aos="fade-right">
+              <section className="my-8 ">
                 <a
                   href="https:www.github.com/psidh/"
                   target="_blank"
@@ -336,7 +317,7 @@ const Resume = () => {
                 </div>
               </section>
 
-              <section className="my-8" data-aos="fade-left">
+              <section className="my-8">
                 <h3 className="md:text-4xl text-2xl font-semibold mt-4 mb-4 md:text-left">
                   <span className="md:text-left lg:ml-3 text-green-500">
                     Skills ⚒️

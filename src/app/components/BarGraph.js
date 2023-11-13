@@ -1,21 +1,11 @@
 import React, { useRef, useEffect } from 'react';
 import Chart from 'chart.js';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const BarGraph = () => {
   const chartRef = useRef(null);
 
   useEffect(() => {
-    AOS.init({
-      delay: 50,
-      offset: 100,
-      duration: 500,
-      once: false,
-      mirror: true,
-      easing: 'ease-in-out',
-    });
-
+  
     const chartCanvas = chartRef.current;
     const ctx = chartCanvas.getContext('2d');
 
@@ -70,7 +60,6 @@ const BarGraph = () => {
   return (
     <div
       className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10"
-      data-aos="fade-in"
     >
       <h1 className="md:text-4xl text-3xl font-semibold my-4 text-center md:text-left text-white">
         Languages

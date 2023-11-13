@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="mx-8 lg:mx-20 flex justify-between text-white  py-8 md:py-10">
+      <div className="mx-8 lg:mx-20 flex justify-between  py-8 md:py-10">
         <a
           className="hover:scale-105 transition duration-300"
           href="mailto:philkhanasidharth14@gmail.com"
@@ -38,13 +38,10 @@ const NavBar = () => {
           <a className="text-[#005AC1]  hover:text-gray-300" href="/">
             Home
           </a>
-          <a className="  hover:text-green-600" href="/#resume">
-            Resume
-          </a>
-          <a className="  hover:text-green-600" href="/#blog">
+          <a className="  hover:text-blue-600" href="/blogs">
             Blogs
           </a>
-          <a className="  hover:text-green-600" href="/#footer">
+          <a className="  hover:text-blue-600" href="/#footer">
             Contact
           </a>
         </div>
@@ -72,15 +69,11 @@ const NavBar = () => {
           <a className="text-[#005AC1] m-6" href="/">
             Home
           </a>
-          <a className="m-6   hover:text-green-600" href="/#resume">
-            {' '}
-            Resume{' '}
-          </a>
-          <a className="m-6   hover:text-green-600" href="/#blog">
+          <a className="m-6" href="/blogs">
             {' '}
             Blogs{' '}
           </a>
-          <a className="m-6   hover:text-green-600" href="/#footer">
+          <a className="m-6" href="/#footer">
             {' '}
             Contact{' '}
           </a>

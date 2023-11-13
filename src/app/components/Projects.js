@@ -1,21 +1,8 @@
-import React, { useEffect } from 'react';
 import projectsData from 'src/app/data/projectsData.js';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
 
 const Projects = () => {
-  useEffect(() => {
-    AOS.init({
-      delay: 50,
-      offset: 100,
-      duration: 500,
-      once: false,
-      mirror: true,
-      easing: 'ease-in-out',
-    });
-  }, []);
-
   const majorProject = projectsData[0]; // The first project will be the major one.
 
   return (
@@ -24,10 +11,7 @@ const Projects = () => {
         <h2 className="text-white md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-4">
           Projects
         </h2>
-        <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4 md:gap-4 lg:gap-6"
-          data-aos="fade-in"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4 md:gap-4 lg:gap-6">
           {/* Major Project on the Left */}
           <div
             key={0}
@@ -75,7 +59,7 @@ const Projects = () => {
           {projectsData.slice(1).map((project, index) => (
             <div
               key={index + 1}
-              className="bg-gray-900 shadow-lg hover:shadow-green-400 
+              className="bg-gray-900 shadow-lg hover:shadow-blue-400 
               rounded-lg p-4 transform transition duration-200
               block md:col-span-1 md:row-span-1"
               style={{ minHeight: '400px' }}

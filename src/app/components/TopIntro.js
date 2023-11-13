@@ -1,30 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-import Image from 'next/image';
-import styled, { createGlobalStyle, css } from 'styled-components';
-
-
-// Create a global style that applies Ambit font to all text elements
-const GlobalStyle = createGlobalStyle`
-  @keyframes blink {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-  .blinking {
-    animation: blink 1s infinite;
-  }
-
-  .rounded-full {
-    border-radius: 50%;
-  }
-`;
-
 const TopIntro = () => {
   return (
-    <div style={{ fontFamily: 'Ambit, sans-serif' }}>
+    <div>
       <main>
         <div
           className="bg-cover bg-center py-12 flex flex-col justify-center items-center bg-opacity-90"
@@ -32,13 +8,12 @@ const TopIntro = () => {
             backgroundImage: 'url("/images/aurora.jpg")',
           }}
         >
-          <div data-aos-duration="500" data-aos="fade-in">
-            <GlobalStyle />
+          <div>
             <div className="px-4 flex justify-center items-center">
               <img
-                src="/me.png"                
+                src="/me.png"
                 alt="author image"
-                className="w-120 h-120 md:w-[220px] md:h-[220px] rounded-full"
+                className="w-80 h-80 md:w-[220px] md:h-[220px] rounded-full"
                 priority
               />
             </div>
@@ -50,18 +25,16 @@ const TopIntro = () => {
                 <span
                   className="font-semibold md:text-6xl text-3xl 
           text-transparent bg-clip-text 
-           bg-gradient-to-t from-gray-300 to-white
+           bg-gradient-to-t from-gray-400 to-white
             py-2
            "
                 >
-                  {/* eslint-disable-next-line react/no-unescaped-entities */}
-                  I'm P Sidharth
+                  I&apos;m P Sidharth
                 </span>
               </h2>
-              <div className="text-white py-2 px-4 lg:px-18 md:text-center text-center my-4 md:mb-8">
+              <div className="text-white py-2 px-4 lg:px-18 md:text-center text-center my-4">
                 <p className="md:text-2xl text-md ">
-                  {/* eslint-disable-next-line react/no-unescaped-entities */}
-                  I'm a Student, Developer passionate about Web Development
+                  I&apos;m a Student, Developer passionate about Web Development
                 </p>
                 <p className="md:text-2xl text-md text-gray-200">
                   With a background in{' '}
@@ -77,20 +50,15 @@ const TopIntro = () => {
                   , I bring Front-End and Back-End to the table{' '}
                 </p>
                 <p className="md:text-2xl text-md text-gray-300">
-                  {/* eslint-disable-next-line react/no-unescaped-entities */}
-                  Let's connect and build great things together...
-                  <span className="inline-flex opacity-50 text-2xl font-light blinking">
-                    |
-                  </span>
+                  Let&apos;s connect and build great things together...
                 </p>
               </div>
               <button
-                className="md:mt-6 mb-4 bg-green-200 transition duration-300
+                className="md:mt-6  bg-green-200 transition duration-300
           hover:bg-green-600 hover:text-white 
           text-black py-2 px-8 rounded-3xl "
               >
                 <span className="text-xl">
-                  {' '}
                   <a href="mailto:philkhanasidharth14@gmail.com"> Connect </a>
                 </span>
               </button>
