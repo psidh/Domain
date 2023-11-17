@@ -52,7 +52,7 @@ const Achievements = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl text-white font-semibold mb-2">
+                    <h3 className="text-2xl text-white font-semibold mb-2">
                       {certificate.title}
                     </h3>
                     <p className="text-gray-300">{certificate.description}</p>

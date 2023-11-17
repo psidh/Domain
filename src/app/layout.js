@@ -7,7 +7,7 @@ const Ambit = localFont({
 });
 
 export const metadata = {
-  title: 'P SIDHARTH',
+  title: 'PHILKHANA SIDHARTH',
   description: `
   Hey, I'm P Sidharth, a sophomore front-end developer passionate about web development with a background in Python and JavaScript. I bring Front-End and Back-End to the table and have experience with React, Next.js, and machine learning.
   
