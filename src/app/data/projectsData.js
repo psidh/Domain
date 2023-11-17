@@ -316,8 +316,8 @@ const projectsData = [
       },
     ],
     image: '/images/projects/project6.png',
-    githubLink: 'https://github.com/psidh/Google-v1',
-    projectLink: 'https://google-psidh.vercel.app/',
+    githubLink: 'https://github.com/psidh/Deepawali',
+    projectLink: 'https://deepawali-sidh.vercel.app',
   },
 
   // Add more project objects
