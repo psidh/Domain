@@ -21,7 +21,7 @@ const Projects = () => {
                 src={project.image}
                 alt={project.title}
                 className="mx-auto my-2 rounded-lg"
-                width={500}
+                width={400}
                 height={400}
               />
               <div className="flex items-center justify-center">
