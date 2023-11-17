@@ -1,11 +1,6 @@
-'use client';
-import React, { useState} from 'react';
 import { RiMenuLine } from "react-icons/ri";
 import { MdOutlineMail } from "react-icons/md";
-
-
 const NavBar = () => {
-
   return (
     <div>
       <div className="mx-8 lg:mx-20 flex justify-between  py-8 md:py-10">
