@@ -7,7 +7,7 @@ const projectsData = [
   {
     title: 'Gita Generator',
     description:
-      ' The Gita Sloka Generator project aims to make the profound teachings of the Bhagavad Gita easily accessible to people from diverse backgrounds. By offering chapter-wise sloka reading and a user-friendly interface, we hope to promote the understanding and appreciation of this timeless spiritual scripture. Whether you are seeking spiritual insights, philosophical guidance, or simply interested in exploring ancient wisdom, the Gita Sloka Generator provides a valuable resource for your spiritual journey. ',
+      ' The Gita Sloka Generator project aims to make the profound teachings of the Bhagavad Gita easily accessible to people ',
     technologies: [
       {
         name: 'HTML',
@@ -268,7 +268,7 @@ const projectsData = [
         ),
       },
     ],
-    image: '/images/projects/project5.png',
+    image: '/images/projects/project7.png',
     githubLink: 'https://github.com/psidh/Google-v1',
     projectLink: 'https://google-psidh.vercel.app/',
   },
@@ -315,7 +315,7 @@ const projectsData = [
         ),
       },
     ],
-    image: '/images/projects/project7.png',
+    image: '/images/projects/project6.png',
     githubLink: 'https://github.com/psidh/Google-v1',
     projectLink: 'https://google-psidh.vercel.app/',
   },

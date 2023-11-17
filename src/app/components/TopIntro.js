@@ -11,7 +11,7 @@ export default function TopIntro() {
                 alt="author image"
                 width={220}
                 height={220}
-                className="w-80 h-80 md:w-[220px] md:h-[220px] rounded-full"
+                className="w-40 h-40 md:w-[220px] md:h-[220px] rounded-full"
               />
             </div>
             <section className="flex flex-col justify-center items-center py-2 md:pt-2 md:pb-4 px-4 lg:px-18">

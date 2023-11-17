@@ -1,16 +1,14 @@
 import blogPosts from 'src/app/data/blogPosts';
 import 'aos/dist/aos.css';
+import Image from 'next/image';
 
 const Blog = () => {
-
   const majorBlog = blogPosts[0];
 
   return (
     <div className="bg-black">
       <main id="blog">
-        <div
-          className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10"
-        >
+        <div className="container mx-auto pt-4 pb-8 px-6 md:px-16 md:py-10">
           <h2 className="text-white md:text-4xl text-3xl font-semibold text-center md:text-left mb-8">
             Blogs
           </h2>
@@ -30,11 +28,14 @@ const Blog = () => {
                 <h3 className="text-xl font-semibold mb-2 text-gray-200">
                   {majorBlog.title}
                 </h3>
-                <img
+                <Image
                   src={majorBlog.image}
                   alt="Blog Image"
+                  width="auto"
+                  height="auto"
                   className="w-full h-full rounded-3xl p-4"
                 />
+
                 <p className="text-gray-400 ">{majorBlog.date}</p>
                 <p className="mt-2 text-gray-200">{majorBlog.content}</p>
               </div>
