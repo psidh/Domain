@@ -221,12 +221,107 @@ const projectsData = [
         ),
       },
     ],
-    image: '/images/projects/project4.png',
-    githubLink: 'https://github.com/psidh/openWeatherApp',
-    projectLink: 'https://psidhweather.vercel.app',
+    image: '/images/projects/project5.png',
+    githubLink: 'https://github.com/psidh/Amazon-Clone',
+    projectLink: 'https://amazon-clone-psidh.vercel.app/',
+  },
+  
+
+  {
+    title: 'Google Search Front-End Clone',
+    description: 'Simple Front-End page of Google home page',
+    technologies: [
+      {
+        name: 'TypeScript',
+        img: (
+          <img
+            src="/images/projects/logos/typescript.png"
+            className="w-12 h-10 rounded-md"
+          />
+        ),
+      },
+      {
+        name: 'React',
+        img: (
+          <img
+            src="/images/projects/logos/reactlogo.png"
+            className="w-10 h-10  rounded-md"
+          />
+        ),
+      },
+      {
+        name: 'NextJs',
+        img: (
+          <img
+            src="/images/projects/logos/nextjslogo.png"
+            className="w-10 h-10 rounded-md"
+          />
+        ),
+      },
+      {
+        name: 'Tailwind CSS',
+        img: (
+          <img
+            src="/images/projects/logos/tailwind.png"
+            className="w-13 h-12 rounded-md"
+          />
+        ),
+      },
+    ],
+    image: '/images/projects/project5.png',
+    githubLink: 'https://github.com/psidh/Google-v1',
+    projectLink: 'https://google-psidh.vercel.app/',
+  },
+
+
+  {
+    title: 'Deepawali Quiz Game',
+    description: 'A quiz game on Mahabharat and Rāmayan. Jai Shri Rām 🥳',
+    technologies: [
+      {
+        name: 'TypeScript',
+        img: (
+          <img
+            src="/images/projects/logos/typescript.png"
+            className="w-12 h-10 rounded-md"
+          />
+        ),
+      },
+      {
+        name: 'React',
+        img: (
+          <img
+            src="/images/projects/logos/reactlogo.png"
+            className="w-10 h-10  rounded-md"
+          />
+        ),
+      },
+      {
+        name: 'NextJs',
+        img: (
+          <img
+            src="/images/projects/logos/nextjslogo.png"
+            className="w-10 h-10 rounded-md"
+          />
+        ),
+      },
+      {
+        name: 'Tailwind CSS',
+        img: (
+          <img
+            src="/images/projects/logos/tailwind.png"
+            className="w-13 h-12 rounded-md"
+          />
+        ),
+      },
+    ],
+    image: '/images/projects/project7.png',
+    githubLink: 'https://github.com/psidh/Google-v1',
+    projectLink: 'https://google-psidh.vercel.app/',
   },
 
   // Add more project objects
+  
 ];
 
 export default projectsData;
