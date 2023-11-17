@@ -1,5 +1,4 @@
 import projectsData from 'src/app/data/projectsData.js';
-import 'aos/dist/aos.css';
 import Image from 'next/image';
 
 const Projects = () => {

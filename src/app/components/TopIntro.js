@@ -11,7 +11,7 @@ export default function TopIntro() {
                 alt="author image"
                 width={220}
                 height={220}
-                className="w-40 h-4ff0 md:w-[220px] md:h-[220px] rounded-full"
+                className="rounded-full"
               />
             </div>
             <section className="flex flex-col justify-center items-center py-2 md:pt-2 md:pb-4 px-4 lg:px-18">
@@ -22,7 +22,7 @@ export default function TopIntro() {
                 <span
                   className="font-semibold md:text-6xl text-3xl 
           text-transparent bg-clip-text 
-           bg-gradient-to-t from-gray-400/30 to-white
+           bg-gradient-to-t from-gray-300/30 to-white
             py-2
            "
                 >

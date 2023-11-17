@@ -122,21 +122,7 @@ const Resume = () => {
                   className="flex items-center"
                 >
                   Kendriya Vidyalaya Sangathan [Kerala | AP]
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="ml-2 w-4 h-4"
-                  >
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
-                  </svg>
+                  
                 </a>
                 <p className="md:text-2xl text-xl mt-8">
                   BTech in Computer Science
@@ -147,21 +133,7 @@ const Resume = () => {
                   className="flex items-center"
                 >
                   GITAM University, Graduated in 2026
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="ml-2 w-4 h-4"
-                  >
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
-                  </svg>
+                  
                 </a>
               </div>
             </section>
@@ -188,21 +160,7 @@ const Resume = () => {
                   <span className="md:text-left lg:ml-3 text-green-500 hover:text-green-200">
                     Frameworks
                   </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="ml-2 w-4 h-4"
-                  >
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
-                  </svg>
+                  
                 </a>
                 <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-6">
                   {Frameworks.map((Frameworks, index) => (
@@ -234,21 +192,6 @@ const Resume = () => {
                   <span className="md:text-left lg:ml-3 text-green-500 hover:text-green-200">
                     Languages
                   </span>{' '}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="ml-2 w-4 h-4"
-                  >
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
-                  </svg>
                 </a>
                 <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-6">
                   {lang.map((lang, index) => (
@@ -280,21 +223,6 @@ const Resume = () => {
                   <span className="md:text-left lg:ml-3 text-green-500 hover:text-green-200">
                     Tools
                   </span>{' '}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="ml-2 w-4 h-4"
-                  >
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
-                  </svg>
                 </a>
                 <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-6">
                   {tools.map((tool, index) => (

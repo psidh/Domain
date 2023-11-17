@@ -1,9 +1,9 @@
 import './globals.css';
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';
-import { Plus_Jakarta_Sans } from 'next/font/google'
+import { Inter     } from 'next/font/google'
 
-const Jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
+const open = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Philkhana Sidharth',
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className={`${Jakarta.className} bg-black text-white`}>
+        <div className={`${open.className} bg-black text-white`}>
           <Navbar />
           {children}
           <Footer />

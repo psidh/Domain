@@ -1,5 +1,4 @@
 import blogPosts from 'src/app/data/blogPosts';
-import 'aos/dist/aos.css';
 import Image from 'next/image';
 
 const Blog = () => {
@@ -13,8 +12,7 @@ const Blog = () => {
             Blogs
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* Major Blog on the Left */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4"> 
             <a
               href={majorBlog.link}
               className="block md:col-span-2 md:row-span-3"

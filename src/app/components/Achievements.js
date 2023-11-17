@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import certificatesData from 'src/app/data/certificates.js';
+import Image from 'next/image';
 
 const Achievements = () => {
   const [sliderInitialized, setSliderInitialized] = useState(false);
@@ -44,11 +45,12 @@ const Achievements = () => {
               <div key={index} className="px-4">
                 <div className="bg-gray-900 rounded-lg shadow-lg p-6 mb-4">
                   <div className="mb-4">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={certificate.image}
                       alt={certificate.title}
-                      className="rounded-lg mx-auto w-60 h-50"
+                      width={300}
+                      height={100}
+                      className="rounded-lg mx-auto "
                     />
                   </div>
                   <div>
