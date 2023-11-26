@@ -31,7 +31,7 @@ export default function TopIntro() {
               </h2>
               <div className="text-gray-200 py-2 px-4 lg:px-18 md:text-center text-center my-4">
                 <p className="md:text-2xl text-md ">
-                  I&apos;m a Student, Front-End Developer
+                  I&apos;m a Student, Developer
                 </p>
                 <p className="md:text-2xl text-md text-gray-200">
                   With a background in{' '}

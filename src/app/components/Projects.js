@@ -40,7 +40,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="text-green-500 mt-2 transform hover:underline hover:underline-offset-2"
                 >
-                  View on GitHub
+                  Source Code
                 </a>
               </div>
             </div>
