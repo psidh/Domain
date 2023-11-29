@@ -17,7 +17,7 @@ const NavBar = () => {
           <a className="text-[#005AC1]  hover:text-gray-300" href="/">
             Home
           </a>
-          <a className="  hover:text-blue-600" href="/blogs">
+          <a className="  hover:text-blue-600" href="https://blog-psidh.vercel.app">
             Blogs
           </a>
           <a className="  hover:text-blue-600" href="/#footer">

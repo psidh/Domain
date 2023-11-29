@@ -32,7 +32,6 @@ import {
   SiPostman,
 } from 'react-icons/si'; // Import the icons
 import { GrMysql } from 'react-icons/gr';
-import { GiTurtle } from 'react-icons/gi';
 import { BiLogoJquery, BiLogoJava, BsGit, BiLogoFlask } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
 
