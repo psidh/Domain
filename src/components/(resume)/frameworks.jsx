@@ -10,7 +10,7 @@ export default function Frameworks({frameworks}) {
           Frameworks
         </span>
       </a>
-      <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-6">
         {frameworks.map((Frameworks, index) => (
           <div
             key={index}

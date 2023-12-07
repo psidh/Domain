@@ -10,7 +10,7 @@ export default function Languages({ lang }) {
           Languages
         </span>{' '}
       </a>
-      <div className="grid grid-cols-2 md:grid md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-6">
         {lang.map((lang, index) => (
           <div
             key={index}
