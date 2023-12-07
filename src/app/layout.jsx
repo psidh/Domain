@@ -1,9 +1,10 @@
 import './globals.css';
 import Navbar from '../components/NavBar'
 import Footer from '../components/Footer';
-import {Inter} from 'next/font/google'
+import Ambit  from 'next/font/local'
 
-const open = Inter({ subsets: ['latin'] })
+
+const ambit = Ambit({ src: './Ambit-Regular.woff2' })
 
 export const metadata = {
   title: 'Philkhana Sidharth',
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className={`${open.className} bg-black text-white`}>
+        <div className={`${ambit.className} bg-black text-white`}>
           <Navbar />
           {children}
           <Footer />
