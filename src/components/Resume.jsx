@@ -3,7 +3,7 @@ import Skills from './(resume)/skills';
 import Tools from './(resume)/tools';
 import Languages from './(resume)/languages';
 import Frameworks from './(resume)/frameworks';
-import {  SiPython, SiJavascript, SiTypescript, SiC, SiCss3, SiCplusplus, SiHtml5, SiNextdotjs, SiReact, SiExpress, SiJupyter,
+import {SiPython, SiJavascript, SiTypescript, SiC, SiCss3, SiCplusplus, SiHtml5, SiNextdotjs, SiReact, SiExpress, SiJupyter,
   SiMongodb, SiTailwindcss, SiBootstrap, SiGnubash, SiPandas, SiFirebase, SiSupabase, SiGit, SiGithub,
   SiFigma, SiMui, SiVercel, SiOpenai, SiVisualstudiocode, SiPycharm, SiIntellijidea, SiWebstorm, SiPostman,} from 'react-icons/si'; // Import the icons
 import { GrMysql } from 'react-icons/gr';
