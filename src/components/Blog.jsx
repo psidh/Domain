@@ -12,7 +12,7 @@ const Blog = () => {
             Blogs
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4"> 
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <a
               href={majorBlog.link}
               className="block md:col-span-2 md:row-span-3"
@@ -20,7 +20,7 @@ const Blog = () => {
               rel="noopener noreferrer"
             >
               <div
-                className="bg-gray-900 rounded-lg transform transition 
+                className="bg-[#1a1a1a] rounded-lg transform transition 
               duration-300 shadow-lg hover:shadow-blue-500 p-6"
               >
                 <h3 className="text-xl font-semibold mb-2 text-gray-200">
@@ -49,7 +49,7 @@ const Blog = () => {
                 rel="noopener noreferrer"
               >
                 <div
-                  className="bg-gray-900 rounded-lg transform transition duration-300 
+                  className="bg-[#1a1a1a] rounded-lg transform transition duration-300 
                 shadow-lg hover:shadow-blue-500 p-6"
                 >
                   <h3 className="text-xl font-semibold mb-2 text-gray-200">

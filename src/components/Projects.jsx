@@ -1,5 +1,6 @@
 import projectsData from 'src/app/data/projectsData.js';
 import Image from 'next/image';
+import '../app/styles.css';
 
 const Projects = () => {
   return (
@@ -12,8 +13,8 @@ const Projects = () => {
           {projectsData.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-900 shadow-lg hover:shadow-blue-400 
-                rounded-lg p-4 transform transition duration-200 flex flex-col justify-between items-center" 
+              className="bg-[#1a1a1a] project-card
+                rounded-lg p-4 transform transition duration-200 flex flex-col justify-between items-center"
               style={{ minHeight: '400px' }}
             >
               <Image
