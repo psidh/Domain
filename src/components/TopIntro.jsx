@@ -26,7 +26,7 @@ export default function TopIntro() {
             py-2
            "
                 >
-                  I&apos;m P Sidharth
+                  I&apos;m Philkhana Sidharth
                 </span>
               </h2>
               <div className="text-gray-200 py-2 px-4 lg:px-18 md:text-center text-center my-4">
