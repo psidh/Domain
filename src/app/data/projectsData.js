@@ -1,6 +1,22 @@
-
-
 const projectsData = [
+  {
+    title: 'Sahayata',
+    description:
+      'Our official submission for Smart India Hackathon 2023. A web app that helps shovel operator with the real-time live status of the dumper trucks.',
+    image: '/icons/spruce.jpeg',
+    githubLink: 'https:github.com/psidh/spruce-dev',
+    projectLink: 'https://spruce-dev.vercel.app',
+  },
+
+  {
+    title: 'Ultra Community',
+    description:
+      'We are not just a community, we are an ecosystem of Dreamers | Learners | Developers',
+    image: '/icons/ultra.jpeg',
+    githubLink: 'https:github.com/psidh/gita_generate',
+    projectLink: 'https://gita-generate.vercel.app',
+  },
+
   {
     title: 'Gita Generator',
     description:
@@ -11,12 +27,27 @@ const projectsData = [
   },
 
   {
-    title: 'To-Do List',
-    description:
-      'A todo List created using NextJs and React, using Typescript that helps you to make a goal setting for your day !',
-    image: '/project2.png',
-    githubLink: 'https://github.com/psidh/TodoList',
-    projectLink: 'https://psidhtodolist.vercel.app',
+    title: 'Amazon Front End Clone',
+    description: 'Clone of E-commerce website. Beware only Front End !',
+    image: '/project5.png',
+    githubLink: 'https://github.com/psidh/Amazon-Clone',
+    projectLink: 'https://amazon-clone-psidh.vercel.app/',
+  },
+
+  {
+    title: 'Deepawali Quiz Game',
+    description: 'A quiz game on Mahabharat and Rāmayan. Jai Shri Rām 🥳',
+    image: '/project6.png',
+    githubLink: 'https://github.com/psidh/Deepawali',
+    projectLink: 'https://deepawali-sidh.vercel.app',
+  },
+
+  {
+    title: 'Google Search Front-End Clone',
+    description: 'Simple Front-End page of Google home page',
+    image: '/project7.png',
+    githubLink: 'https://github.com/psidh/Google-v1',
+    projectLink: 'https://google-psidh.vercel.app/',
   },
 
   {
@@ -35,33 +66,15 @@ const projectsData = [
   },
 
   {
-    title: 'Amazon Front End Clone',
-    description: 'Clone of E-commerce website. Beware only Front End !',
-    image: '/project5.png',
-    githubLink: 'https://github.com/psidh/Amazon-Clone',
-    projectLink: 'https://amazon-clone-psidh.vercel.app/',
-  },
-  
-
-  {
-    title: 'Google Search Front-End Clone',
-    description: 'Simple Front-End page of Google home page',
-    image: '/project7.png',
-    githubLink: 'https://github.com/psidh/Google-v1',
-    projectLink: 'https://google-psidh.vercel.app/',
-  },
-
-
-  {
-    title: 'Deepawali Quiz Game',
-    description: 'A quiz game on Mahabharat and Rāmayan. Jai Shri Rām 🥳',
-    image: '/project6.png',
-    githubLink: 'https://github.com/psidh/Deepawali',
-    projectLink: 'https://deepawali-sidh.vercel.app',
+    title: 'To-Do List',
+    description:
+      'A todo List created using NextJs and React, using Typescript that helps you to make a goal setting for your day !',
+    image: '/project2.png',
+    githubLink: 'https://github.com/psidh/TodoList',
+    projectLink: 'https://psidhtodolist.vercel.app',
   },
 
   // Add more project objects
-  
 ];
 
 export default projectsData;
