@@ -29,11 +29,11 @@ export default function TopIntro() {
                   I&apos;m Philkhana Sidharth
                 </span>
               </h2>
-              <div className="text-gray-200 py-2 px-4 lg:px-18 md:text-center text-center my-4">
-                <p className="md:text-2xl text-md ">
+              <div className="text-gray-200 py-2 px-4 flex flex-col items-center justify-center  my-4">
+                <p className="md:text-3xl text-md ">
                   I&apos;m a Student, Developer
                 </p>
-                <p className="md:text-2xl text-md text-gray-200">
+                <p className="md:text-3xl text-md text-gray-200">
                   With a background in{' '}
                   <a href="https://github.com/psidh">
                     <span className="underline underline-offset-4">
@@ -42,7 +42,7 @@ export default function TopIntro() {
                   </a>{' '}
                   , I bring Front-End and Back-End to the table{' '}
                 </p>
-                <p className="md:text-2xl text-md text-gray-300">
+                <p className="md:text-3xl text-md text-gray-300">
                   Let&apos;s connect and build great things together...
                 </p>
               </div>
