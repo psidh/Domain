@@ -7,9 +7,9 @@ import { FaNodeJs } from 'react-icons/fa';
 
 
 const frameworks = [
-  { name: 'Next.js 13', icon: <SiNextdotjs /> },
+  { name: 'NextJS', icon: <SiNextdotjs /> },
   { name: 'React', icon: <SiReact />, color: 'text-cyan-400' },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: 'text-emerald-300'},
+  { name: 'TailwindCSS', icon: <SiTailwindcss />, color: 'text-emerald-300'},
   { name: 'Express', icon: <SiExpress />, color: 'text-yellow-500' },
   { name: 'Node.js', icon: <FaNodeJs />, color: 'text-lime-500' },
   { name: 'Mongodb', icon: <SiMongodb />, color: 'text-green-400' },
@@ -24,14 +24,14 @@ const frameworks = [
 
 const lang = [
   { name: 'Bash', icon: <SiGnubash />, color: 'text-gray-500' },
-  { name: 'C++', icon: <SiCplusplus />, color: 'text-teal-400' },
-  { name: 'C', icon: <SiC />, color: 'text-gray-400' },
+  { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-400'},
+  { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
   { name: 'Java', icon: <BiLogoJava />, color: 'text-orange-500' },
   { name: 'Python', icon: <SiPython />, color: 'text-blue-300' },
+  { name: 'C++', icon: <SiCplusplus />, color: 'text-teal-400' },
+  { name: 'C', icon: <SiC />, color: 'text-gray-400' },
   { name: 'CSS', icon: <SiCss3 />, color: 'text-cyan-400' },
   { name: 'HTML', icon: <SiHtml5 />, color: 'text-orange-500' },
-  { name: 'JavaScript', icon: <SiJavascript />, color: 'text-yellow-400' },
-  { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
 ];
 
 const tools = [

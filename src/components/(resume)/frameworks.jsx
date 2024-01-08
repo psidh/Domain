@@ -4,7 +4,7 @@ export default function Frameworks({frameworks}) {
       <a
         href="https:www.github.com/psidh/"
         target="_blank"
-        className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "
+        className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4"
       >
         <span className="md:text-left lg:ml-3 text-green-500 hover:text-green-200">
           Frameworks
@@ -14,7 +14,7 @@ export default function Frameworks({frameworks}) {
         {frameworks.map((Frameworks, index) => (
           <div
             key={index}
-            className="md:text-xl text-white md:p-4 p-2
+            className="md:text-xl text-white my-4
         flex justify-center items-center border-0 rounded-lg"
           >
             <div className="flex flex-col items-center justify-center">
