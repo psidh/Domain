@@ -2,14 +2,16 @@ import {SiPython, SiJavascript, SiTypescript, SiC, SiCss3, SiCplusplus, SiHtml5,
   SiMongodb, SiTailwindcss, SiBootstrap, SiGnubash, SiPandas, SiFirebase, SiSupabase, SiGit, SiGithub, SiDart ,
   SiFigma, SiMui, SiVercel, SiOpenai, SiVisualstudiocode, SiPycharm, SiIntellijidea, SiWebstorm, SiPostman, SiFlutter } from 'react-icons/si'; // Import the icons
 import { GrMysql } from 'react-icons/gr';
+import { FaVuejs } from "react-icons/fa6";
 import { BiLogoJava, BiLogoFlask } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
 
 
 const frameworks = [
-  { name: 'NextJS', icon: <SiNextdotjs /> },
-  { name: 'React', icon: <SiReact />, color: 'text-cyan-400' },
-  { name: 'TailwindCSS', icon: <SiTailwindcss />, color: 'text-emerald-300'},
+  { name: 'Next.js', icon: <SiNextdotjs /> },
+  { name: 'React.js', icon: <SiReact />, color: 'text-cyan-400' },
+  { name: 'Vue.js', icon: <FaVuejs />, color: 'text-cyan-400' },
+  { name: 'Tailwind', icon: <SiTailwindcss />, color: 'text-emerald-300'},
   { name: 'Express', icon: <SiExpress />, color: 'text-yellow-500' },
   { name: 'Node.js', icon: <FaNodeJs />, color: 'text-lime-500' },
   { name: 'Mongodb', icon: <SiMongodb />, color: 'text-green-400' },
