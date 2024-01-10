@@ -5,8 +5,8 @@ import '../app/styles.css';
 const Projects = () => {
   return (
     <main>
-      <div className="w-4/5 md:w-full container mx-auto pt-4 pb-4 px-4 md:px-8 md:py-6">
-        <h2 className=" text-white md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-4">
+      <div className="w-full container mx-auto pt-4 pb-4 px-4 md:px-8 md:py-6">
+        <h2 className="text-white md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-4">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4 md:gap-4 lg:gap-6">

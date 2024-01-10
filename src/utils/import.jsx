@@ -1,6 +1,6 @@
 import {SiPython, SiJavascript, SiTypescript, SiC, SiCss3, SiCplusplus, SiHtml5, SiNextdotjs, SiReact, SiExpress, SiJupyter,
-  SiMongodb, SiTailwindcss, SiBootstrap, SiGnubash, SiPandas, SiFirebase, SiSupabase, SiGit, SiGithub,
-  SiFigma, SiMui, SiVercel, SiOpenai, SiVisualstudiocode, SiPycharm, SiIntellijidea, SiWebstorm, SiPostman,} from 'react-icons/si'; // Import the icons
+  SiMongodb, SiTailwindcss, SiBootstrap, SiGnubash, SiPandas, SiFirebase, SiSupabase, SiGit, SiGithub, SiDart ,
+  SiFigma, SiMui, SiVercel, SiOpenai, SiVisualstudiocode, SiPycharm, SiIntellijidea, SiWebstorm, SiPostman, SiFlutter } from 'react-icons/si'; // Import the icons
 import { GrMysql } from 'react-icons/gr';
 import { BiLogoJava, BiLogoFlask } from 'react-icons/bi';
 import { FaNodeJs } from 'react-icons/fa';
@@ -13,13 +13,15 @@ const frameworks = [
   { name: 'Express', icon: <SiExpress />, color: 'text-yellow-500' },
   { name: 'Node.js', icon: <FaNodeJs />, color: 'text-lime-500' },
   { name: 'Mongodb', icon: <SiMongodb />, color: 'text-green-400' },
+  { name: 'Flask', icon: <BiLogoFlask />, color: 'text-red-500' },
+  { name: 'Flutter', icon: <SiFlutter />, color: 'text-blue-500' },
   { name: 'BootStrap', icon: <SiBootstrap />, color: 'text-violet-400' },
   { name: 'Jupyter', icon: <SiJupyter />, color: 'text-orange-500' },
   { name: 'Pandas', icon: <SiPandas />, color: 'text-blue-500' },
   { name: 'FireBase', icon: <SiFirebase />, color: 'text-amber-400' },
   { name: 'SupaBase', icon: <SiSupabase />, color: 'text-green-400' },
   { name: 'MySQL', icon: <GrMysql />, color: 'text-blue-200' },
-  { name: 'Flask', icon: <BiLogoFlask />, color: 'text-red-500' },
+  
 ];
 
 const lang = [
@@ -28,6 +30,7 @@ const lang = [
   { name: 'TypeScript', icon: <SiTypescript />, color: 'text-blue-400' },
   { name: 'Java', icon: <BiLogoJava />, color: 'text-orange-500' },
   { name: 'Python', icon: <SiPython />, color: 'text-blue-300' },
+  { name: 'Dart', icon: <SiDart />, color: 'text-blue-300' },
   { name: 'C++', icon: <SiCplusplus />, color: 'text-teal-400' },
   { name: 'C', icon: <SiC />, color: 'text-gray-400' },
   { name: 'CSS', icon: <SiCss3 />, color: 'text-cyan-400' },

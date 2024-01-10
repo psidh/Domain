@@ -1,15 +1,9 @@
 export default function Tool({ tools }) {
   return (
     <section className="my-8 ">
-      <a
-        href="https://www.github.com/psidh/"
-        target="_blank"
-        className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 "
-      >
-        <span className="md:text-left lg:ml-3 text-green-500 hover:text-green-200">
-          Tools
-        </span>{' '}
-      </a>
+      <h1 className="md:text-4xl text-2xl flex items-center font-semibold mt-4 mb-4 md:text-left lg:ml-3 text-green-500 ">
+        Tools
+      </h1>
       <div className="grid grid-cols-3 md:grid-cols-4 gap-6">
         {tools.map((tool, index) => (
           <div
