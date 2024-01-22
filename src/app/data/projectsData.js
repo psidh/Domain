@@ -1,5 +1,13 @@
 const projectsData = [
   {
+    title: 'Amazon Clone',
+    description: 'Clone of E-commerce website Amazon. Full-Stack Web Application',
+    image: '/project5.png',
+    githubLink: 'https://github.com/psidh/Amazon-Clone',
+    projectLink: 'https://amazon-clone-psidh.vercel.app/',
+  },
+
+  {
     title: 'Sahayata',
     description:
       'Our official submission for Smart India Hackathon 2023. A web app that helps shovel operator with the real-time live status of the dumper trucks.',
@@ -24,14 +32,6 @@ const projectsData = [
     image: '/project1.png',
     githubLink: 'https:github.com/psidh/gita_generate',
     projectLink: 'https:gita-generate.vercel.app',
-  },
-
-  {
-    title: 'Amazon Front End Clone',
-    description: 'Clone of E-commerce website. Beware only Front End !',
-    image: '/project5.png',
-    githubLink: 'https://github.com/psidh/Amazon-Clone',
-    projectLink: 'https://amazon-clone-psidh.vercel.app/',
   },
 
   {
