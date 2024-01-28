@@ -8,6 +8,15 @@ const projectsData = [
   },
 
   {
+    title: 'Netflix Clone',
+    description: 'Clone of Streaming company website Netflix. Full-Stack Web App with features of authentication, streaming, favorites, wishlists, search and exploring',
+    image: '/project8.png',
+    githubLink: 'https://github.com/psidh/Netflix-Clone',
+    projectLink: 'https://netflix-psidh.vercel.app/',
+  },
+
+
+  {
     title: 'Sahayata',
     description:
       'Our official submission for Smart India Hackathon 2023. A web app that helps shovel operator with the real-time live status of the dumper trucks.',
