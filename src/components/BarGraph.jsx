@@ -12,7 +12,7 @@ const BarGraph = () => {
     new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['JavaScript', 'Python', 'C', 'C++', 'Java', 'HTML'],
+        labels: ['JavaScript', 'Python', 'C', 'Java', 'HTML'],
         datasets: [
           {
             label: 'Programming Languages',

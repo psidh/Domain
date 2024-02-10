@@ -13,18 +13,18 @@ const Resume = () => {
   const skills = imports[3];
 
   return (
-    <main id="resume">
+    <main id='resume'>
       <div>
-        <div className="py-4 md:py-10 px-8 lg:px-36">
-          <h2 className="md:text-4xl text-white text-4xl font-semibold my-4 text-center md:text-left">
+        <div className='py-4 md:py-10 px-8 lg:px-36'>
+          <h2 className='md:text-4xl text-white text-4xl font-semibold my-24 md:mt-16 text-center md:text-left'>
             Resume
           </h2>
-          <div className="md:grid md:grid-cols-2 gap-8 mt-12 mb-8">
+          <div className='md:grid md:grid-cols-2 gap-8 mt-12 mb-8'>
             <Education />
             <Experience />
           </div>
           <div>
-            <div className="md:grid grid-cols-2 gap-8">
+            <div className='md:grid grid-cols-2 gap-8'>
               <Frameworks frameworks={frameworks} />
               <Languages lang={lang} />
               <Tools tools={tools} />

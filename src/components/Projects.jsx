@@ -11,11 +11,11 @@ const Projects = () => {
   };
   return (
     <main>
-      <div className='w-full container mx-auto pt-4 pb-4 px-4 md:px-8 md:py-6'>
+      <div className='w-full container mx-auto '>
         <h2 className='text-white md:text-4xl text-3xl font-semibold my-4 text-center md:text-left mb-4'>
           Projects
         </h2>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4 md:gap-4 lg:gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 md:gap-4 lg:gap-8'>
           {projectsData.map((project, index) => (
             <div
               onClick={() => {
@@ -41,7 +41,7 @@ const Projects = () => {
                   href={project.githubLink}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:text-black hover:bg-white text-black bg-green-500 px-4 py-2 rounded-md text-center mt-4 w-full transform transition-all duration-150'
+                  className='hover:text-black hover:bg-white text-white border border-green-500 px-4 py-2 rounded-md text-center mt-4 w-full transform transition-all duration-150'
                 >
                   Source Code
                 </a>

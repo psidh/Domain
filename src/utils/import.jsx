@@ -33,7 +33,6 @@ const lang = [
   { name: 'Java', icon: <BiLogoJava />, color: 'text-orange-500' },
   { name: 'Python', icon: <SiPython />, color: 'text-blue-300' },
   { name: 'Dart', icon: <SiDart />, color: 'text-blue-300' },
-  { name: 'C++', icon: <SiCplusplus />, color: 'text-teal-400' },
   { name: 'C', icon: <SiC />, color: 'text-gray-400' },
   { name: 'CSS', icon: <SiCss3 />, color: 'text-cyan-400' },
   { name: 'HTML', icon: <SiHtml5 />, color: 'text-orange-500' },
