@@ -10,13 +10,11 @@ export default function Skills() {
   const skills = imports[3];
 
   return (
-    <div className='py-4 px-8 lg:px-24'>
+    <div className='px-8 lg:px-24'>
       <div>
-        <div className='md:grid md:grid-cols-2 gap-8'>
+        <div className='md:grid md:grid-cols-2 gap-x-12'>
           <Frameworks frameworks={frameworks} />
           <Languages lang={lang} />
-          {/* <Tools tools={tools} /> */}
-          {/* <Skills skills={skills} /> */}
         </div>
       </div>
     </div>

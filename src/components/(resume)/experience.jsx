@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function experience() {
   return (
     <div>
@@ -7,7 +5,7 @@ export default function experience() {
         <h3 className='md:text-4xl text-2xl font-bold mb-4 md:mt-0 mt-8 text-fuchsia-500'>
           Experience
         </h3>
-        <div className='text-white'>
+        <div className=''>
           <a
             href='https://kvsangathan.nic.in/'
             target='_blank'

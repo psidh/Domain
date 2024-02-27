@@ -6,38 +6,38 @@ import { FiGithub } from 'react-icons/fi';
 
 const Footer = () => {
   return (
-    <main id="footer">
-      <div className="text-white">
-        <div className="py-8 md:py-16 px-8 lg:px-36 border-t-[0.05em] flex lg:flex-row flex-col gap-12 lg:gap-0 justify-between items-center">
-          <div className="flex gap-12 ">
+    <main id='footer'>
+      <div className=''>
+        <div className='py-8 md:py-16 px-8 lg:px-36 border-t-[0.05em] flex lg:flex-row flex-col gap-12 lg:gap-0 justify-between items-center'>
+          <div className='flex gap-12 '>
             <a
-              className="hover:scale-150 transition duration-300"
-              href="https://instagram.com/p_s1dharth"
+              className='hover:scale-105 transition duration-100 cl'
+              href='https://instagram.com/p_s1dharth'
             >
-              <FaInstagram />
+              <FaInstagram/>
             </a>
             <a
-              className="hover:scale-150 transition duration-300"
-              href="https://twitter.com/p_s1dharth"
+              className='hover:scale-105 transition duration-100'
+              href='https://twitter.com/p_s1dharth'
             >
-              <FiTwitter />
+              <FiTwitter/>
             </a>
             <a
-              className="hover:scale-150 transition duration-300"
-              href="https://www.linkedin.com/in/p-sidharth"
+              className='hover:scale-105 transition duration-100'
+              href='https://www.linkedin.com/in/p-sidharth'
             >
-              <FiLinkedin />
+              <FiLinkedin/>
             </a>
             <a
-              className="hover:scale-150 transition duration-300"
-              href="https://github.com/psidh"
+              className='hover:scale-105 transition duration-100'
+              href='https://github.com/psidh'
             >
-              <FiGithub />
+              <FiGithub/>
             </a>
           </div>
-          <div className="flex gap-4 hover:scale-105 transition duration-300">
-            <a href="mailto:philkhanasidharth14@gmail.com">
-              <div className="flex gap-4 items-center">
+          <div className='flex gap-4 hover:scale-105 transition duration-300'>
+            <a href='mailto:philkhanasidharth14@gmail.com'>
+              <div className='flex gap-4 items-center'>
                 <MdOutlineMail />
                 <span>philkhanasidharth14@gmail.com</span>
               </div>

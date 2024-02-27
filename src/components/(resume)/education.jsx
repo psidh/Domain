@@ -6,7 +6,7 @@ const Education = () => {
           Education
         </h3>
         <div className='flex justify-between items-center'>
-          <div className='text-white'>
+          <div className=''>
             <a
               href='https://kvsangathan.nic.in/'
               target='_blank'

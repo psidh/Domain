@@ -8,7 +8,7 @@ export default function Tool({ tools }) {
         {tools.map((tool, index) => (
           <div
             key={index}
-            className='md:text-xl text-white md:p-4 p-2
+            className='md:text-xl  md:p-4 p-2
             flex justify-center items-center border-0 rounded-lg'
           >
             <div className='flex flex-col items-center justify-center'>

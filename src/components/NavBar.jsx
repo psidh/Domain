@@ -13,8 +13,8 @@ const NavBar = () => {
             <span>philkhanasidharth14@gmail.com</span>
           </div>
         </a>
-        <div className='gap-14 hidden lg:flex text-white'>
-          <a className='hover:text-white  text-fuchsia-600' href='/'>
+        <div className='gap-14 hidden lg:flex '>
+          <a className='hover:  text-fuchsia-600' href='/'>
             Home
           </a>
           <a

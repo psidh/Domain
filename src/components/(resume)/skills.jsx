@@ -9,7 +9,7 @@ const Skills = ({ skills }) => {
           <div
             key={index}
             className='md:text-xl md:p-4 p-2  
-          flex justify-start items-center border-0 text-white rounded-lg'
+          flex justify-start items-center border-0  rounded-lg'
           >
             {skill}
           </div>

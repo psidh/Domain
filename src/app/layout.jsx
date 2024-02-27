@@ -1,10 +1,9 @@
 import './globals.css';
-import Navbar from '../components/NavBar'
+import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
-import Ambit  from 'next/font/local'
+import Ambit from 'next/font/local';
 
-
-const ambit = Ambit({ src: './Ambit-Regular.woff2' })
+const ambit = Ambit({ src: './Ambit-Regular.woff2' });
 
 export const metadata = {
   title: 'Philkhana Sidharth',
@@ -17,9 +16,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
-        <div className={`${ambit.className} bg-black text-white`}>
+        <div className={`${ambit.className} bg-black text-[#d5d5d5]`}>
           <Navbar />
           {children}
           <Footer />
