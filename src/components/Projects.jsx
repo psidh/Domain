@@ -27,7 +27,7 @@ const Projects = () => {
                   href={project.githubLink}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='bg-fuchsia-950  border border-fuchsia-500
+                  className='hover:bg-fuchsia-950/50  border border-fuchsia-500
                   rounded-full px-4 py-2 text-center mt-4 w-full transform transition-all duration-150'
                 >
                   Source Code

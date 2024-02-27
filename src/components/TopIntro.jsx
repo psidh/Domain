@@ -35,14 +35,13 @@ export default function TopIntro() {
                   Let&apos;s connect and build great things together...
                 </p>
               </div>
-              <button
-                className='border bg-fuchsia-950/50
-          border-fuchsia-600 py-2 px-10 rounded-full '
+              <a
+                href='mailto:philkhanasidharth14@gmail.com'
+                className='border hover:bg-fuchsia-950/50
+          border-fuchsia-600  px-10 rounded-full text-xl font-semibold pt-2 pb-[5px]'
               >
-                <span className='text-xl font-semibold'>
-                  <a href='mailto:philkhanasidharth14@gmail.com'> Connect </a>
-                </span>
-              </button>
+                Connect
+              </a>
             </section>
           </div>
         </div>
