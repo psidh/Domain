@@ -13,7 +13,7 @@ export default function TopIntro() {
                 <span
                   className='font-semibold md:text-5xl text-3xl 
           text-transparent bg-clip-text 
-           bg-gradient-to-t from-gray-300/30 to-white
+           bg-gradient-to-t from-gray-500/40 to-white
             py-2
            '
                 >
@@ -24,10 +24,10 @@ export default function TopIntro() {
                 <p className='md:text-2xl text-md '>
                   I&apos;m a Student, Developer
                 </p>
-                <p className='md:text-2xl text-md text-gray-200'>
+                <p className='md:text-2xl text-md text-white'>
                   With a background in{' '}
                   <a href='https://github.com/psidh'>
-                    <span className='underline underline-offset-4'>
+                    <span className='underline underline-offset-4 text-fuchsia-400'>
                       JavaScript
                     </span>
                   </a>{' '}
@@ -38,11 +38,11 @@ export default function TopIntro() {
                 </p>
               </div>
               <button
-                className='md:my-6  hover:bg-green-200 
-          bg-green-600 text-gray-200 transition duration-300
+                className='md:my-6  hover:bg-fuchsia-200 
+          bg-fuchsia-600 text-gray-200 transition duration-300
           hover:text-black py-2 px-8 rounded-3xl '
               >
-                <span className='text-xl'>
+                <span className='text-xl font-semibold'>
                   <a href='mailto:philkhanasidharth14@gmail.com'> Connect </a>
                 </span>
               </button>
