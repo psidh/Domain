@@ -15,7 +15,7 @@ export default function Skills() {
         <div className='md:grid grid-cols-2 gap-8'>
           <Frameworks frameworks={frameworks} />
           <Languages lang={lang} />
-          <Tools tools={tools} />
+          {/* <Tools tools={tools} /> */}
           {/* <Skills skills={skills} /> */}
         </div>
       </div>
