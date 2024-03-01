@@ -44,14 +44,9 @@ const frameworks = [
   { name: 'Express', icon: <SiExpress />,  },
   { name: 'Node.js', icon: <FaNodeJs />, },
   { name: 'Mongodb', icon: <SiMongodb />, },
-  { name: 'Flask', icon: <BiLogoFlask />,  },
-  { name: 'Flutter', icon: <SiFlutter />,  },
-  { name: 'BootStrap', icon: <SiBootstrap />,  },
-  { name: 'Jupyter', icon: <SiJupyter />,  },
-  { name: 'Pandas', icon: <SiPandas />,  },
   { name: 'FireBase', icon: <SiFirebase />,  },
   { name: 'SupaBase', icon: <SiSupabase />, },
-  { name: 'MySQL', icon: <GrMysql />,  },
+  
 ];
 
 const lang = [
@@ -60,7 +55,6 @@ const lang = [
   { name: 'TypeScript', icon: <SiTypescript />, },
   { name: 'Java', icon: <BiLogoJava />,  },
   { name: 'Python', icon: <SiPython />,  },
-  { name: 'Dart', icon: <SiDart />,  },
   { name: 'C', icon: <SiC />,  },
   { name: 'CSS', icon: <SiCss3 />,},
   { name: 'HTML', icon: <SiHtml5 />,  },
