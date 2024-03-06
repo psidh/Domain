@@ -9,7 +9,7 @@ export default function TopIntro() {
               <h2 className='md:text-2xl text-4xl font-semibold mt-2 py-2'>
                 <span className='md:text-3xl text-xl font-normal'>Hey, </span>
                 <span
-                  className='font-semibold lg:text-5xl text-3xl
+                  className='font-semibold lg:text-5xl text-2xl
           text-transparent bg-clip-text 
            bg-gradient-to-t from-gray-500/40 to-white
             py-2
