@@ -4,7 +4,7 @@ export default function error() {
       <p className='text-3xl md:text-6xl mb-6'>Page not Found | 404</p>
       <a
         href='/'
-        className='text-xl md:text-3xl mt-6 py-3 px-9 bg-fuchsia-500 rounded-full 
+        className='text-xl md:text-3xl mt-6 py-3 px-9 bg-green-500 rounded-full 
       hover:border hover:border-white hover:-translate-x-3 transform duration-300'
       >
         Home

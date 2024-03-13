@@ -14,16 +14,16 @@ const NavBar = () => {
           </div>
         </a>
         <div className='gap-14 hidden lg:flex '>
-          <a className='hover:  text-fuchsia-600' href='/'>
+          <a className='hover:  text-green-600' href='/'>
             Home
           </a>
           <a
-            className='  hover:text-fuchsia-600'
+            className='  hover:text-green-600'
             href='https://blog-psidh.vercel.app'
           >
             Blogs
           </a>
-          <a className='  hover:text-fuchsia-600' href='/#footer'>
+          <a className='  hover:text-green-600' href='/#footer'>
             Contact
           </a>
         </div>

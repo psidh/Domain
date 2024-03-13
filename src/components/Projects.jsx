@@ -3,7 +3,7 @@ const Projects = () => {
   return (
     <main>
       <div className='py-4 px-8 lg:px-24'>
-        <h2 className='text-fuchsia-500 md:text-4xl text-3xl font-semibold mt-4 mb-8 text-center md:text-left ml-4'>
+        <h2 className='text-green-500 md:text-4xl text-3xl font-semibold mt-4 mb-8 text-center md:text-left ml-4'>
           Projects
         </h2>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 md:gap-4 lg:gap-8'>
@@ -27,7 +27,7 @@ const Projects = () => {
                   href={project.githubLink}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:bg-fuchsia-950/50  border border-fuchsia-500
+                  className='hover:bg-green-950/50  border border-green-500
                   rounded-full px-4 py-2 text-center mt-4 w-full transform transition-all duration-150'
                 >
                   Source Code

@@ -2,7 +2,7 @@ export default function experience() {
   return (
     <div>
       <div>
-        <h3 className='md:text-4xl text-2xl font-bold mb-4 md:mt-0 mt-8 text-fuchsia-500'>
+        <h3 className='md:text-4xl text-2xl font-bold mb-4 md:mt-0 mt-8 text-green-500'>
           Experience
         </h3>
         <div className=''>

@@ -1,7 +1,7 @@
 export default function Languages({ lang }) {
   return (
     <section className='my-8'>
-      <h1 className='text-fuchsia-500 md:text-4xl text-3xl font-semibold mt-4 mb-8 text-center md:text-left md:ml-12'>
+      <h1 className='text-green-500 md:text-4xl text-3xl font-semibold mt-4 mb-8 text-center md:text-left md:ml-12'>
         Languages
       </h1>
       <div className='grid grid-cols-3 sm:grid-cols-4 '>
