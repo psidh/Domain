@@ -32,9 +32,9 @@ export default function TopIntro() {
            bg-gradient-to-t from-gray-300/40 to-white'>
                   Student | Developer
                 </p>
-                <p className='md:text-2xl text-lg text-center'>
-                  I bring Front-End and
-                  Back-End to the table
+                <p className='md:text-2xl text-lg text-transparent bg-clip-text mt-2
+           bg-gradient-to-t from-gray-300/40 to-white'>
+                  Front-End | Back-End | Cloud | DevOps
                 </p>
               </div>
               <a

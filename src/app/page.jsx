@@ -5,8 +5,8 @@ function MyApp() {
   return (
     <div>
       <TopIntro />
-      <Skills />
       <Projects />
+      <Skills />
     </div>
   );
 }

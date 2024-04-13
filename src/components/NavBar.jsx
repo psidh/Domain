@@ -1,36 +1,52 @@
-import { RiMenuLine } from 'react-icons/ri';
 import { MdOutlineMail } from 'react-icons/md';
-const NavBar = () => {
+import { FaInstagram } from 'react-icons/fa';
+import { FiTwitter } from 'react-icons/fi';
+import { FiLinkedin } from 'react-icons/fi';
+import { FiGithub } from 'react-icons/fi';
+
+const Navbar = () => {
   return (
-    <div>
-      <div className='mx-8 lg:mx-20 flex justify-between  py-8 md:py-10'>
-        <a
-          className='hover:scale-105 transition duration-300'
-          href='mailto:philkhanasidharth14@gmail.com'
-        >
-          <div className='flex gap-4 items-center '>
-            <MdOutlineMail />
-            <span>philkhanasidharth14@gmail.com</span>
+    <main id='footer'>
+      <div className=''>
+        <div className='py-8 md:py-16 px-8 lg:px-36 border-t-[0.05em] flex lg:flex-row flex-col gap-12 lg:gap-0 justify-between items-center'>
+          <div className='flex gap-12 '>
+            <a
+              className='hover:scale-125 transition duration-150 text-2xl'
+              href='https://instagram.com/p_s1dharth'
+            >
+              <FaInstagram/>
+            </a>
+            <a
+              className='hover:scale-125 transition duration-150 text-2xl'
+              href='https://twitter.com/p_s1dharth'
+            >
+              <FiTwitter/>
+            </a>
+            <a
+              className='hover:scale-125 transition duration-150 text-2xl'
+              href='https://www.linkedin.com/in/p-sidharth'
+            >
+              <FiLinkedin/>
+            </a>
+            <a
+              className='hover:scale-125 transition duration-150 text-2xl'
+              href='https://github.com/psidh'
+            >
+              <FiGithub/>
+            </a>
           </div>
-        </a>
-        <div className='gap-14 hidden lg:flex '>
-          <a className='hover:  text-green-600' href='/'>
-            Home
-          </a>
-          <a
-            className='  hover:text-green-600'
-            href='https://blog-psidh.vercel.app'
-          >
-            Blogs
-          </a>
-          <a className='  hover:text-green-600' href='/#footer'>
-            Contact
-          </a>
+          <div className='flex gap-4 hover:scale-105 transition duration-300 text-xl'>
+            <a href='mailto:philkhanasidharth14@gmail.com'>
+              <div className='flex gap-4 items-center'>
+                <MdOutlineMail />
+                <span>philkhanasidharth14@gmail.com</span>
+              </div>
+            </a>
+          </div>
         </div>
-        <RiMenuLine className='flex lg:hidden w-5 h-5 cursor-pointer' />
       </div>
-    </div>
+    </main>
   );
 };
 
-export default NavBar;
+export default Navbar;

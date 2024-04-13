@@ -1,5 +1,13 @@
 const projectsData = [
   {
+    title: 'Sahayata',
+    description:
+      'Our official submission for Smart India Hackathon 2023. A web app that helps shovel operator with the real-time live status of the dumper trucks.',
+    image: '/icons/spruce.jpeg',
+    githubLink: 'https:github.com/psidh/spruce-dev',
+    projectLink: 'https://spruce-dev.vercel.app',
+  },
+  {
     title: 'Amazon Clone',
     description: 'Clone of E-commerce website Amazon. Full-Stack Web Application',
     image: '/projects/project5.png',
@@ -23,14 +31,6 @@ const projectsData = [
     projectLink: 'https://spotify-clone-psidh.vercel.app/',
   },
 
-  {
-    title: 'Sahayata',
-    description:
-      'Our official submission for Smart India Hackathon 2023. A web app that helps shovel operator with the real-time live status of the dumper trucks.',
-    image: '/icons/spruce.jpeg',
-    githubLink: 'https:github.com/psidh/spruce-dev',
-    projectLink: 'https://spruce-dev.vercel.app',
-  },
 
   {
     title: 'Ultra Community',
