@@ -4,7 +4,7 @@ import { FiTwitter } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
 import { FiGithub } from 'react-icons/fi';
 
-const Navbar = () => {
+export default function  Navbar(){
   return (
     <main id='footer'>
       <div className=''>
@@ -49,4 +49,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+
