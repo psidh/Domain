@@ -1,5 +1,5 @@
 import './globals.css';
-import Navbar from '../components/Navbar';
+import Navbar from '@/components/Navbar';
 import Ambit from 'next/font/local';
 
 const ambit = Ambit({ src: './Ambit-Regular.woff2' });
