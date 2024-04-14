@@ -1,5 +1,4 @@
 import './globals.css';
-import Navbar from '@/components/Navbar';
 import Ambit from 'next/font/local';
 
 const ambit = Ambit({ src: './Ambit-Regular.woff2' });
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body>
         <div className={`${ambit.className} bg-black text-[#d5d5d5]`}>
-          <Navbar />
           {children}
         </div>
       </body>

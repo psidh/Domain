@@ -4,7 +4,7 @@ import { FiTwitter } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
 import { FiGithub } from 'react-icons/fi';
 
-export default function  Navbar(){
+export default function  NavBar(){
   return (
     <main id='footer'>
       <div className=''>
