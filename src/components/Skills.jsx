@@ -1,7 +1,6 @@
 import imports from '../utils/import';
 import Frameworks from './(resume)/frameworks';
 import Languages from './(resume)/languages';
-import Tools from './(resume)/tools';
 
 export default function Skills() {
   const frameworks = imports[0];
