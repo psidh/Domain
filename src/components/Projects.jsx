@@ -10,8 +10,8 @@ const Projects = () => {
 
   return (
     <main>
-      <div className='py-4 px-8 lg:px-24'>
-        <h2 className='text-green-500 md:text-4xl text-3xl font-semibold mt-4 mb-8 text-center md:text-left ml-4'>
+      <div className='lg:px-24'>
+        <h2 className='text-green-500 md:text-4xl text-3xl font-semibold  text-center md:text-left sm:ml-4 pt-4'>
           Projects
         </h2>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 md:gap-4 lg:gap-8'>

@@ -1,6 +1,6 @@
 export default function Languages({ lang }) {
   return (
-    <section className='my-8'>
+    <section className='py-2 sm:py-0'>
       <h1 className='text-green-500 md:text-4xl text-3xl font-semibold mt-4 mb-8 text-center md:text-left md:ml-12'>
         Languages
       </h1>

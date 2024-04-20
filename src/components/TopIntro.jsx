@@ -5,7 +5,7 @@ export default function TopIntro() {
   return (
     <div>
       <main>
-        <div className='py-12 flex flex-col text-center justify-center items-center'>
+        <div className='py-4 flex flex-col text-center justify-center items-center'>
           <div>
             <section className='flex flex-col justify-center items-center py-2 md:pt-2 md:pb-4 px-4 lg:px-18 overflow-clip'>
               <h2 className='md:text-2xl text-4xl font-semibold mt-2 py-2'>
