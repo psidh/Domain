@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import projectsData from 'src/app/data/projectsData.js';
+import projectsData from '@/app/data/projectsData.js';
 
 const Projects = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);
@@ -35,7 +35,7 @@ const Projects = () => {
                   <div className='grow' />
                   <div className='flex justify-between items-center w-full space-x-2'>
                     <a
-                      href={project.projectLink}
+                      href={project.githubLink}
                       target='_blank'
                       rel='noopener noreferrer'
                       className='hover:bg-fuchsia-900/50  border border-fuchsia-500
@@ -44,7 +44,7 @@ const Projects = () => {
                       GitHub
                     </a>
                     <a
-                      href={project.githubLink}
+                      href={project.projectLink}
                       target='_blank'
                       rel='noopener noreferrer'
                       className='hover:bg-blue-900/50  border border-blue-500
