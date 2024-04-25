@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Domain from '@/components/Domain';
 import NavBar from '../components/NavBar';
 import TopIntro from '../components/TopIntro';
 import Projects from '../components/Projects';
