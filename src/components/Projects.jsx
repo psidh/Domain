@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import projectsData from 'src/app/data/projectsData.js';
+import projectsData from '@/app/data/projectsData.js';
 
 const Projects = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);
