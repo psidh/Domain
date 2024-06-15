@@ -2,7 +2,7 @@ export default function Frameworks({ frameworks }) {
   return (
     <section className='py-2 sm:py-0'>
       <h1 className='text-green-500 md:text-4xl text-3xl font-semibold mt-4 mb-8 text-center md:text-left md:ml-6'>
-        Frameworks
+        Tech Stack
       </h1>
       <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 xl:grid-cols-5'>
         {frameworks.map((Frameworks, index) => (

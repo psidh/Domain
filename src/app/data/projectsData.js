@@ -8,6 +8,14 @@ const projectsData = [
     projectLink: 'https://spruce-dev.vercel.app',
   },
   {
+    title: 'RedX',
+    description:
+      'Social media application inspired by X. A platform for people to share their thoughts, ideas, and connect with like-minded people.',
+    image: '/projects/redx.png',
+    githubLink: 'https:github.com/psidh/RedX',
+    projectLink: 'https://redx-psidh.vercel.app',
+  },
+  {
     title: 'Coal Rake Navigators',
     description:
       'At CRN Coal Rake Navigators, we specialize in revolutionizing coal logistics by real-time updates at railway sidings. By optimizing coal transportation routes and minimizing waiting times, we help companies save money',
@@ -22,14 +30,6 @@ const projectsData = [
     image: '/projects/project13.png',
     githubLink: 'https://github.com/psidh/devFest23',
     projectLink: 'https://devfest23-psi.vercel.app/',
-  },
-  {
-    title: 'GDSC - Task Submission Portal',
-    description:
-      'Web application to store all the tasks submitted by the candidates to apply for Google Developer Student Clubs Core Team Recruitment',
-    image: '/projects/project14.png',
-    githubLink: 'https://github.com/ManasMalla/task-submission-portal',
-    projectLink: 'https://task-submission-portal.vercel.app/',
   },
   {
     title: 'E-Commerce Platform - Amazon',
@@ -47,16 +47,6 @@ const projectsData = [
     githubLink: 'https:github.com/psidh/Web-Study-Jams',
     projectLink: 'https://web-study-jams.vercel.app/',
   },
-
-  {
-    title: 'GDSC GITAM Website',
-    description:
-      'Google Developer Student Clubs Official Website',
-    image: '/projects/project15.png',
-    githubLink: 'https://github.com/ManasMalla/gdsc-gitam',
-    projectLink: 'https://gdsc-gitam.vercel.app/',
-  },
-
   {
     title: 'Netflix Clone',
     description:
@@ -82,16 +72,6 @@ const projectsData = [
     githubLink: 'https://github.com/psidh/Spotify-Clone',
     projectLink: 'https://spotify-clone-psidh.vercel.app/',
   },
-
-  {
-    title: 'Ultra Community',
-    description:
-      'We are not just a community, we are an ecosystem of Dreamers | Learners | Developers',
-    image: '/icons/ultra.jpeg',
-    githubLink: 'https:github.com/psidh/gita_generate',
-    projectLink: 'https://gita-generate.vercel.app',
-  },
-
   {
     title: 'Gita Generator',
     description:
@@ -100,48 +80,6 @@ const projectsData = [
     githubLink: 'https:github.com/psidh/gita_generate',
     projectLink: 'https:gita-generate.vercel.app',
   },
-
-  {
-    title: 'Deepawali Quiz Game',
-    description: 'A quiz game on Mahabharat and Rāmayan. Jai Shri Rām 🥳',
-    image: '/projects/project6.png',
-    githubLink: 'https://github.com/psidh/Deepawali',
-    projectLink: 'https://deepawali-sidh.vercel.app',
-  },
-
-  {
-    title: 'Google Search Front-End Clone',
-    description: 'Simple Front-End page of Google home page',
-    image: '/projects/project7.png',
-    githubLink: 'https://github.com/psidh/Google-v1',
-    projectLink: 'https://google-psidh.vercel.app/',
-  },
-
-  {
-    title: 'Quotes Generator',
-    description: 'Static Website that generates my personal quotes/quotations!',
-    image: '/projects/project3.png',
-    githubLink: 'https://github.com/psidh/myQuotes',
-    projectLink: 'https://psidhquotes.vercel.app',
-  },
-  {
-    title: 'Weather App',
-    description: "An All stop solution to find where's it raining/shining",
-    image: '/projects/project4.png',
-    githubLink: 'https://github.com/psidh/openWeatherApp',
-    projectLink: 'https://psidhweather.vercel.app',
-  },
-
-  {
-    title: 'To-Do List',
-    description:
-      'A todo List created using NextJs and React, using Typescript that helps you to make a goal setting for your day !',
-    image: '/projects/project2.png',
-    githubLink: 'https://github.com/psidh/TodoList',
-    projectLink: 'https://psidhtodolist.vercel.app',
-  },
-
-  // Add more project objects
 ];
 
 export default projectsData;
