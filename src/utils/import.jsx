@@ -18,7 +18,6 @@ import {
   SiRecoil,
   SiPrometheus,
   SiGrafana,
-  SiCloudflareworkers
 } from 'react-icons/si'; 
 import { BiLogoJava, BiLogoPostgresql } from 'react-icons/bi';
 import { FaNodeJs, FaAws } from 'react-icons/fa';
@@ -33,7 +32,6 @@ const frameworks = [
   { name: 'PostgreSQL', icon: <BiLogoPostgresql /> },
   { name: 'React.js', icon: <SiReact />,},
   { name: 'Docker', icon: <FaDocker />},
-  { name: 'Cloudflare Workers', icon: <SiCloudflareworkers />},
   { name: 'Recoil', icon: <SiRecoil />},
   { name: 'Express', icon: <SiExpress />,  },
   { name: 'Node.js', icon: <FaNodeJs />, },
