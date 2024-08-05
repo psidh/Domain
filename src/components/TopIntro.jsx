@@ -1,5 +1,4 @@
 import React from 'react';
-import { SparklesCore } from './ui/sparkles';
 
 export default function TopIntro() {
   return (
