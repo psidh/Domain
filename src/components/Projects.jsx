@@ -21,40 +21,42 @@ const Projects = () => {
               <div key={index} className="my-4 mx-2">
                 <div
                   className="project-card
-                rounded-xl transform transition duration-200 flex flex-col justify-start items-center h-full"
+                rounded-xl transform border border-neutral-600 bg-neutral-800 overflow-clip transition duration-200 flex flex-col justify-start items-center h-full"
                 >
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="rounded-md object-center object-cover w-full h-56"
+                    className="rounded-tr-md rounded-tl-md object-center object-cover w-full h-56"
                   />
-                  <p className="text-xl  justify-center font-semibold my-4 flex items-center">
-                    {project.title}
-                  </p>
-                  <p className="text-gray-400 my-2">{project.description}</p>
-                  <div className="grow" />
-                  <div className="flex justify-between items-center w-full space-x-2">
-                    {project.projectLink ? (
-                      <a
-                        href={project.projectLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:bg-blue-900/50  border border-blue-500
+                  <div className="p-6">
+                    <p className="text-xl  justify-center font-semibold my-4 flex items-center">
+                      {project.title}
+                    </p>
+                    <p className="text-neutral-400 my-2">{project.description}</p>
+                    <div className="grow" />
+                    <div className="flex justify-between items-center w-full space-x-2">
+                      {project.projectLink ? (
+                        <a
+                          href={project.projectLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:bg-blue-900/50 bg-neutral-600
                 rounded-full px-4 py-1 text-center mt-4 w-full transform transition-all duration-150"
-                      >
-                        Link
-                      </a>
-                    ) : (
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:bg-fuchsia-900/50  border border-fuchsia-500
+                        >
+                          Link
+                        </a>
+                      ) : (
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:bg-fuchsia-900/50  bg-neutral-600
                   rounded-full px-4 py-1 text-center mt-4 w-full transform transition-all duration-150"
-                      >
-                        GitHub
-                      </a>
-                    )}
+                        >
+                          GitHub
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -63,14 +65,14 @@ const Projects = () => {
         {/* Render the "View All" button if there are more projects to show */}
         {projectsData.length > projectsLimit && !showAllProjects && (
           <div className="my-8 flex flex-row items-center justify-center w-full px-16">
-            <div className="h-[1px] w-full  px-8 bg-gray-600"></div>
+            <div className="h-[1px] w-full  px-8 bg-neutral-600"></div>
             <button
               onClick={() => setShowAllProjects(true)}
               className="mx-8 shrink-0 bg-green-500 font-semibold text-white px-16 text-center py-2 rounded-full"
             >
               Show All
             </button>
-            <div className="h-[1px]  w-full  px-8 bg-gray-600"></div>
+            <div className="h-[1px]  w-full  px-8 bg-neutral-600"></div>
           </div>
         )}
       </div>
