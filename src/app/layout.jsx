@@ -15,10 +15,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body>
-        <div className={`${ambit.className} bg-black text-[#d5d5d5]`}>
-          {children}
-        </div>
+      <meta name="google-site-verification" content="xwyi6x_2h7pOdce90Uty6fIi6zw5KxNO71sJ0-HgWC4" />
+        <body>
+          <div className={`${ambit.className} bg-black text-[#d5d5d5]`}>
+            {children}
+          </div>
       </body>
     </html>
   );
