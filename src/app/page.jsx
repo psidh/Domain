@@ -1,12 +1,15 @@
-import NavBar from '../components/NavBar';
-import TopIntro from '../components/TopIntro';
-import Projects from '../components/Projects';
-import Skills from '../components/Skills';
+import NavBar from "../components/NavBar";
+import Header from "../components/TopIntro";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
+import Experience from "@/components/Experience";
+
 function MyApp() {
   return (
     <div>
       <NavBar />
-      <TopIntro />
+      <Header />
+      <Experience />
       <Projects />
       <Skills />
     </div>

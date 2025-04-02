@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <main>
       <div className="lg:px-24">
-        <h2 className="text-green-500 md:text-4xl text-3xl font-semibold  text-center md:text-left sm:ml-4 pt-4">
+        <h2 className="text-[#00FF0D] md:text-4xl text-3xl font-semibold  text-center md:text-left sm:ml-4 pt-4">
           Projects
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 md:gap-4 lg:gap-8">
@@ -21,7 +21,7 @@ const Projects = () => {
               <div key={index} className="my-4 mx-2">
                 <div
                   className="project-card
-                rounded-xl transform border border-neutral-600 bg-neutral-800 overflow-clip transition duration-200 flex flex-col justify-start items-center h-full"
+                rounded-xl transform  bg-neutral-900 overflow-clip transition duration-200 flex flex-col justify-start items-center h-full"
                 >
                   <img
                     src={project.image}
@@ -32,7 +32,9 @@ const Projects = () => {
                     <p className="text-xl  justify-center font-semibold my-4 flex items-center">
                       {project.title}
                     </p>
-                    <p className="text-neutral-400 my-2">{project.description}</p>
+                    <p className="text-neutral-400 my-2">
+                      {project.description}
+                    </p>
                     <div className="grow" />
                     <div className="flex justify-between items-center w-full space-x-2">
                       {project.projectLink ? (
@@ -40,7 +42,7 @@ const Projects = () => {
                           href={project.projectLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="hover:bg-blue-900/50 bg-neutral-600
+                          className="hover:bg-[#00FF0D]/50 bg-neutral-800
                 rounded-full px-4 py-1 text-center mt-4 w-full transform transition-all duration-150"
                         >
                           Link
@@ -50,7 +52,7 @@ const Projects = () => {
                           href={project.githubLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="hover:bg-fuchsia-900/50  bg-neutral-600
+                          className="hover:bg-[#00FF0D]/50  bg-neutral-800
                   rounded-full px-4 py-1 text-center mt-4 w-full transform transition-all duration-150"
                         >
                           GitHub
@@ -68,7 +70,7 @@ const Projects = () => {
             <div className="h-[1px] w-full  px-8 bg-neutral-600"></div>
             <button
               onClick={() => setShowAllProjects(true)}
-              className="mx-8 shrink-0 bg-green-500 font-semibold text-white px-16 text-center py-2 rounded-full"
+              className="mx-8 shrink-0 bg-[#00FF0D] font-semibold text-black px-16 text-center py-2 rounded-full"
             >
               Show All
             </button>

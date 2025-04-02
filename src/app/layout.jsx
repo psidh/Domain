@@ -1,7 +1,7 @@
 import './globals.css';
 import Ambit from 'next/font/local';
 
-const ambit = Ambit({ src: './Ambit-Regular.woff2' });
+const ambit = Ambit({ src: './font/Avenir-Roman-12.ttf' });
 
 export const metadata = {
   title: 'Philkhana Sidharth',
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <meta name="google-site-verification" content="xwyi6x_2h7pOdce90Uty6fIi6zw5KxNO71sJ0-HgWC4" />
         <body>
-          <div className={`${ambit.className} bg-black text-[#d5d5d5]`}>
+          <div className={`${ambit.className} bg-black text-white`}>
             {children}
           </div>
       </body>

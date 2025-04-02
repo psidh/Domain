@@ -7,7 +7,7 @@ import { FiGithub } from 'react-icons/fi';
 export default function  NavBar(){
   return (
     <main id='footer invisible sm:visible'>
-      <div className=''>
+      <div className='bg-transparent'>
         <div className='py-8 md:py-16 px-8 lg:px-36 flex lg:flex-row flex-col gap-6 lg:gap-0 justify-between items-center'>
           <div className='flex gap-8 '>
             <a
