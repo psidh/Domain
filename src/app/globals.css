@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+  body {
+    @apply bg-white dark:bg-black;
+  }
+}
+
+@keyframes rotateReverse {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .rotate-reverse {
+    animation: rotateReverse 1s linear infinite;
+  }
+  
