@@ -6,20 +6,19 @@ import { useRef, useEffect, useState } from "react";
 const icons = [
   "aws",
   "docker",
-  "figma",
   "firebase",
   "go",
   "java",
+  "rust",
   "mongo",
+  "react",
+  "tail",
   "next",
+  "type",
   "node",
   "post",
   "prisma",
-  "react",
   "redis",
-  "rust",
-  "tail",
-  "type",
 ];
 
 export default function Skill() {
