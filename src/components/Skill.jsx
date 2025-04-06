@@ -42,9 +42,9 @@ export default function Skill() {
       setSize(48);
       setCardSize(16);
     } else {
-      radius = 180;
-      setSize(32);
-      setCardSize(12);
+      radius = 145;
+      setSize(24);
+      setCardSize(8);
     }
 
     const pos = icons.map((_, i) => {
@@ -61,7 +61,7 @@ export default function Skill() {
   return (
     <div
       ref={ref}
-      className="relative flex justify-center items-center overflow-hidden h-[55vh] md:h-[100vh]"
+      className="relative flex justify-center items-center overflow-hidden mt-12 md:mt-0 h-[55vh] md:h-[100vh]"
     >
       {/* Center Label */}
       <motion.div
@@ -71,17 +71,17 @@ export default function Skill() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <section className="text-center">
-          <h1 className="text-xl md:text-2xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-t from-neutral-500 to-black dark:from-neutral-300 dark:to-white">
+          <h1 className="text-lg md:text-2xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-t from-neutral-500 to-black dark:from-neutral-300 dark:to-white">
             I&apos;m Philkhana Sidharth
           </h1>
-          <div className="mt-4 mb-2">
-            <p className="font-normal text-sm md:text-lg text-black dark:text-neutral-400">
+          <div className="md:mt-4 md:mb-2">
+            <p className="font-normal text-[10px] md:text-lg text-black dark:text-neutral-400">
               Front-End  •  Back-End  •  Cloud  •  DevOps
             </p>
           </div>
           <a
             href="mailto:philkhanasidharth14@gmail.com"
-            className="inline-block mt-6 hover:border hover:border-green-300 hover:bg-white hover:text-green-500 text-white bg-green-600 transition-all duration-300 px-8 py-2 rounded-full text-lg font-medium"
+            className="inline-block mt-2 md:mt-6 hover:border hover:border-green-300 hover:bg-white hover:text-green-500 text-white bg-green-600 transition-all duration-300 px-8 py-2 rounded-full text-sm md:text-lg font-medium"
           >
             Connect
           </a>
