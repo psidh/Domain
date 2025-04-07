@@ -9,15 +9,18 @@
 }
 
 @keyframes rotateReverse {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-360deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
-  
-  .rotate-reverse {
-    animation: rotateReverse 1s linear infinite;
+  to {
+    transform: rotate(-360deg);
   }
-  
+}
+
+.rotate-reverse {
+  animation: rotateReverse 1s linear infinite;
+}
+
+body {
+  overflow-x: hidden;
+}
