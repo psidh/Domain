@@ -336,14 +336,14 @@ const Experience = () => {
                   </span>
                 </div>
 
-                <ul className="text-left text-neutral-400 dark:text-neutral-300 mt-3 list-disc list-inside">
+                <ul className="text-left text-neutral-600 dark:text-neutral-300 mt-3 list-disc list-inside">
                   {exp.points.map((point, idx) => (
                     <li key={idx}>{point}</li>
                   ))}
                 </ul>
 
                 {Array.isArray(exp.links) && exp.links.length > 0 && (
-                  <p className="text-base mt-3 text-neutral-600">
+                  <p className="text-base mt-3 font-medium text-neutral-600">
                     Links:{" "}
                     {exp.links
                       .map((link, i) => (
