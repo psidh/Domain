@@ -142,7 +142,7 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 const experiences = [
   {
-    company: "Beesi",
+    company: "PoolMoney",
     role: "Full Stack Developer",
     duration: "Jan - Mar 2025",
     points: [
