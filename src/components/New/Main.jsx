@@ -13,7 +13,7 @@ export default function New() {
         <img
           src="/bg2.png"
           alt="background"
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover"
         />
       </div>
 
