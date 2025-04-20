@@ -2,7 +2,7 @@ import React from "react";
 const ProjectCard = ({ title, subtitle, period, description }) => (
   <div className="p-4 backdrop-blur-3xl bg-opacity-[5%] rounded-lg">
     <h3 className="text-xl font-semibold">{title}</h3>
-    <div className="w-full h-[0.1px] mt-3 bg-neutral-600 z-10 transform -translate-y-[60%]" />
+    <div className="w-full h-[0.1px] mt-3 bg-neutral-600" />
     <div className="flex items-center justify-between text-lg font-normal">
       <h4 className="my-4 text-sm text-neutral-300 font-medium">{subtitle}</h4>
       <p className="text-neutral-400 text-sm">{period}</p>

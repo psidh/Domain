@@ -8,7 +8,8 @@ export default function New() {
   return (
     <div className="relative w-full overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 z-10" />
+        <div className="absolute inset-0 z-10 bg-black/30" />
+
         <img
           src="/bg2.png"
           alt="background"
@@ -27,10 +28,10 @@ export default function New() {
               Student    |    Developer
             </h2>
             <p className="text-md lg:text-sm text-center md:text-left text-neutral-300 w-full md:w-3/4 leading-8 lg:leading-6 my-6 lg:mt-4">
-              I&apos;m a developer who builds like a maximalist and enjoys pouring
-              out code. My journey started at 12 with Web and hasn&apos;t paused
-              since. From winning hackathons to building multiple Full Stack
-              apps, I craft code with intent and intensity.
+              I&apos;m a developer who builds like a maximalist and enjoys
+              pouring out code. My journey started at 12 with Web and
+              hasn&apos;t paused since. From winning hackathons to building
+              multiple Full Stack apps, I craft code with intent and intensity.
             </p>
           </div>
           <Links />
