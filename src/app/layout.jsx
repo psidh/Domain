@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           <div
-            className={`${geist.className} bg-white text-black dark:bg-black dark:text-white`}
+            className={`${geist.className} `}
           >
             {children}
           </div>

@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
-  body {
-    @apply bg-white dark:bg-black;
-  }
-}
-
 @keyframes rotateReverse {
   from {
     transform: rotate(0deg);

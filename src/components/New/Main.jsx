@@ -17,7 +17,7 @@ export default function New() {
       </div>
 
       {/* Foreground content */}
-      <div className="relative z-20 py-12 px-8 md:p-12 dark:bg-transparent flex flex-col items-start w-full dark:text-white">
+      <div className="relative z-20 py-12 px-8 md:p-12 bg-transparent flex flex-col items-start w-full text-white">
         <div className="flex lg:flex-row flex-col items-center justify-between w-full mb-8 lg:gap-0 gap-8">
           <div>
             <h1 className="text-5xl mt-6` md:text-[36px] text-center lg:text-left w-full lg:text-5xl font-semibold">
