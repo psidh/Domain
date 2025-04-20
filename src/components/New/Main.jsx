@@ -8,7 +8,7 @@ export default function New() {
   return (
     <div className="relative w-full overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 z-10 bg-black/30" />
+        <div className="absolute inset-0 z-10 bg-black" />
 
         <img
           src="/bg2.png"
