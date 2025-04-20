@@ -1,10 +1,11 @@
 import "./globals.css";
-// import Ambit from 'next/font/local';
-import { Plus_Jakarta_Sans } from "next/font/google";
-const ambit = Plus_Jakarta_Sans({
-  subsets: ["latin"],
+import { Plus_Jakarta_Sans } from 'next/font/google';
+
+// Initialize the font
+const geist = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  display: 'swap',
 });
-// const ambit = Ambit({ src: './font/Avenir-Roman-12.ttf' });
 import { Providers } from "./providers";
 
 export const metadata = {
@@ -67,7 +68,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           <div
-            className={`${ambit.className} bg-white text-black dark:bg-black dark:text-white`}
+            className={`${geist.className} bg-white text-black dark:bg-black dark:text-white`}
           >
             {children}
           </div>

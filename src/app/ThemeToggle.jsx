@@ -13,13 +13,13 @@ export default function ThemeSwitch() {
   useEffect(() => setMounted(true), []);
 
   if (!mounted)
-    return <FiSun className="w-8 h-8" onClick={() => setTheme("light")} />;
+    return <FiSun className="w-4 h-4" onClick={() => setTheme("light")} />;
 
   if (resolvedTheme === "dark") {
-    return <FiSun className="w-8 h-8" onClick={() => setTheme("light")} />;
+    return <FiSun className="w-4 h-4" onClick={() => setTheme("light")} />;
   }
 
   if (resolvedTheme === "light") {
-    return <FiMoon className="w-8 h-8" onClick={() => setTheme("dark")} />;
+    return <FiMoon className="w-4 h-4" onClick={() => setTheme("dark")} />;
   }
 }
