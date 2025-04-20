@@ -27,7 +27,7 @@ export default function New() {
               Student    |    Developer
             </h2>
             <p className="text-md lg:text-sm text-center md:text-left text-neutral-300 w-full md:w-3/4 leading-8 lg:leading-6 my-6 lg:mt-4">
-              I'm a developer who builds like a maximalist and enjoys pouring
+              I&apos;m a developer who builds like a maximalist and enjoys pouring
               out code. My journey started at 12 with Web and hasn&apos;t paused
               since. From winning hackathons to building multiple Full Stack
               apps, I craft code with intent and intensity.
