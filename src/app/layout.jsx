@@ -40,7 +40,9 @@ export const metadata = {
   creator: "P Sidharth",
   openGraph: {
     title: "Philkhana Sidharth",
-    description: `Explore the portfolio of P Sidharth, a passionate front-end developer with strong backend and ML foundations. Skilled in building web applications using React, Firebase, MongoDB, PostgreSQL.`,
+    description: `P Sidharth is a passionate Computer Science undergrad and full-stack developer 
+  with expertise in Next.js, Express, MongoDB and PostgreSQL/Prisma. Skilled in frontend and backend development, 
+  Sidharth builds scalable web apps and brings a deep understanding of software engineering and UI/UX.`,
     url: "https://psidharth.dev",
     siteName: "Philkhana Sidharth",
     type: "website",
@@ -68,7 +70,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           <div
-            className={`${geist.className} `}
+            className={`${geist.className} bg-black`}
           >
             {children}
           </div>

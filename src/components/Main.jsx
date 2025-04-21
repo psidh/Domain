@@ -4,11 +4,11 @@ import Projects from "./Projects";
 import Miscellaneous from "./Miscellaneous";
 import Links from "./Links";
 
-export default function New() {
+export default function Main() {
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full ">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 z-10 bg-black/50" />
+        <div className="absolute inset-0 z-10 bg-black/40" />
 
         <img
           src="/bg2.png"
