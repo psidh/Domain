@@ -81,7 +81,7 @@ export default function Experience() {
   return (
     <>
       <div className="flex flex-col gap-6 pr-2 w-full lg:w-1/3">
-        <h3 className="text-3xl mt-6 lg:mt-0 lg:text-lg text-blue-300 font-semibold w-full text-center">
+        <h3 className="text-3xl mt-6 lg:mt-0 lg:text-2xl text-blue-300 font-semibold w-full text-center">
           Experience
         </h3>
         {experienceData.map((e) => (
