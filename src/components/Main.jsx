@@ -9,7 +9,7 @@ export default function Main() {
     <div className="relative z-20 py-12 px-8 md:px-12 md:pt-12 bg-transparent flex flex-col items-start w-full text-white">
       <div className=" flex lg:flex-row flex-col items-center justify-between w-full mb-8 lg:gap-0 gap-8">
         <div>
-          <h1 className="text-5xl mt-6 md:text-[36px] text-center lg:text-left w-full lg:text-5xl font-semibold">
+          <h1 className="text-5xl md:text-[36px] text-center lg:text-left w-full lg:text-5xl font-semibold">
             Philkhana Sidharth
           </h1>
           <h2 className="mt-4 text-center lg:text-left w-full font-medium text-xl text-neutral-400">
