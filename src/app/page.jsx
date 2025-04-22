@@ -2,10 +2,18 @@ import Main from "@/components/Main";
 
 function MyApp() {
   return (
-    <div>
-      {/* <div className="fixed top-1 right-1 border border-neutral-500 z-[9999] m-4 cursor-pointer backdrop-blur-2xl bg-transparent bg-neutral-100  dark:bg-neutral-800 p-2 rounded-full inline-flex">
-        <ThemeToggle />
-      </div> */}
+    <div className="relative w-full">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute inset-0 z-10 bg-black/20" />
+        <img
+          src="/bg2.png"
+          alt="background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Main Content */}
       <Main />
     </div>
   );
