@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -41,7 +40,7 @@ const ExperienceCard = ({ exp, onClick, onHover, onLeave }) => (
     onClick={() => onClick(exp)}
     onMouseEnter={(e) => onHover(exp, e)}
     onMouseLeave={onLeave}
-    className="p-4 backdrop-blur-3xl bg-opacity-[5%] rounded-lg cursor-pointer hover:bg-opacity-10 transition-all duration-300 ease-in-out"
+    className="p-4 backdrop-blur-3xl border border-neutral-700 bg-opacity-[5%] rounded-lg cursor-pointer hover:bg-opacity-10 transition-all duration-300 ease-in-out"
   >
     <h3 className="text-xl font-semibold">{exp.title}</h3>
     <div className="w-full h-[0.1px] mt-3 bg-neutral-600" />
@@ -137,11 +136,17 @@ export default function Experience() {
           </button>
         </div>
         <div className="p-6 text-neutral-300 space-y-3">
-          <img
-            src={selectedExp?.image}
-            alt=""
-            className="w-full h-[50vh] mb-2 object-cover object-left rounded-xl"
-          />
+          {selectedExp?.image ? (
+            <img
+              src={selectedExp?.image}
+              alt=""
+              className="w-full h-[50vh] mb-2 object-cover object-center rounded-xl"
+            />
+          ) : (
+            <p className="text-4xl flex flex-col items-center justify-center h-[30vh] text">
+              Loading
+            </p>
+          )}
           <h4 className="text-sm text-neutral-400">
             {selectedExp?.subtitle} • {selectedExp?.period}
           </h4>

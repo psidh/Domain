@@ -39,7 +39,7 @@ const ProjectCard = ({ project, onClick, onHover, onLeave }) => (
     onClick={() => onClick(project)}
     onMouseEnter={(e) => onHover(project, e)}
     onMouseLeave={onLeave}
-    className="p-4 backdrop-blur-3xl bg-opacity-[5%] rounded-lg cursor-pointer hover:bg-opacity-10 transition-all duration-300 ease-in-out "
+    className="p-4 backdrop-blur-3xl  border border-neutral-700 bg-opacity-[5%] rounded-lg cursor-pointer hover:bg-opacity-10 transition-all duration-300 ease-in-out "
   >
     <h3 className="text-xl font-semibold">{project.title}</h3>
     <div className="w-full h-[0.1px] mt-3 bg-neutral-600" />
@@ -139,11 +139,15 @@ export default function Projects() {
           </button>
         </div>
         <div className="p-6 text-neutral-300 space-y-3">
-          <img
-            src={selectedProject?.image}
-            alt=""
-            className="w-full h-[50vh] mb-2 object-cover object-center rounded-xl"
-          />
+          {selectedProject?.image ? (
+            <img
+              src={selectedProject?.image}
+              alt=""
+              className="w-full h-[50vh] mb-2 object-cover object-center rounded-xl"
+            />
+          ) : (
+            <p className="text-4xl flex flex-col items-center justify-center h-[30vh] text">Loading</p>
+          )}
           <h4 className="text-sm text-neutral-400">
             {selectedProject?.subtitle} • {selectedProject?.period}
           </h4>

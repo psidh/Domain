@@ -8,7 +8,7 @@ export default function Main() {
   return (
     <div className="relative w-full ">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 z-10 bg-black/40" />
+        <div className="absolute inset-0 z-10 bg-black/20" />
 
         <img
           src="/bg2.png"
