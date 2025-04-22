@@ -61,7 +61,7 @@ export default function Mischellaneous() {
   useEffect(() => {
     const timer = setInterval(() => {
       nextSlide();
-    }, 3000); // 5 sec delay
+    }, 5500); // 5 sec delay
     return () => clearInterval(timer);
   }, []);
 
