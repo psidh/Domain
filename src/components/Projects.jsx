@@ -16,7 +16,7 @@ const projectsData = [
   {
     title: "Rooster",
     subtitle: "One-Click React Deployment",
-    period: "Jan - Mar 2025",
+    period: "Jul 2024",
     description:
       "Tool that deploys any React app in a click using Node.js and AWS ECS - S3",
     details: "Includes CI/CD pipeline integration, zero-downtime deploys .",
@@ -111,7 +111,7 @@ export default function Projects() {
             <img
               src={hovered.project?.image}
               alt=""
-              className="rounded-xl mb-2"
+              className="rounded-xl mb-2 w-full h-[20vh] object-cover object-center"
             />
             <h4 className="font-semibold text-white mb-1">
               {hovered.project.title}
