@@ -15,7 +15,7 @@ export default function Main() {
           <h2 className="mt-4 text-center lg:text-left w-full font-medium text-xl text-neutral-400">
             Student    |    Developer
           </h2>
-          <p className="text-md lg:text-lg text-center md:text-left font-extralight text-neutral-100 w-full md:w-[94%] leading-8 lg:leading-8 my-6 lg:mt-4">
+          <p className="text-md lg:text-lg text-center md:text-left text-neutral-100 font-medium w-full md:w-[94%] leading-8 lg:leading-8 my-6 lg:mt-4">
             I&apos;m a developer who builds like a maximalist and enjoys pouring
             out code. My journey started at 12 with Web and hasn&apos;t paused
             since. From winning hackathons to building multiple Full Stack apps,

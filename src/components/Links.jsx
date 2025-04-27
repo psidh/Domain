@@ -1,5 +1,10 @@
-
-import { FiGithub, FiLinkedin, FiTwitter, FiInstagram } from "react-icons/fi";
+import {
+  FiGithub,
+  FiLinkedin,
+  FiTwitter,
+  FiInstagram,
+  FiMail,
+} from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
 
 export default function Links() {
@@ -42,13 +47,13 @@ export default function Links() {
         <FiTwitter />
       </a>
       <a
-        href="https://instagram.com/p_s1dharth/"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=philkhanasidharth14@gmail.com"
         target="_blank"
-        title="Instagram"
+        title="Gmail"
         rel="noopener noreferrer"
         className="hover:scale-110 transition-all duration-200"
       >
-        <FiInstagram />
+        <FiMail />
       </a>
     </div>
   );
