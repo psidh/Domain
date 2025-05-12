@@ -8,7 +8,7 @@ function MyApp() {
     <div className="relative w-full">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute inset-0 z-10 bg-black/40 bg-opacity-50 backdrop-blur-md" />
+        <div className="absolute inset-0 z-10 bg-black/40 bg-opacity-50 backdrop-blur-sm" />
         <img
           src={arr[0]}
           alt="background"

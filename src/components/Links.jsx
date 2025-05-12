@@ -1,10 +1,10 @@
 import {
   FiGithub,
   FiLinkedin,
-  FiTwitter,
-  FiInstagram,
+  FiX,
   FiMail,
 } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 
 export default function Links() {
@@ -44,7 +44,7 @@ export default function Links() {
         rel="noopener noreferrer"
         className="hover:scale-110 transition-all duration-200"
       >
-        <FiTwitter />
+        <FaXTwitter />
       </a>
       <a
         href="https://mail.google.com/mail/?view=cm&fs=1&to=philkhanasidharth14@gmail.com"
