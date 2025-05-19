@@ -40,7 +40,7 @@ const ExperienceCard = ({ exp, onClick, onHover, onLeave }) => (
     onClick={() => onClick(exp)}
     onMouseEnter={(e) => onHover(exp, e)}
     onMouseLeave={onLeave}
-    className="p-4 backdrop-blur-3xl border border-neutral-700 bg-opacity-[5%] rounded-lg cursor-pointer hover:bg-opacity-10 transition-all duration-300 ease-in-out"
+    className="p-4 backdrop-blur-3xl  bg-opacity-[5%] rounded-lg cursor-pointer hover:bg-opacity-10 transition-all duration-300 ease-in-out"
   >
     <h3 className="text-xl font-semibold">{exp.title}</h3>
     <div className="w-full h-[0.1px] mt-3 bg-neutral-600" />
@@ -80,7 +80,7 @@ export default function Experience() {
   return (
     <>
       <div className="flex flex-col gap-6 pr-2 w-full lg:w-1/3">
-        <h3 className="text-3xl mt-6 lg:mt-0 lg:text-2xl text-blue-300 font-semibold w-full text-center">
+        <h3 className="text-3xl mt-6 lg:mt-0 lg:text-2xl font-semibold w-full text-center">
           Experience
         </h3>
         {experienceData.map((e) => (
@@ -113,7 +113,7 @@ export default function Experience() {
             <h4 className="font-semibold text-white mb-1">
               {hovered.exp.title}
             </h4>
-            <p>{hovered.exp.description}</p>
+            <p>Click for more info</p>
           </motion.div>
         )}
       </AnimatePresence>

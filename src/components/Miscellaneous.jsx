@@ -36,16 +36,16 @@ const rowVariants = {
 
 const slides = [
   {
-    title: "Ganges",
-    date: "Jul 2025",
-    desc: "a indic inspired flow of communication",
-    gradient: "from-[#000000] to-[#1d3a90]",
-    textColor: "text-blue-500",
+    title: "Prithvi",
+    date: "Aug 2025",
+    desc: "systems level project in optimising data",
+    gradient: "from-[#000000] to-[#1d903a]",
+    textColor: "text-green-500",
   },
   {
     title: "Agni",
-    date: "Oct 2025",
-    desc: "a blazing low-level systems project",
+    date: "Nov 2025",
+    desc: "a blazingly fast low-level project",
     gradient: "from-[#000000] to-[#901d1d]",
     textColor: "text-orange-500",
   },
