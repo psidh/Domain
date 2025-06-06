@@ -62,7 +62,7 @@ const blogs = [
   },
   {
     title: "Inside the Machine",
-    date: "Nov 2025",
+    date: "June 2025",
     desc: "Introduction and overview of operating system",
     gradient: "from-[#000000] to-[#1d903a]",
     textColor: "text-green-500",
@@ -117,9 +117,6 @@ export default function Mischellaneous() {
               transition={{ duration: 0.5, ease: "linear" }}
               className={`p-4 rounded-2xl bg-gradient-to-br ${blogs[index2].gradient} text-white shadow-lg cursor-pointer`}
             >
-              <p className="text-xl font-semibold text-center mb-2">
-                {blogs[index2].date}
-              </p>
               <div className="text-sm text-neutral-200 text-center">
                 <p
                   className={`font-bold mb-2 text-2xl ${blogs[index2].textColor}`}
