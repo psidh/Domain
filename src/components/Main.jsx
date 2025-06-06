@@ -36,11 +36,11 @@ export default function Main() {
       </div>
       <div className="lg:hidden flex">
         <div className="w-full flex lg:flex-row flex-col gap-y-12 lg:gap-y-0 lg:gap-6 overflow-hidden">
-          <Miscellaneous />
-          <div className="hidden lg:flex mt-24 h-[50vh] w-[1px] my-2 bg-neutral-600" />
           <Experience />
           <div className="hidden lg:flex mt-24 h-[50vh] w-[1px] my-2 bg-neutral-600" />
           <Projects />
+          <div className="hidden lg:flex mt-24 h-[50vh] w-[1px] my-2 bg-neutral-600" />
+          <Miscellaneous />
         </div>
       </div>
     </div>
