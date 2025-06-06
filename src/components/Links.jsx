@@ -1,11 +1,7 @@
-import {
-  FiGithub,
-  FiLinkedin,
-  FiX,
-  FiMail,
-} from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
+import { FaMedium } from "react-icons/fa";
 
 export default function Links() {
   return (
@@ -27,6 +23,15 @@ export default function Links() {
         className="hover:scale-110 transition-all duration-200"
       >
         <SiLeetcode />
+      </a>
+      <a
+        href="https://medium.com/@philkhanasidharth14"
+        target="_blank"
+        title="Medium"
+        rel="noopener noreferrer"
+        className="hover:scale-110 transition-all duration-200"
+      >
+        <FaMedium />
       </a>
       <a
         href="https://linkedin.com/in/p-sidharth/"
