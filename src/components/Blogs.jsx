@@ -37,7 +37,7 @@ export default function Blogs() {
 
   return (
     <div className="dynamic-glow-rose border border-rose-900 bg-gradient-to-br from-rose-950 to-black p-4 rounded-xl"> 
-      <h3 className="text-3xl mb-4 lg:mt-0 lg:text-2xl text-neutral-200 font-semibold w-full lg:text-left text-center">
+      <h3 className="text-rose-300 text-3xl mb-4 lg:mt-0 lg:text-2xl font-semibold w-full lg:text-left text-center">
         Blogs
       </h3>
 
@@ -71,12 +71,12 @@ export default function Blogs() {
           </a>
         </AnimatePresence>
 
-        <div className="absolute top-1/2 -translate-y-1/2 left-2">
+        <div className="absolute top-1/2 -translate-y-1/2 left-0">
           <button onClick={prevBlog}>
             <ChevronLeft className="text-white hover:scale-110 transition" />
           </button>
         </div>
-        <div className="absolute top-1/2 -translate-y-1/2 right-2">
+        <div className="absolute top-1/2 -translate-y-1/2 right-0">
           <button onClick={nextBlog}>
             <ChevronRight className="text-white hover:scale-110 transition" />
           </button>

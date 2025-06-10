@@ -26,8 +26,6 @@ export default function ComingSoon() {
   const prevSlide = () =>
     setIndex((prev) => (prev - 1 + slides.length) % slides.length);
 
-  const nextBlog = () => setIndex2((prev) => (prev + 1) % blogs.length);
-
   useEffect(() => {
     const timer = setInterval(() => {
       nextSlide();
@@ -37,7 +35,7 @@ export default function ComingSoon() {
 
   return (
     <div className="dynamic-glow-sky border border-sky-900 bg-gradient-to-br from-sky-950 to-black p-4 rounded-xl mb-6">
-      <h3 className="text-3xl lg:mt-0 lg:text-2xl text-neutral-200 font-semibold mb-4 w-full lg:text-left text-center">
+      <h3 className="text-sky-300 text-3xl lg:mt-0 lg:text-2xl font-semibold mb-4 w-full lg:text-left text-center">
         Coming Soon
       </h3>
       <div className="w-full border border-sky-950 h-[1px] mb-4"></div>
@@ -52,9 +50,9 @@ export default function ComingSoon() {
             transition={{ duration: 0.5, ease: "linear" }}
             className={`p-4 rounded-2xl text-white shadow-lg`}
           >
-            <p className="text-3xl font-semibold text-center mb-2">
+            {/* <p className="text-3xl font-semibold text-center mb-2">
               {slides[index].date}
-            </p>
+            </p> */}
             <div className="text-sm text-neutral-200 text-center">
               <p
                 className={`font-bold mb-2 text-2xl ${slides[index].textColor}`}
@@ -66,12 +64,12 @@ export default function ComingSoon() {
           </motion.div>
         </AnimatePresence>
 
-        <div className="absolute top-1/2 -translate-y-1/2 left-2">
+        <div className="absolute top-1/2 -translate-y-1/2 left-0">
           <button onClick={prevSlide}>
             <ChevronLeft className="text-white hover:scale-110 transition" />
           </button>
         </div>
-        <div className="absolute top-1/2 -translate-y-1/2 right-2">
+        <div className="absolute top-1/2 -translate-y-1/2 right-0">
           <button onClick={nextSlide}>
             <ChevronRight className="text-white hover:scale-110 transition" />
           </button>

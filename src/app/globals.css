@@ -44,7 +44,6 @@ body {
 /* _____________________ */
 
 .dynamic-glow {
-  border-radius: 12px;
   background-color: #111; /* or transparent */
   color: white;
   animation: glowCycleNeutral 6s linear infinite;

@@ -33,7 +33,7 @@ export default function TechStack() {
   return (
     <div className="dynamic-glow p-4 flex flex-col w-full border border-neutral-700 bg-gradient-to-br from-neutral-800/80 to-black rounded-xl">
       <div className="">
-        <h3 className="text-xl font-semibold mb-4 text-center lg:text-left text-white">
+        <h3 className="text-3xl mb-4 lg:mt-0 lg:text-2xl font-semibold w-full lg:text-left text-center text-neutral-20">
           Tech Stack
         </h3>
         <div className="w-full border border-neutral-700 h-[1px] mb-4"></div>
@@ -50,8 +50,8 @@ export default function TechStack() {
               <Image
                 src={`/tools/${icon}.svg`}
                 alt={icon}
-                width={35}
-                height={35}
+                width={34}
+                height={34}
                 className="object-cover"
               />
             </motion.div>
