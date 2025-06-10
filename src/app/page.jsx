@@ -9,11 +9,11 @@ function MyApp() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 z-10 bg-black/20 backdrop-blur-sm" />
-        <img
+        {/* <img
           src={arr[0]}
           alt="background"
           className="w-full h-full object-cover"
-        />
+        /> */}
       </div>
 
       {/* Main Content */}

@@ -40,7 +40,7 @@ const ExperienceCard = ({ exp, onClick, onHover, onLeave }) => (
     onClick={() => onClick(exp)}
     onMouseEnter={(e) => onHover(exp, e)}
     onMouseLeave={onLeave}
-    className="p-4 backdrop-blur-3xl  bg-opacity-[5%] rounded-lg cursor-pointer hover:bg-opacity-10 transition-all duration-300 ease-in-out"
+    className="cursor-pointer"
   >
     <h3 className="text-xl font-semibold">{exp.title}</h3>
     <div className="w-full h-[0.1px] mt-3 bg-neutral-600" />
@@ -79,10 +79,11 @@ export default function Experience() {
 
   return (
     <>
-      <div className="flex flex-col gap-6 pr-2 w-full lg:w-1/3">
-        <h3 className="text-3xl mt-6 lg:mt-0 lg:text-2xl font-semibold w-full text-center">
+      <div className="dynamic-glow-blue  mt-4  flex flex-col gap-6 pr-2 w-full lg:w-1/3 border border-blue-900 bg-gradient-to-br from-blue-950 to-black p-4 rounded-xl overflow-y-auto h-[60vh] mb-6">
+        <h3 className="text-blue-300 text-3xl lg:mt-0 lg:text-2xl font-semibold w-full lg:text-left text-center">
           Experience
         </h3>
+        <div className="w-full border border-blue-900 h-[1px] mb-4"></div>
         {experienceData.map((e) => (
           <ExperienceCard
             key={e.title}

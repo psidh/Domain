@@ -18,3 +18,217 @@
 body {
   overflow-x: hidden;
 }
+
+/* Transparent scrollbar with white thumb */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Optional: hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* _____________________ */
+
+.dynamic-glow {
+  border-radius: 12px;
+  background-color: #111; /* or transparent */
+  color: white;
+  animation: glowCycleNeutral 6s linear infinite;
+  box-shadow: 0 0 20px currentColor;
+}
+
+@keyframes glowCycleNeutral {
+  0% {
+    box-shadow: 0 0 20px #b1b1b1;
+  }
+  25% {
+    box-shadow: 0 0 20px #4e4e4e;
+  }
+  50% {
+    box-shadow: 0 0 20px #2d2d2d;
+  }
+  75% {
+    box-shadow: 0 0 20px #a6a6a6;
+  }
+  100% {
+    box-shadow: 0 0 20px #ffffff;
+  }
+}
+
+/* _____________________ */
+
+.dynamic-glow-green {
+  border-radius: 12px;
+  background-color: #111; /* or transparent */
+  color: white;
+  animation: glowCycleGreen 4s linear infinite;
+  box-shadow: 0 0 20px currentColor;
+}
+
+@keyframes glowCycleGreen {
+  0% {
+    box-shadow: 0 0 20px #44ff00;
+  }
+  25% {
+    box-shadow: 0 0 20px #34c300;
+  }
+  50% {
+    box-shadow: 0 0 20px #0f3900;
+  }
+  75% {
+    box-shadow: 0 0 20px #1c6a00;
+  }
+  100% {
+    box-shadow: 0 0 20px #44ff00;
+  }
+}
+/* _____________________ */
+
+.dynamic-glow-blue {
+  border-radius: 12px;
+  background-color: #111; /* or transparent */
+  color: white;
+  animation: glowCycleBlue 4s linear infinite;
+  box-shadow: 0 0 20px currentColor;
+}
+
+@keyframes glowCycleBlue {
+  0% {
+    box-shadow: 0 0 20px #3b82f6;
+  } /* blue-500 */
+  25% {
+    box-shadow: 0 0 20px #2563eb;
+  } /* blue-600 */
+  50% {
+    box-shadow: 0 0 20px #1d4ed8;
+  } /* blue-700 */
+  75% {
+    box-shadow: 0 0 20px #1e40af;
+  } /* blue-800 */
+  100% {
+    box-shadow: 0 0 20px #3b82f6;
+  } /* blue-500 */
+}
+
+/*  */
+
+.dynamic-glow-rose {
+  border-radius: 12px;
+  background-color: #111; /* or transparent */
+  color: white;
+  animation: glowCycleRose 4s linear infinite;
+  box-shadow: 0 0 20px currentColor;
+}
+
+@keyframes glowCycleRose {
+  0% {
+    box-shadow: 0 0 20px #f43f5e;
+  } /* rose-500 */
+  25% {
+    box-shadow: 0 0 20px #e11d48;
+  } /* rose-600 */
+  50% {
+    box-shadow: 0 0 20px #be123c;
+  } /* rose-700 */
+  75% {
+    box-shadow: 0 0 20px #9f1239;
+  } /* rose-800 */
+  100% {
+    box-shadow: 0 0 20px #f43f5e;
+  } /* rose-500 */
+}
+
+/*  */
+
+.dynamic-glow-red {
+  border-radius: 12px;
+  background-color: #111; /* or transparent */
+  color: white;
+  animation: glowCycleRed 4s linear infinite;
+  box-shadow: 0 0 20px currentColor;
+}
+
+@keyframes glowCycleRed {
+  0% {
+    box-shadow: 0 0 20px #ef4444;
+  } /* red-500 */
+  25% {
+    box-shadow: 0 0 20px #dc2626;
+  } /* red-600 */
+  50% {
+    box-shadow: 0 0 20px #b91c1c;
+  } /* red-700 */
+  75% {
+    box-shadow: 0 0 20px #991b1b;
+  } /* red-800 */
+  100% {
+    box-shadow: 0 0 20px #ef4444;
+  } /* red-500 */
+}
+/*  */
+
+.dynamic-glow-yellow {
+  border-radius: 12px;
+  background-color: #111; /* or transparent */
+  color: white;
+  animation: glowCycleYellow 4s linear infinite;
+  box-shadow: 0 0 20px currentColor;
+}
+
+@keyframes glowCycleYellow {
+  0% {
+    box-shadow: 0 0 20px #eab308;
+  } /* yellow-500 */
+  25% {
+    box-shadow: 0 0 20px #ca8a04;
+  } /* yellow-600 */
+  50% {
+    box-shadow: 0 0 20px #a16207;
+  } /* yellow-700 */
+  75% {
+    box-shadow: 0 0 20px #854d0e;
+  } /* yellow-800 */
+  100% {
+    box-shadow: 0 0 20px #eab308;
+  } /* yellow-500 */
+}
+/*  */
+
+.dynamic-glow-sky {
+  border-radius: 12px;
+  background-color: #111; /* or transparent */
+  color: white;
+  animation: glowCycleSky 4s linear infinite;
+  box-shadow: 0 0 20px currentColor;
+}
+@keyframes glowCycleSky {
+  0% {
+    box-shadow: 0 0 20px #0ea5e9;
+  } /* sky-500 */
+  25% {
+    box-shadow: 0 0 20px #0284c7;
+  } /* sky-600 */
+  50% {
+    box-shadow: 0 0 20px #0369a1;
+  } /* sky-700 */
+  75% {
+    box-shadow: 0 0 20px #075985;
+  } /* sky-800 */
+  100% {
+    box-shadow: 0 0 20px #0ea5e9;
+  } /* sky-500 */
+}

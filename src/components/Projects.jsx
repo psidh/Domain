@@ -47,7 +47,7 @@ const ProjectCard = ({ project, onClick, onHover, onLeave }) => (
     onClick={() => onClick(project)}
     onMouseEnter={(e) => onHover(project, e)}
     onMouseLeave={onLeave}
-    className="p-4 backdrop-blur-3xl  bg-opacity-[5%] rounded-lg cursor-pointer hover:bg-opacity-10 transition-all duration-300 ease-in-out"
+    className="rounded-lg cursor-pointer transition-all duration-300 ease-in-out"
   >
     <h3 className="text-xl font-semibold">{project.title}</h3>
     <div className="w-full h-[0.1px] mt-3 bg-neutral-600" />
@@ -86,10 +86,11 @@ export default function Projects() {
 
   return (
     <>
-      <div className="flex flex-col gap-6 pr-2 w-full lg:w-1/3">
-        <h3 className="text-3xl mt-6 lg:mt-0 lg:text-2xl  font-semibold w-full text-center">
+      <div className="dynamic-glow-green mt-4 flex flex-col gap-6 pr-2 w-full lg:w-1/3 border border-green-900 bg-gradient-to-br from-green-950 to-black p-5 rounded-xl overflow-y-auto h-[60vh]">
+        <h3 className="text-green-500 text-3xl lg:mt-0 lg:text-2xl lg:text-left font-semibold w-full text-center">
           Projects
         </h3>
+        <div className="w-full border border-green-800 h-[1px] mb-4"></div>
         {projectsData.map((p) => (
           <ProjectCard
             key={p.title}
