@@ -79,7 +79,7 @@ export default function Experience() {
 
   return (
     <>
-      <div className="dynamic-glow-blue  mt-4  flex flex-col gap-6 pr-2 w-full lg:w-1/3 border border-blue-900 bg-gradient-to-br from-blue-950 to-black p-4 rounded-xl overflow-y-auto h-[60vh] mb-6">
+      <div className="dynamic-glow-blue lg:mx-4 mt-4  flex flex-col gap-6 pr-2 w-full lg:w-1/3 border border-blue-900 bg-gradient-to-br from-blue-950 to-black p-4 rounded-xl overflow-y-auto h-[60vh] mb-6">
         <h3 className="text-blue-300 text-3xl lg:mt-0 lg:text-2xl font-semibold w-full lg:text-left text-center">
           Experience
         </h3>

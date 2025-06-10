@@ -7,7 +7,7 @@ import Links from "./Links";
 export default function Main() {
   return (
     <div className="relative z-20 py-12 px-8 md:px-12 md:pt-12 bg-transparent flex flex-col items-start w-full text-white">
-      <div className="flex lg:flex-row  flex-col justify-between  mb-8 gap-8 h-full">
+      <div className="flex lg:flex-row  flex-col justify-between lg:ml-3 lg:mr-7 mb-8 gap-8 h-full">
         <div className="dynamic-glow-red border border-red-900 bg-gradient-to-br from-red-950 to-black p-4 rounded-xl">
           <h1 className="text-4xl mb-6 md:text-[36px] text-center lg:text-left w-full lg:text-5xl font-semibold">
             Philkhana Sidharth
