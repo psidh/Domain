@@ -18,6 +18,7 @@ const blogs = [
     desc: "Introduction and overview of operating system",
     gradient: "",
     textColor: "",
+    link : "https://medium.com/@philkhanasidharth14/inside-the-machine-learning-os-with-vishnu-and-krish-93313cd01834"
   },
 ];
 

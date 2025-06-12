@@ -164,7 +164,7 @@ export default function Projects() {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-full sm:w-[700px] backdrop-blur-2xl bg-black bg-opacity-30 z-50 transform transition-transform duration-300 ease-in-out overflow-y-scroll ${
+        className={`fixed top-0 right-0 h-full w-full sm:w-[900px] backdrop-blur-2xl bg-black bg-opacity-30 z-50 transform transition-transform duration-300 ease-in-out overflow-y-scroll ${
           selectedProject ? "translate-x-0" : "translate-x-full"
         }`}
       >

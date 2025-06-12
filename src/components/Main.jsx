@@ -26,7 +26,7 @@ export default function Main() {
                 </span>{" "}
                 with Web and never looked back. From winning multiple{" "}
                 <span className="text-green-500">hackathons</span> to building
-                <span className="text-green-500">Full Stack</span> apps, I love exploring new avenues.
+                <span className="text-green-500"> Full Stack</span> apps, I love exploring new avenues.
               </p>
             </div>
             <img
