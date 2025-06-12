@@ -34,11 +34,11 @@ export default function ComingSoon() {
   }, []);
 
   return (
-    <div className="dynamic-glow-sky border border-sky-900 bg-gradient-to-br from-sky-950 to-black p-4 rounded-xl mb-6">
+    <div className="dynamic-glow-sky border border-sky-900 bg-gradient-to-br from-sky-950/30 to-black p-4 rounded-xl mb-6">
       <h3 className="text-sky-300 text-3xl lg:mt-0 lg:text-2xl font-semibold mb-4 w-full lg:text-left text-center">
         Coming Soon
       </h3>
-      <div className="w-full border border-sky-950 h-[1px] mb-4"></div>
+      <div className="w-full border border-sky-950/50 h-[1px] mb-4"></div>
 
       <div className="relative">
         <AnimatePresence mode="wait">

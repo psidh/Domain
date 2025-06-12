@@ -9,8 +9,12 @@ const projectsData = [
     period: "Jul 2024",
     description:
       "A Sanskrit based programming language in GoLang. Features : Loops, Functions, Arrays, HashMaps, HashSets.",
-    details:
-      "Includes lexer, tokeniser, AST, parser, tests, downloadable links for all 3 OS",
+    details: [
+      "Created Ganges, a custom programming language with Sanskrit-inspired syntax, designed for clarity and educational use in systems programming.",
+      "Built a complete recursive descent parser and tree-walking interpreter from scratch in Go, supporting variables, conditionals, loops, functions, and HashSet, Arrays, HashMap data structures.",
+      "Designed and implemented a real-time browser-based playground for the language, enabling instant feedback and code visualization.",
+      " Delivered a complete MVP in under 30 days, including support for control flow, expression evaluation, and extensible architecture for future compilation to WebAssembly.",
+    ],
     image: "https://ganges.psidharth.dev/assets/meta-header.png",
     deployedLink: "https://ganges.psidharth.dev",
     githubLink: "https://github/psidh/Ganges",
@@ -21,24 +25,51 @@ const projectsData = [
     period: "Jul - Nov 2023",
     description:
       "Web app for shovel operators to monitor real-time dumper truck locations and statuses.",
-    details:
-      "Sahayata was built with React, Firebase, and Mapbox. It features real-time updates, live dashboards, and location-based alerts. Used by mining operators to streamline vehicle routing.",
+    details: [
+      "Developed an IoT-driven coal optimization platform, integrating real-time sensor data to enhance supply chain efficiency.",
+      "Engineered a low-latency, cost-effective sensor network, reducing coal transportation inefficiencies by 10%.",
+      "Optimized resource allocation, resulting in a 21% increase in operational savings and increased logistics throughput.",
+      "Achieved a Google Lighthouse score of 90, ensuring a high-performance, SEO-optimized platform.",
+    ],
     image: "/icons/spruce.jpeg",
     deployedLink: "https://sahayata.vercel.app/",
     githubLink: "https://github.com/psidh/Sahayata",
   },
 
   {
+    title: "Chess Web app",
+    subtitle: "Online Multiplayer Chess game",
+    period: "Jan 2025",
+    description:
+      "Online Multiplayer Chess game implemented through WebSockets. Play 1v1, random people on the server.",
+    details: [
+      "Real-time multiplayer chess via WebSockets",
+      "Supports 1v1 matches with random matchmaking.",
+      "Move validation and game rules implemented through chess.js",
+      "Client-side board rendering with interactive UI",
+      "Random matchmaking for 1v1 games using simple queues",
+      "User accounts likely managed via Prisma/PostgreSQL. Database sync for game history, stats, or profile data",
+    ],
+    image: "/projects/chess.png",
+    deployedLink: "-",
+    githubLink: "https://github.com/psidh/chess",
+    demoVideo: "",
+  },
+  {
     title: "DevFest RSVP",
     subtitle: "Google Developer Groups | Vizag",
     period: "Dec 2023",
     description:
       "Central RSVP site for GDG DevFest Vizag 2023. Manages live check-ins, confirmations, and analytics.",
-    details:
-      "Real-time attendee tracking, QR code check-in system, exportable analytics dashboard, built with Next.js + PostgreSQL.",
+    details: [
+      "Real-time attendee tracking QR code , ",
+      "Check-in systems for more than 10 sessions in the event.",
+      "Exportable analytics dashboard",
+      "Built with Next.js + Firebase. Integrated React-QR-Code for the check-ins.",
+    ],
     image: "/projects/project13.png",
-    deployedLink: "/",
-    githubLink: "/",
+    deployedLink: "-",
+    githubLink: "https://github.com/psidh/devFest23",
   },
 ];
 
@@ -50,14 +81,15 @@ const ProjectCard = ({ project, onClick, onHover, onLeave }) => (
     className="rounded-lg cursor-pointer transition-all duration-300 ease-in-out"
   >
     <h3 className="text-xl font-semibold">{project.title}</h3>
-    <div className="w-full h-[0.1px] mt-3 bg-neutral-600" />
+    {/* <div className="w-full h-[0.1px] mt-3 bg-neutral-600" /> */}
     <div className="flex items-center justify-between text-lg font-normal">
-      <h4 className="my-4 text-sm text-neutral-300 font-medium">
+      <h4 className="my-4 text-sm text-neutral-500 font-medium">
         {project.subtitle}
       </h4>
-      <p className="text-neutral-400 text-sm">{project.period}</p>
+      <p className="text-neutral-500 text-sm">{project.period}</p>
     </div>
-    <p className="text-neutral-300 font-medium">{project.description}</p>
+    <p className="text-neutral-300 font-medium mb-4">{project.description}</p>
+    <div className="w-full h-[0.1px] bg-neutral-500"></div>
   </div>
 );
 
@@ -86,11 +118,11 @@ export default function Projects() {
 
   return (
     <>
-      <div className="dynamic-glow-green mt-4 flex flex-col gap-6 pr-2 w-full lg:w-1/3 border border-green-900 bg-gradient-to-br from-green-950 to-black p-5 rounded-xl overflow-y-auto h-[60vh]">
-        <h3 className="text-green-500 text-3xl lg:mt-0 lg:text-2xl lg:text-left font-semibold w-full text-center">
+      <div className="dynamic-glow-red mt-4 flex flex-col gap-6 pr-2 w-full lg:w-1/3 border border-red-900 bg-gradient-to-br from-red-950/50 to-black p-5 rounded-xl overflow-y-auto h-[65vh]">
+        <h3 className="text-red-500 text-3xl lg:mt-0 lg:text-left font-semibold w-full text-center">
           Projects
         </h3>
-        <div className="w-full border border-green-800 h-[1px] mb-4"></div>
+        <div className="w-full border border-red-800 h-[1px] "></div>
         {projectsData.map((p) => (
           <ProjectCard
             key={p.title}
@@ -110,7 +142,7 @@ export default function Projects() {
             initial={{ opacity: 0, scale: 0.95, y: -10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -10 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
             className="fixed z-50 p-4 w-[300px] backdrop-blur bg-black bg-opacity-60 border border-neutral-700 rounded-lg shadow-xl text-sm text-neutral-300 pointer-events-none"
             style={{
               top: `${hovered.y}px`,
@@ -132,7 +164,7 @@ export default function Projects() {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-full sm:w-[700px] backdrop-blur-2xl bg-black bg-opacity-30 z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-full sm:w-[700px] backdrop-blur-2xl bg-black bg-opacity-30 z-50 transform transition-transform duration-300 ease-in-out overflow-y-scroll ${
           selectedProject ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -162,16 +194,20 @@ export default function Projects() {
           <h4 className="text-base my-4 text-neutral-400">
             {selectedProject?.subtitle} • {selectedProject?.period}
           </h4>
-          <hr className="border border-neutral-700" />
-          <p className="text-xl">{selectedProject?.details}</p>
-          <div className="flex flex-col items-start justify-center">
-            <a
-              href={selectedProject?.deployedLink}
-              target="_blank"
-              className="my-2 text-fuchsia-400 font-semibold"
-            >
-              Deployed Link
-            </a>
+          <div className="flex flex-col md:flex-row items-start justify-center gap-4 md:justify-start">
+            {selectedProject?.deployedLink === "-" ? (
+              <p className="my-2 text-fuchsia-800 font-semibold">
+                Deployed Link
+              </p>
+            ) : (
+              <a
+                href={selectedProject?.deployedLink}
+                target="_blank"
+                className="my-2 text-fuchsia-400 font-semibold"
+              >
+                Deployed Link
+              </a>
+            )}
             <a
               href={selectedProject?.githubLink}
               target="_blank"
@@ -180,6 +216,16 @@ export default function Projects() {
               GitHub Link
             </a>
           </div>
+          <hr className="border border-neutral-700" />
+          {Array.isArray(selectedProject?.details) ? (
+            selectedProject.details.map((detail, idx) => (
+              <li key={idx} className="list-disc list-inside">
+                {detail}
+              </li>
+            ))
+          ) : (
+            <p>{selectedProject?.details}</p>
+          )}
         </div>
       </div>
 

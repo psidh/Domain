@@ -30,7 +30,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 10px;
   border: 2px solid transparent;
   background-clip: content-box;
@@ -230,4 +230,30 @@ body {
   100% {
     box-shadow: 0 0 20px #0ea5e9;
   } /* sky-500 */
+}
+
+.dynamic-glow-purple {
+  border-radius: 12px;
+  background-color: #111; /* or transparent */
+  color: white;
+  animation: glowCyclePurple 4s linear infinite;
+  box-shadow: 0 0 20px currentColor;
+}
+
+@keyframes glowCyclePurple {
+  0% {
+    box-shadow: 0 0 20px #a855f7;
+  } /* purple-500 */
+  25% {
+    box-shadow: 0 0 20px #9333ea;
+  } /* purple-600 */
+  50% {
+    box-shadow: 0 0 20px #7e22ce;
+  } /* purple-700 */
+  75% {
+    box-shadow: 0 0 20px #6b21a8;
+  } /* purple-800 */
+  100% {
+    box-shadow: 0 0 20px #a855f7;
+  } /* purple-500 */
 }

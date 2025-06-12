@@ -5,7 +5,7 @@ import { FaMedium } from "react-icons/fa";
 
 export default function Links() {
   return (
-    <div className="dynamic-glow-yellow p-5 flex flex-col items-center justify-between w-full lg:w-1/2 shadow-lg shadow-yellow-400 border border-yellow-700 bg-gradient-to-tl from-yellow-700 to-black rounded-xl min-h-full">
+    <div className="dynamic-glow-yellow p-5 flex flex-col items-center justify-between w-full lg:w-1/2 shadow-lg shadow-yellow-400 border border-yellow-700 bg-gradient-to-br from-yellow-950/50 to-black rounded-xl min-h-full">
       <h3 className="text-yellow-500 text-3xl lg:mt-0 mb-4 lg:text-2xl lg:text-left font-semibold w-full text-center">
         Social Links
       </h3>
