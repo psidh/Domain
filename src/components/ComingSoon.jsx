@@ -5,17 +5,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    title: "Prithvi",
-    date: "Aug 2025",
-    desc: "systems level project in optimising data",
+    title: "Akash",
+    date: "Oct 2025",
+    desc: "systems level project in balancing",
     gradient: "from-[#7a7a7a] to-[#000000]",
-    textColor: "text-white",
-  },
-  {
-    title: "Agni",
-    date: "Nov 2025",
-    desc: "a blazingly fast low-level project",
-    gradient: "from-[#000000] to-[#7a7a7a]",
     textColor: "text-white",
   },
 ];

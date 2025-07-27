@@ -4,6 +4,26 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const projectsData = [
   {
+    title: "Prithvi",
+    subtitle: "Key Val Database built from scratch",
+    period: "Jul 2025",
+    description:
+      "Prithvi is an open-source, in-memory key-value database written in Java — built from scratch for performance, transparency, and developer control. It supports multiple data types, expiration, LRU caching, disk persistence, and a multi-threaded architecture.",
+    details: [
+      "Built from scratch in Java with support for multiple data types and advanced features.",
+      "Implemented core data structures including Strings, Lists, and Sets, with over 20 commands supported and performance benchmarked at 138K+ ops/sec on commodity hardware. Added TTL and LRU cache policies for efficient memory usage.",
+      "Designed a thread-safe architecture using synchronized blocks and multithreaded client handling, tested to handle 100+ , (10,000,000 reqs) concurrent connections with no race conditions or data corruption.",
+      "Built a robust JWT-style authentication system from scratch, including AUTH and TOKEN commands for per-session security.",
+      "Added Write-Ahead Logging (WAL) for crash recovery and disk persistence, with startup log replay ensuring durability of data.",
+      "Developed a JavaScript SDK and CLI client for seamless interaction, and documented all commands and features in a comprehensive README.",
+      "Delivered a production-grade MVP running on port 1902, built in under 45 days with a focus on performance, reliability, and extensibility.",
+    ],
+
+    image: "https://prithvi.psidharth.dev/prithvi.png",
+    deployedLink: "https://prithvi.psidharth.dev",
+    githubLink: "https://github/psidh/Prithvi",
+  },
+  {
     title: "Ganges",
     subtitle: "Dynamically Typed - Interpreted Language",
     period: "Jul 2024",
