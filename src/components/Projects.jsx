@@ -100,8 +100,7 @@ const ProjectCard = ({ project, onClick, onHover, onLeave }) => (
     onMouseLeave={onLeave}
     className="rounded-lg cursor-pointer transition-all duration-300 ease-in-out"
   >
-    <h3 className="text-xl font-semibold">{project.title}</h3>
-    {/* <div className="w-full h-[0.1px] mt-3 bg-neutral-600" /> */}
+    <h3 className="text-xl font-semibold text-red-200">{project.title}</h3>
     <div className="flex items-center justify-between text-lg font-normal">
       <h4 className="my-4 text-sm text-neutral-500 font-medium">
         {project.subtitle}
