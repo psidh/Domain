@@ -108,7 +108,9 @@ const ProjectCard = ({ project, onClick, onHover, onLeave }) => (
       </h4>
       <p className="text-neutral-500 text-sm">{project.period}</p>
     </div>
-    <p className="text-neutral-300 font-medium mb-4">{project.description}</p>
+    <p className="text-neutral-400 font-medium mb-4">
+      {project.description.length > 100 ? project.description.slice(0, 100) + "…" : project.description}
+    </p>
     <div className="w-full h-[0.1px] bg-neutral-500"></div>
   </div>
 );
@@ -138,7 +140,7 @@ export default function Projects() {
 
   return (
     <>
-      <div className="dynamic-glow-red mt-4 flex flex-col gap-6 pr-2 w-full lg:w-1/3 border border-red-900 bg-gradient-to-br from-red-950/50 to-black p-5 rounded-xl overflow-y-auto h-[65vh]">
+      <div className="mt-4 flex flex-col gap-6 pr-2 w-full lg:w-1/3 border border-red-900 bg-gradient-to-br from-red-950/50 to-black p-5 rounded-xl overflow-y-auto h-[65vh]">
         <h3 className="text-red-500 text-3xl lg:mt-0 lg:text-left font-semibold w-full text-center">
           Projects
         </h3>

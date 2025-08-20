@@ -37,7 +37,7 @@ export default function Blogs() {
   }, []);
 
   return (
-    <div className="dynamic-glow-purple border border-purple-900 bg-gradient-to-br from-purple-950/30 to-black p-4 rounded-xl">
+    <div className="border border-purple-900 bg-gradient-to-br from-purple-950/30 to-black p-4 rounded-xl">
       <h3 className="text-purple-300 text-3xl mb-4 lg:mt-0 lg:text-2xl font-semibold w-full lg:text-left text-center">
         Blogs
       </h3>

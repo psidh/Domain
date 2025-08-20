@@ -17,7 +17,7 @@ const skillIcons = [
 
 export default function TechStack() {
   return (
-    <div className="dynamic-glow p-4 flex flex-col w-full border border-neutral-700 bg-gradient-to-br from-neutral-900/80 to-black rounded-xl">
+    <div className="p-4 flex flex-col w-full border border-neutral-700 bg-gradient-to-br from-neutral-900/80 to-black rounded-xl">
       <div className="">
         <h3 className="text-3xl mb-4 lg:mt-0 font-semibold w-full lg:text-left text-center text-neutral-20">
           Tech Stack

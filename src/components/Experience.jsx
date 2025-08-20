@@ -51,15 +51,17 @@ const ExperienceCard = ({ exp, onClick, onHover, onLeave }) => (
     onMouseLeave={onLeave}
     className="cursor-pointer"
   >
-    <h3 className="text-xl font-semibold">{exp.title}</h3>
-    {/* <div className="w-full h-[0.1px] mt-3 bg-neutral-600" /> */}
+    <h3 className="text-xl font-semibold text-blue-300">{exp.title}</h3>
     <div className="flex items-center justify-between text-lg font-normal">
       <h4 className="my-4 text-sm text-neutral-500 font-medium">
         {exp.subtitle}
       </h4>
       <p className="text-neutral-500 text-sm">{exp.period}</p>
     </div>
-    <p className="text-neutral-300 font-medium mb-4">{exp.description}</p>
+    <p className="text-neutral-400 font-medium mb-4">
+      {exp.description.length > 100 ? exp.description.slice(0, 100) + "…" : exp.description}
+    </p>
+
     <div className="w-full h-[0.1px] bg-neutral-500"></div>
   </div>
 );
@@ -89,7 +91,7 @@ export default function Experience() {
 
   return (
     <>
-      <div className="dynamic-glow-blue lg:ml-4 mt-4  flex flex-col gap-6 pr-2 w-full lg:w-1/3 border border-blue-900 bg-gradient-to-br from-blue-950/50 to-black p-4 rounded-xl overflow-y-auto h-[65vh] mb-6">
+      <div className="lg:ml-4 mt-4  flex flex-col gap-6 pr-2 w-full lg:w-1/3 border border-blue-900 bg-gradient-to-br from-blue-950/50 to-black p-4 rounded-xl overflow-y-auto h-[65vh] mb-6">
         <h3 className="text-blue-300 text-3xl lg:mt-0 font-semibold w-full lg:text-left text-center">
           Experience
         </h3>

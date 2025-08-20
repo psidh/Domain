@@ -8,7 +8,7 @@ export default function Main() {
   return (
     <div className="relative z-20 py-12 px-8 md:px-12 md:pt-12 bg-transparent flex flex-col items-start w-full text-white">
       <div className="flex lg:flex-row  flex-col justify-between lg:ml-3 lg:mr-7 mb-8 gap-8 h-full">
-        <div className="dynamic-glow-green border border-green-900 bg-gradient-to-br from-green-950/50 to-black p-4 rounded-xl">
+        <div className="border border-green-900 bg-gradient-to-br from-green-950/50 to-black p-4 rounded-xl">
           <div className="flex lg:flex-row flex-col-reverse items-center justify-center lg:justify-between">
             <div>
               <h1 className="text-4xl mb-6 md:text-[36px] text-center lg:text-left w-full lg:text-5xl font-semibold">
